@@ -20,8 +20,8 @@ import xml.etree.ElementTree as ET
 
 BLOCKED_PATH = re.compile(r"(?:^|/)(?:admin|login|logout|signin|signup|account|settings|api/private|auth|checkout|payment)(?:/|$)", re.I)
 ACCEPTED_FILES = {"", ".html", ".htm", ".json", ".xml", ".js", ".mjs", ".css", ".txt"}
-SKIP_REPO = (".github/", "node_modules/", "tests/", "test/", "docs/", "scripts/", "vendor/", "assets/", "dist/", "build/", "coverage/")
-REPO_SUFFIXES = (".html", ".htm", ".json", ".js", ".mjs", ".css")
+SKIP_REPO = (".github/", "node_modules/", "tests/", "test/", "docs/", "scripts/", "vendor/", "assets/", "dist/", "build/", "coverage/", "admin/", "src/admin/", "public/fonts/")
+REPO_SUFFIXES = (".html", ".htm", ".json", ".js", ".mjs", ".css", ".ts", ".tsx", ".jsx")
 
 
 class Links(HTMLParser):
@@ -290,7 +290,9 @@ def discover(site: dict, getter, previous_history: list[dict], sleep=time.sleep)
                 notes.append("GitHub repository tree was truncated")
             accepted = [x for x in data.get("tree", []) if x.get("type") == "blob" and x.get("size", 0) <= 5_000_000
                         and x.get("path", "").lower().endswith(REPO_SUFFIXES)
-                        and not x.get("path", "").startswith(SKIP_REPO)]
+                        and not x.get("path", "").startswith(SKIP_REPO)
+                        and x.get("path", "").split("/")[-1] not in {"package.json", "package-lock.json", "components.json", ".oxlintrc.json"}
+                        and not x.get("path", "").split("/")[-1].startswith("tsconfig")]
             if len(accepted) > max_repo_files:
                 hit_cap = True
                 notes.append(f"repository file cap: {len(accepted)} > {max_repo_files}")

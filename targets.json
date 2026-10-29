@@ -80,7 +80,8 @@
         "seed_urls": [
           "https://encore.taipei/2026/",
           "https://encore.taipei/tower/",
-          "https://encore.taipei/submit/"
+          "https://encore.taipei/submit/",
+          "https://encore.taipei/club/"
         ],
         "sitemaps": [
           "https://encore.taipei/sitemap.xml"
@@ -100,7 +101,10 @@
             "source_id": "achievements",
             "kind": "encore-achievements"
           }
-        ]
+        ],
+        "repository_tree": "https://api.github.com/repos/dAAAb/encore-taipei/git/trees/main?recursive=1",
+        "repository_raw_base": "https://raw.githubusercontent.com/dAAAb/encore-taipei/main",
+        "max_repo_files": 190
       }
     },
     {

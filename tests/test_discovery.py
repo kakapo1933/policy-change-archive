@@ -80,9 +80,9 @@ class DiscoveryTests(unittest.TestCase):
         root='https://raw.githubusercontent.com/demo/example/main'
         tree='https://api.github.com/repos/demo/example/git/trees/main?recursive=1'
         site={'id':'demo','homepage':'https://github.com/demo/example','sources':[], 'crawl':{'repository_tree':tree,'repository_raw_base':root,'max_repo_files':10}}
-        entries=[{'type':'blob','path':p,'size':10} for p in ['index.html','data/policies.json','main.js','docs/cover.html','vendor/lib.js','assets/photo.png','tests/test.js']]
+        entries=[{'type':'blob','path':p,'size':10} for p in ['index.html','data/policies.json','main.js','src/main.tsx','docs/cover.html','vendor/lib.js','admin/index.html','assets/photo.png','package-lock.json','tests/test.js']]
         result=discovery.discover(site,lambda url:(json.dumps({'tree':entries}).encode(),200,{}),[])
-        self.assertEqual({s['name'] for s in result.sources},{'index.html','data/policies.json','main.js'})
+        self.assertEqual({s['name'] for s in result.sources},{'index.html','data/policies.json','main.js','src/main.tsx'})
         self.assertEqual(result.coverage['repository_files'],3)
 
 
