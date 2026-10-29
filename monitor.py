@@ -12,22 +12,27 @@ import gzip
 import hashlib
 import html
 from html.parser import HTMLParser
+from http.client import HTTPException
 import json
-import os
 from pathlib import Path
 import re
 import sys
 import time
 from datetime import datetime, timezone
 from urllib.error import HTTPError, URLError
-from urllib.request import Request, urlopen, build_opener, HTTPRedirectHandler
+from urllib.request import Request, build_opener, HTTPRedirectHandler
 from discovery import discover
 
 BASE = Path(__file__).resolve().parent
 ROOT = BASE / "data"
 CONFIG = BASE / "targets.json"
 MAX_BYTES = 5 * 1024 * 1024
-USER_AGENT = "PolicyWatch/1.0 (+public archival monitor; one request per target per day)"
+USER_AGENT = "PolicyWatch/1.1 (+https://github.com/kakapo1933/policy-change-archive; daily bounded crawl of public pages and source files)"
+# Events surfaced to readers; "still_gone" and "unchanged" are repeated daily states, not events.
+CHANGE_EVENTS = {"changed", "removed", "unlisted", "restored", "renamed"}
+# Minimum trigram Jaccard between a vanished and a new record of the same dataset
+# to report them as one suspected renamed/rewritten policy instead of remove + add.
+RENAME_SIMILARITY = 0.5
 
 
 class TextExtractor(HTMLParser):
@@ -56,7 +61,7 @@ class TextExtractor(HTMLParser):
             self.parts.append(data)
 
 
-def normalized_text(blob: bytes, kind: str, content_type: str = "") -> str:
+def normalized_text(blob: bytes, kind: str) -> str:
     raw = blob.decode("utf-8-sig", errors="replace")
     if kind == "json":
         try:
@@ -160,6 +165,57 @@ def similarity(a: str, b: str) -> float | None:
     return round(100 * len(x & y) / len(x | y), 2)
 
 
+def text_similarity(a: str, b: str) -> float:
+    x, y = trigrams(a), trigrams(b)
+    return len(x & y) / len(x | y) if x and y else 0.0
+
+
+def remember(record: dict, last_ok: dict, last_state: dict):
+    """Index the latest successful and latest definitive (ok/gone) record per source."""
+    key = (record["site_id"], record["source_id"])
+    if record["status"] == "ok":
+        last_ok[key] = record
+    if record["status"] in ("ok", "gone"):
+        last_state[key] = record
+
+
+def pair_renames(records: list[dict]):
+    """Pair a vanished policy record with a similar new one from the same dataset.
+
+    Records without stable IDs are keyed by title, so an edited title otherwise
+    looks like an unrelated removal plus addition and the diff is lost.
+    """
+    removed = [r for r in records if r["logical"] and r["status"] == "gone" and r["change"] == "removed"]
+    added = [r for r in records if r["logical"] and r["status"] == "ok" and r["change"] == "initial"]
+    texts = {}
+
+    def text_of(path: Path) -> str:
+        if path not in texts:
+            texts[path] = path.read_text(encoding="utf-8") if path.exists() else ""
+        return texts[path]
+
+    candidates = []
+    for old in removed:
+        old_text = text_of(ROOT / "texts" / f"{old['previous_text_sha256']}.txt")
+        for new in added:
+            if new["discovered_by"] != old["discovered_by"] or not new["text_snapshot"]:
+                continue
+            score = text_similarity(old_text, text_of(BASE / new["text_snapshot"]))
+            if score >= RENAME_SIMILARITY:
+                candidates.append((score, old, new))
+    paired = set()
+    for score, old, new in sorted(candidates, key=lambda c: c[0], reverse=True):
+        if id(old) in paired or id(new) in paired:
+            continue
+        paired.update((id(old), id(new)))
+        old_text = text_of(ROOT / "texts" / f"{old['previous_text_sha256']}.txt")
+        match = round(100 * score, 2)
+        old.update(change="renamed", renamed_to=new["source_id"], renamed_to_name=new["name"], match_similarity=match)
+        new.update(change="renamed", renamed_from=old["source_id"], renamed_from_name=old["name"], match_similarity=match,
+                   previous_observed_at=old["previous_observed_at"], previous_text_sha256=old["previous_text_sha256"],
+                   diff=short_diff(old_text, text_of(BASE / new["text_snapshot"])))
+
+
 def run(now: datetime | None = None, getter=fetch):
     now = now or datetime.now(timezone.utc)
     timestamp = now.astimezone(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
@@ -169,12 +225,17 @@ def run(now: datetime | None = None, getter=fetch):
     history = read_json(history_path, [])
     records = []
     coverage = {}
+    last_ok, last_state = {}, {}
+    for r in history:
+        remember(r, last_ok, last_state)
     for site in targets:
         discovered = discover(site, getter, history)
         coverage[site["id"]] = discovered.coverage or {"site_id": site["id"], "complete": True, "tracked_resources": len(site["sources"]), "notes": [], "errors": []}
         all_sources = list(site["sources"]) + discovered.sources
+        site_start = len(records)
         for source in all_sources:
-            prev = next((r for r in reversed(history + records) if r["site_id"] == site["id"] and r["source_id"] == source["id"] and r["status"] == "ok"), None)
+            prev = last_ok.get((site["id"], source["id"]))
+            state = last_state.get((site["id"], source["id"]))
             rec = {"name": source.get("name", source["id"]), "kind": source.get("type", "html"), "discovered_by": source.get("discovered_by", "configured"), "listed": source.get("listed", True), "logical": source.get("logical", False), "observed_at": timestamp, "run_id": run_id, "site_id": site["id"], "source_id": source["id"], "url": source["url"], "status": "error", "http_status": None, "raw_sha256": None, "text_sha256": None, "bytes": None, "change": "unknown", "previous_observed_at": prev["observed_at"] if prev else None, "previous_text_sha256": prev["text_sha256"] if prev else None, "error": None, "headers": {}, "snapshot": None, "text_snapshot": None, "comparison_text_snapshot": None, "comparison_text_sha256": None, "diff": []}
             try:
                 if source.get("logical"):
@@ -186,7 +247,7 @@ def run(now: datetime | None = None, getter=fetch):
                     blob, code, headers = discovered.responses.get(source["url"]) or getter(source["url"])
                 if not 200 <= code < 300:
                     raise ValueError(f"HTTP {code}")
-                text = normalized_text(blob, source["type"], headers.get("content-type", ""))
+                text = normalized_text(blob, source["type"])
                 raw_hash, text_hash = sha(blob), sha(text.encode("utf-8"))
                 snap = ROOT / "snapshots" / f"{raw_hash}.gz"
                 if not snap.exists():
@@ -217,25 +278,28 @@ def run(now: datetime | None = None, getter=fetch):
                 # A page can still return 200 even after all navigation links disappear.
                 if source.get("listed") is False and prev and prev.get("listed") is not False:
                     change = "unlisted" if change == "unchanged" else change
+                # Back after a confirmed 404/410 or a record vanishing from its dataset.
+                if state is not None and state["status"] == "gone":
+                    change = "restored"
                 diff = short_diff(before, text) if prev and text_hash != prev["text_sha256"] and before else []
                 rec.update(status="ok", http_status=code, raw_sha256=raw_hash, text_sha256=text_hash, bytes=len(blob), change=change, headers=headers, snapshot=snap.relative_to(BASE).as_posix(), text_snapshot=txt.relative_to(BASE).as_posix(), comparison_text_snapshot=comparison_path.relative_to(BASE).as_posix() if comparison_path else None, comparison_text_sha256=comparison_hash, diff=diff)
-            except (HTTPError, URLError, TimeoutError, ValueError, OSError, UnicodeError) as exc:
+            except (HTTPError, URLError, HTTPException, TimeoutError, ValueError, OSError, UnicodeError) as exc:
                 rec["error"] = f"{type(exc).__name__}: {exc}"[:350]
                 if isinstance(exc, HTTPError):
                     rec["http_status"] = exc.code
                     if exc.code in (404, 410) and prev is not None:
                         rec["status"] = "gone"
-                        rec["change"] = "removed" if not any(h.get("site_id") == site["id"] and h.get("source_id") == source["id"] and h.get("status") == "gone" for h in reversed(history)) else "still_gone"
+                        # Judge by the latest definitive state, so gone -> restored -> gone is a new removal.
+                        rec["change"] = "still_gone" if state is not None and state["status"] == "gone" else "removed"
             records.append(rec)
+            remember(rec, last_ok, last_state)
             print(f"{site['id']}/{source['id']}: {rec['status']} ({rec['change']})", flush=True)
         for missing in discovered.missing_virtual:
             # A missing logical policy is meaningful only after its parent JSON
             # was read successfully, and only once per disappearance.
-            past = [r for r in history if r.get("site_id") == site["id"] and r.get("source_id") == missing["id"]]
-            if not past or past[-1].get("status") == "gone":
-                continue
-            last = next((r for r in reversed(past) if r.get("status") == "ok"), None)
-            if last is None:
+            state = last_state.get((site["id"], missing["id"]))
+            last = last_ok.get((site["id"], missing["id"]))
+            if state is None or state["status"] == "gone" or last is None:
                 continue
             records.append({"name": missing["name"], "kind": "json", "discovered_by": missing["discovered_by"],
                             "listed": False, "logical": True, "observed_at": timestamp, "run_id": run_id,
@@ -245,6 +309,7 @@ def run(now: datetime | None = None, getter=fetch):
                             "previous_text_sha256": last["text_sha256"], "error": "Policy record absent from newly fetched parent JSON",
                             "headers": {}, "snapshot": None, "text_snapshot": None, "comparison_text_snapshot": None,
                             "comparison_text_sha256": None, "diff": []})
+        pair_renames(records[site_start:])
     # Append-only history: reject a replay with the same run ID rather than silently overwrite.
     if any(r["run_id"] == run_id for r in history):
         raise ValueError(f"run_id already exists: {run_id}")
@@ -252,15 +317,22 @@ def run(now: datetime | None = None, getter=fetch):
     save_json(history_path, history)
     save_json(ROOT / "runs" / f"{run_id}.json", {"run_id": run_id, "observed_at": timestamp, "records": records})
 
+    def is_event(r):
+        # A suspected rename is one event; count only its new-record side.
+        return r.get("change") in CHANGE_EVENTS and not (r.get("change") == "renamed" and r.get("status") == "gone")
+
     latest = {}
     for site in targets:
         rlist = [r for r in history if r["site_id"] == site["id"]]
         latest_run = rlist[-1]["run_id"] if rlist else None
         latest_records = [r for r in rlist if r["run_id"] == latest_run]
         latest[site["id"]] = {"latest": latest_records, "total_observations": len(rlist),
-                              "change_events": sum(r.get("change") in {"changed", "removed", "unlisted"} for r in rlist),
+                              "change_events": sum(map(is_event, rlist)),
                               "resource_count": len(latest_records),
-                              "latest_changed": sum(r.get("change") in {"changed", "removed", "unlisted"} for r in latest_records)}
+                              "latest_changed": sum(map(is_event, latest_records))}
+    # Every non-routine record, without the 2000-row window, so older changes stay findable.
+    events = [r for r in reversed(history)
+              if r.get("change") in CHANGE_EVENTS or r.get("change") == "initial" or r.get("status") == "error"]
     comparisons = []
     for i, first in enumerate(targets):
         for second in targets[i+1:]:
@@ -268,7 +340,7 @@ def run(now: datetime | None = None, getter=fetch):
                 combined = []
                 selected = []
                 for src in site.get("comparison_sources", ["homepage"]):
-                    r = next((r for r in reversed(history) if r["site_id"] == site["id"] and r["source_id"] == src and r["status"] == "ok"), None)
+                    r = last_ok.get((site["id"], src))
                     if not r:
                         continue
                     chosen = r.get("comparison_text_snapshot") or r.get("text_snapshot")
@@ -283,6 +355,7 @@ def run(now: datetime | None = None, getter=fetch):
             comparisons.append({"a": first["id"], "b": second["id"], "score": score, "sources_a": a_sources, "sources_b": b_sources})
     save_json(ROOT / "summary.json", {"generated_at": timestamp, "sites": targets, "stats": latest,
                                      "coverage": coverage, "comparisons": comparisons,
+                                     "events": events,
                                      "history": list(reversed(history[-2000:]))})
     return records
 

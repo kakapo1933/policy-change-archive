@@ -5,6 +5,8 @@ import tempfile
 from pathlib import Path
 import unittest
 from unittest.mock import patch
+from http.client import IncompleteRead
+from urllib.error import HTTPError
 import monitor
 
 class MonitorTests(unittest.TestCase):
@@ -43,6 +45,32 @@ class MonitorTests(unittest.TestCase):
         self.assertEqual(len(h),8)
         self.assertEqual(len(list((self.dir/'data/runs').glob('*.json'))),4)
         self.assertEqual(len(list((self.dir/'data/snapshots').glob('*.gz'))),4)
+
+    def test_removed_restored_removed_again(self):
+        date=datetime(2026,10,29,tzinfo=timezone.utc)
+        state={'up':True}
+        def getter(url):
+            if url=='https://example.org' and not state['up']:
+                raise HTTPError(url,404,'Not Found',{},None)
+            return b'<p>page</p>' if url=='https://example.org' else b'{"a":1}',200,{}
+        changes=[]
+        for day,up in enumerate([True,False,False,True,False]):
+            state['up']=up
+            changes.append(monitor.run(date+timedelta(days=day),getter)[0]['change'])
+        self.assertEqual(changes,['initial','removed','still_gone','restored','removed'])
+        s=json.loads((self.dir/'data/summary.json').read_text())
+        self.assertEqual(s['stats']['one']['change_events'],3)
+        self.assertEqual([r['change'] for r in s['events'] if r['site_id']=='one'],['removed','restored','removed','initial'])
+
+    def test_incomplete_read_does_not_abort_run(self):
+        date=datetime(2026,10,29,tzinfo=timezone.utc)
+        def getter(url):
+            if url=='https://example.net':
+                raise IncompleteRead(b'partial')
+            return b'<p>ok</p>',200,{}
+        records=monitor.run(date,getter)
+        self.assertEqual([r['status'] for r in records],['ok','error'])
+        self.assertIn('IncompleteRead',records[1]['error'])
 
     def test_duplicate_run_rejected(self):
         date=datetime(2026,10,29,tzinfo=timezone.utc)
