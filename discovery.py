@@ -8,6 +8,7 @@ from __future__ import annotations
 from collections import deque
 from dataclasses import dataclass, field
 from html.parser import HTMLParser
+from http.client import HTTPException
 import hashlib
 import json
 import posixpath
@@ -170,7 +171,7 @@ def discover(site: dict, getter, previous_history: list[dict], sleep=time.sleep)
             if exc.code != 404:
                 errors.append(f"robots.txt HTTP {exc.code}; halted web crawl")
                 robots = False
-        except (URLError, TimeoutError, OSError, ValueError) as exc:
+        except (URLError, HTTPException, TimeoutError, OSError, ValueError) as exc:
             errors.append(f"robots.txt unavailable ({type(exc).__name__}); halted web crawl")
             robots = False
         for url in cfg.get("sitemaps", []):
@@ -204,7 +205,7 @@ def discover(site: dict, getter, previous_history: list[dict], sleep=time.sleep)
                 elif root_tag == "urlset":
                     for x in locs[:max_pages * 3]:
                         enqueue(x, "sitemap")
-            except (HTTPError, URLError, TimeoutError, OSError, ValueError, ET.ParseError) as exc:
+            except (HTTPError, URLError, HTTPException, TimeoutError, OSError, ValueError, ET.ParseError) as exc:
                 # Many sites simply don't have a sitemap; retain that uncertainty.
                 if not isinstance(exc, HTTPError) or exc.code != 404:
                     notes.append(f"sitemap unavailable: {url}: {type(exc).__name__}")
@@ -227,7 +228,7 @@ def discover(site: dict, getter, previous_history: list[dict], sleep=time.sleep)
                     parser.feed(blob.decode("utf-8-sig", errors="replace"))
                     for href in parser.urls:
                         enqueue(urljoin(url, href), f"html:{url}", depth + 1)
-            except (HTTPError, URLError, TimeoutError, OSError, ValueError) as exc:
+            except (HTTPError, URLError, HTTPException, TimeoutError, OSError, ValueError) as exc:
                 # Will be captured as a failed per-page observation later.
                 errors.append(f"page discovery fetch failed: {url} ({type(exc).__name__})")
             if delay:
@@ -238,6 +239,12 @@ def discover(site: dict, getter, previous_history: list[dict], sleep=time.sleep)
     # Discover standalone policy pages and logical (SPA) policy records from JSON.
     derived_current = set()
     complete_datasets = set()
+    # Latest definitive record per logical policy, to compare against the new extraction.
+    last_items = {}
+    for rec in previous_history:
+        sid = str(rec.get("source_id", ""))
+        if rec.get("site_id") == site_id and sid.startswith("item-") and rec.get("status") in ("ok", "gone"):
+            last_items[sid] = rec
     for dataset in cfg.get("policy_datasets", []):
         parent = next((x for x in site["sources"] if x["id"] == dataset.get("source_id")), None)
         if not parent:
@@ -254,6 +261,7 @@ def discover(site: dict, getter, previous_history: list[dict], sleep=time.sleep)
                         add(row["url"], "official-policy-index", "html")
             entries = list(entries_from_json(parsed, dataset["kind"]))
             duplicate_ids = {}
+            extracted = 0
             for record_id, record, title in entries[:1000]:
                 if not record_id:
                     continue
@@ -270,11 +278,18 @@ def discover(site: dict, getter, previous_history: list[dict], sleep=time.sleep)
                 result.sources.append(source)
                 result.virtual_blobs[sid] = body_from_json(record)
                 derived_current.add(sid)
+                extracted += 1
+            previous = sum(r.get("status") == "ok" and r.get("discovered_by") == f"record:{parent['id']}" for r in last_items.values())
             if len(entries) > 1000:
+                # Records beyond the cap were not read, so their absence proves nothing.
                 hit_cap = True
                 notes.append(f"logical record cap: {parent['id']}")
-            complete_datasets.add(parent["id"])
-        except (HTTPError, URLError, TimeoutError, OSError, ValueError, json.JSONDecodeError) as exc:
+            elif previous and extracted < previous * 0.5:
+                # A renamed key or new layout reads as "every policy deleted"; don't infer removals.
+                errors.append(f"policy dataset {parent['id']}: extracted {extracted} records, previously {previous}; possible schema change, removals not inferred")
+            else:
+                complete_datasets.add(parent["id"])
+        except (HTTPError, URLError, HTTPException, TimeoutError, OSError, ValueError, json.JSONDecodeError) as exc:
             errors.append(f"policy dataset {parent['id']} unavailable: {type(exc).__name__}: {exc}")
 
     # Discover text website resources directly from an independently published source repo.
@@ -302,7 +317,7 @@ def discover(site: dict, getter, previous_history: list[dict], sleep=time.sleep)
                 typ = "json" if entry["path"].endswith(".json") else "html" if entry["path"].endswith((".html", ".htm")) else "asset"
                 if file_url not in existing_urls:
                     result.sources.append({"id": source_id(file_url), "url": file_url, "name": entry["path"], "type": typ, "discovered_by": "repository-tree"})
-        except (HTTPError, URLError, TimeoutError, OSError, ValueError, json.JSONDecodeError) as exc:
+        except (HTTPError, URLError, HTTPException, TimeoutError, OSError, ValueError, json.JSONDecodeError) as exc:
             errors.append(f"GitHub source tree unavailable: {type(exc).__name__}: {exc}")
 
     result.sources.extend(candidates.values())
@@ -325,12 +340,11 @@ def discover(site: dict, getter, previous_history: list[dict], sleep=time.sleep)
                 listing_complete = not errors and not hit_cap and robots is not False
                 result.sources.append({"id": sid, "url": url, "name": rec.get("name") or unquote(urlsplit(url).path), "type": rec.get("kind") or "html", "discovered_by": "previously-observed", "listed": False if listing_complete else None})
 
-    for rec in previous_history:
-        sid = rec.get("source_id", "")
-        if rec.get("site_id") != site_id or not sid.startswith("item-") or sid in derived_current:
+    for sid, rec in last_items.items():
+        if sid in derived_current or rec.get("status") != "ok":
             continue
         parent_id = str(rec.get("discovered_by", "")).removeprefix("record:")
-        if parent_id in complete_datasets and sid not in {x["id"] for x in result.missing_virtual}:
+        if parent_id in complete_datasets:
             result.missing_virtual.append({"id": sid, "url": rec["url"], "name": rec.get("name", sid), "type": "json", "discovered_by": f"record:{parent_id}", "logical": True})
 
     unique = {}

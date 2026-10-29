@@ -16,7 +16,9 @@
 - 網址只接受 HTTPS、同網域、公開 GET 及無 query 變體，拒絕跨域跳轉、管理／登入路徑。遵守 `robots.txt`；無法確認 robots（除 404）時停止該站的網頁探索，並留下錯誤資訊。
 - 預設站點頁數上限 HEART 120、安可 100，政策紀錄每組最多 1,000 筆，安可原始碼最多 190 個、第三站程式碼最多 130 個；對網站逐頁限速約 0.2 秒，單檔大小上限 5 MiB。
 - 超過上限、Sitemap 失敗、HTTP 錯誤、JSON 解析錯誤等會在 `data/summary.json` 的 `coverage` 標示。**「探索完成」僅代表此次設定範圍的程序完成，不等於數學上證明全站沒有漏頁。**
-- 只有實際 URL 回 HTTP 404／410（曾成功抓取過），或之前存在的某筆政策從**成功讀取**的新 JSON 消失時，才標記 `removed`。僅從站內連結消失但頁面仍可開啟時標記 `unlisted`；抓取失敗不會誤判移除。
+- 只有實際 URL 回 HTTP 404／410（曾成功抓取過），或之前存在的某筆政策從**成功讀取**的新 JSON 消失時，才標記 `removed`。僅從站內連結消失但頁面仍可開啟時標記 `unlisted`；抓取失敗不會誤判移除。判斷依據是該來源**最近一次確定狀態**：移除後又出現標記 `restored`，恢復後再次消失會重新標記 `removed`，持續消失則為 `still_gone`。
+- 政策 JSON 若抽出的條目為 0，或少於前次的一半，視為資料結構可能變動：記錄在 `coverage` 錯誤中，**不推論任何條目被移除**；超過 1,000 筆上限時同樣不推論移除。
+- 部分來源（例如安可的 `platform.json`、`achievements.json`）沒有穩定 ID，只能以標題識別。同一次掃描中，若同一資料集有一筆消失、一筆新增，且文字三字元片段 Jaccard ≥ 50%，兩筆都標記 `renamed`（疑似改名／改寫），並附上相似度與前後差異；這是配對推測，不是同一政策的確認。
 - SPA 3D 場景、單一網址下的 hash route、登入後內容、不可見 API、圖片／影片及 JavaScript 動態生成但不在公開資料中的狀態，**無法保證完整覆蓋**。對這類 SPA，我們改以政策 JSON 中**每一筆條目**當成「邏輯頁」逐項觀測，但不是聲稱有真的公開 URL。公開介面會標記這些是從 JSON 拆出的條目。
 
 ## 證據可驗證性
@@ -25,7 +27,7 @@
 - `data/snapshots/<sha256>.gz`：原始 HTTP 回應內文 gzip 快照，內容相同只保留一份。
 - `data/texts/<sha256>.txt`：可讀文字快照，JSON 會規範化格式；政策邏輯頁使用單筆 JSON 內容來計算原始 Hash。
 - `raw_sha256`：原始內容指紋；`text_sha256`：可讀文字指紋；`diff`：前後版文字差異。每項來源有自己的 URL/項目 ID、UTC 時間、HTTP 狀態與標頭。
-- `data/summary.json`：公開查詢頁使用的最新狀態、每站探索品質、三站政策文字重合指標；該指標**不代表政策剽竊**。
+- `data/summary.json`：公開查詢頁使用的最新狀態、每站探索品質、三站政策文字重合指標（該指標**不代表政策剽竊**）；`events` 保存全部首次觀測、變更、移除、恢復、疑似改名與抓取失敗，`history` 只含最近 2,000 筆紀錄。
 - 這些紀錄能說明「在什麼時間觀察到哪個版本」，不能當作網站實際發布時間或作者身分的權威證明。Git 歷史可由有權限的人重寫，關鍵證據仍應搭配第三方封存。
 
 ## 開發、測試與部署
@@ -39,7 +41,7 @@ python3 -m http.server 8000
 # http://localhost:8000/site/
 ```
 
-`.github/workflows/policy-watch.yml` 每天台灣時間約 **09:17** 執行（GitHub 排程可能延遲或跳過），也可在 Actions 手動執行。每次擷取會保留所有原始紀錄，並以 Git commit 保存快照。請保持 Repository Actions 的 `contents: write` 權限。
+`.github/workflows/policy-watch.yml` 只在每天台灣時間約 **09:17** 的排程（GitHub 排程可能延遲或跳過）或在 Actions 手動執行時擷取；只修改 `site/` 時僅重新發布網頁。程式碼的 push 與 PR 由 `.github/workflows/ci.yml` 執行單元測試，不會觸發擷取。Workflow 使用的 Actions 均以 commit SHA 固定版本。每次擷取會保留所有原始紀錄，並以 Git commit 保存快照。請保持 Repository Actions 的 `contents: write` 權限。
 
 靜態查詢網頁為 `site/index.html`，資料存放於 `data/`；GitHub Pages 需在 `Settings → Pages → Build and deployment → Source` 選擇 **GitHub Actions**。未成功部署前，請勿將預期的 Pages 網址視為已上線。
 

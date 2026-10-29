@@ -4,6 +4,7 @@ from pathlib import Path
 import tempfile
 import unittest
 from unittest.mock import patch
+from http.client import IncompleteRead
 from urllib.error import HTTPError
 
 import discovery
@@ -90,6 +91,27 @@ class DiscoveryTests(unittest.TestCase):
         self.assertEqual(len(found.sources),1)
         self.assertIsNone(found.sources[0]['listed'])
 
+    def test_record_cap_does_not_infer_removals(self):
+        url='https://demo.example/data.json'
+        site={'id':'demo','homepage':'https://demo.example/','sources':[{'id':'policies','url':url,'type':'json'}],
+              'crawl':{'policy_datasets':[{'source_id':'policies','kind':'default'}]}}
+        data={'items':[{'id':f'p{i}','title':f'政策{i}'} for i in range(1001)]}
+        past=[{'site_id':'demo','source_id':'item-beyond-cap','url':url+'#record=p1000','name':'政策1000','status':'ok','discovered_by':'record:policies'}]
+        result=discovery.discover(site,lambda u:(discovery.body_from_json(data),200,{}),past)
+        self.assertTrue(result.coverage['capped'])
+        self.assertEqual(result.missing_virtual,[])
+
+    def test_incomplete_http_read_is_recorded_not_fatal(self):
+        site={'id':'demo','homepage':'https://demo.example/','sources':[],
+              'crawl':{'discover_web':True,'allowed_paths':['/'],'max_pages':5,'delay_seconds':0}}
+        def getter(url):
+            if url.endswith('robots.txt'):
+                raise HTTPError(url,404,'missing',{},None)
+            raise IncompleteRead(b'partial')
+        result=discovery.discover(site,getter,[],sleep=lambda n:None)
+        self.assertFalse(result.coverage['complete'])
+        self.assertIn('IncompleteRead',' '.join(result.coverage['errors']))
+
     def test_repo_manifest_filter(self):
         root='https://raw.githubusercontent.com/demo/example/main'
         tree='https://api.github.com/repos/demo/example/git/trees/main?recursive=1'
@@ -108,7 +130,7 @@ class CrawlIntegrationTests(unittest.TestCase):
         for p in self.patches:p.start()
         self.url='https://example.test/'
         self.policy=self.url+'data/policies.json'
-        self.data={'items':[{'id':'alpha','title':'運動驛站','detail':'新增公立運動設施'}]}
+        self.data={'items':[{'id':'alpha','title':'運動驛站','detail':'新增公立運動設施'},{'id':'beta','title':'公車改革','detail':'改善公車路網'}]}
         self.paths={self.url+'robots.txt':b'User-agent: *\nAllow: /',self.url+'sitemap.xml':b'<urlset><url><loc>https://example.test/one/</loc></url></urlset>',self.url:b'<a href="/one/">Page</a>',self.url+'one/':b'<h1>My policy</h1>'}
         self.targets={'sites':[{'id':'one','name':'Example','homepage':self.url,'sources':[{'id':'homepage','url':self.url,'type':'html'},{'id':'policies','url':self.policy,'type':'json'}],'crawl':{'discover_web':True,'sitemaps':[self.url+'sitemap.xml'],'allowed_paths':['/'],'max_pages':12,'delay_seconds':0,'policy_datasets':[{'source_id':'policies','kind':'default'}]}}]}
         (self.root/'targets.json').write_text(json.dumps(self.targets))
@@ -127,15 +149,15 @@ class CrawlIntegrationTests(unittest.TestCase):
     def test_capture_detect_change_delete_legacy_history(self):
         date=datetime(2026,10,29,tzinfo=timezone.utc)
         first=monitor.run(date,self.get)
-        self.assertEqual(len(first),4) # home + dataset + page + policy record
-        self.assertEqual(len([r for r in first if r.get('logical')]),1)
+        self.assertEqual(len(first),5) # home + dataset + page + two policy records
+        self.assertEqual(len([r for r in first if r.get('logical')]),2)
         s=json.loads((self.root/'data/summary.json').read_text())
-        self.assertEqual(s['stats']['one']['resource_count'],4)
+        self.assertEqual(s['stats']['one']['resource_count'],5)
         self.assertTrue(s['coverage']['one']['complete'])
         self.paths[self.url+'one/']=b'<h1>New policy text</h1>'
         second=monitor.run(date+timedelta(days=1),self.get)
         self.assertEqual(next(r for r in second if r['url']==self.url+'one/') ['change'],'changed')
-        self.data['items']=[]
+        self.data['items']=self.data['items'][:1]
         del self.paths[self.url+'one/']
         third=monitor.run(date+timedelta(days=2),self.get)
         self.assertTrue(any(r['change']=='removed' and r['logical'] for r in third))
@@ -144,5 +166,35 @@ class CrawlIntegrationTests(unittest.TestCase):
         fourth = monitor.run(date+timedelta(days=3), self.get)
         self.assertFalse(any(r['logical'] and r['change']=='removed' for r in fourth))
         self.assertTrue(any(r['status']=='gone' and r['change']=='still_gone' for r in fourth))
+
+    def test_schema_change_does_not_mark_every_policy_removed(self):
+        date=datetime(2026,10,29,tzinfo=timezone.utc)
+        monitor.run(date,self.get)
+        self.data={'data':self.data['items']}  # top-level key renamed upstream
+        second=monitor.run(date+timedelta(days=1),self.get)
+        self.assertFalse(any(r['change']=='removed' for r in second))
+        cv=json.loads((self.root/'data/summary.json').read_text())['coverage']['one']
+        self.assertFalse(cv['complete'])
+        self.assertIn('possible schema change',' '.join(cv['errors']))
+
+    def test_suspected_rename_of_record_without_stable_id(self):
+        detail='這是一段足夠長的政策說明文字，用來確認標題修改後仍能以內容相似度配對同一筆政策條目。'
+        self.data={'items':[{'title':'運動驛站','detail':detail},{'title':'公車改革','detail':'改善公車路網與班距'}]}
+        date=datetime(2026,10,29,tzinfo=timezone.utc)
+        monitor.run(date,self.get)
+        self.data['items'][0]['title']='全民運動驛站'
+        second=monitor.run(date+timedelta(days=1),self.get)
+        renamed=[r for r in second if r['change']=='renamed']
+        self.assertEqual(len(renamed),2)
+        new=next(r for r in renamed if r['status']=='ok')
+        old=next(r for r in renamed if r['status']=='gone')
+        self.assertEqual(new['renamed_from'],old['source_id'])
+        self.assertEqual(old['renamed_to'],new['source_id'])
+        self.assertGreaterEqual(new['match_similarity'],50)
+        self.assertTrue(any('全民運動驛站' in line for line in new['diff']))
+        s=json.loads((self.root/'data/summary.json').read_text())
+        self.assertEqual(s['stats']['one']['latest_changed'],2)  # parent JSON changed + one rename (not remove + add)
+        self.assertTrue(any(r['change']=='renamed' for r in s['events']))
+        self.assertFalse(any(r['change']=='removed' for r in second))
 
 if __name__=='__main__':unittest.main()
