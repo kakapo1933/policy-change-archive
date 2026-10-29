@@ -1,0 +1,18 @@
+{
+"date": "2025-12-18",
+"facts": [
+"2026–2030 碳預算總量 4,284 萬噸 CO2e",
+"2024 年排放較 2005 年減 19.39%",
+"目標 2030 年較 2005 年減 40%、2050 淨零"
+],
+"id": "environment-carbon",
+"sources": [
+{
+"published": "2025-12-18",
+"publisher": "臺北市環保局",
+"url": "https://www.dep.gov.taipei/News_Content.aspx?n=CB6D5C560DE4D2DD&sms=72544237BBE4C5F6&s=C896B11FE243A3FA"
+}
+],
+"status": "in_progress",
+"title": "淨零：第一期碳預算核定"
+}

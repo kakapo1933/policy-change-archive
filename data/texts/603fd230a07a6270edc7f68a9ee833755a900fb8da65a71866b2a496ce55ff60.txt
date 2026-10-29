@@ -1,0 +1,34 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "游泳、球類、舞蹈、滑冰"
+}
+],
+"flows": [
+"F1",
+"F9",
+"F10"
+],
+"id": "card-sport",
+"name": {
+"en": "Sport points",
+"zh": "運動幣"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "支持游泳、球類、舞蹈、滑冰等多元活動，讓家庭更容易走進運動空間。"
+},
+"sources": [
+"card"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "0–18 歲兒少與家人"
+}
+}

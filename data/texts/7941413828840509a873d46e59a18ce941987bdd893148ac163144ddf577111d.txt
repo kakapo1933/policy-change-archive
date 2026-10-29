@@ -1,0 +1,16 @@
+{
+"date": "2024-02-28",
+"facts": [
+"2024-02-28 起恢復騎乘前 30 分鐘免費，超過後依原費率計費"
+],
+"id": "transport-youbike",
+"sources": [
+{
+"published": "2024-02-27",
+"publisher": "環境資訊中心",
+"url": "https://e-info.org.tw/node/238570"
+}
+],
+"status": "done",
+"title": "YouBike 前 30 分鐘免費恢復實施"
+}

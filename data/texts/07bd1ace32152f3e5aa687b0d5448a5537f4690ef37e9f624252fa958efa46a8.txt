@@ -1,0 +1,50 @@
+{
+"category": "市政",
+"confidence": "medium",
+"critical": [],
+"deadline": "每年",
+"evidence": [
+"2022-10-19 數位時代專訪，蔣萬安表示應舉辦「像是SXSW（西南偏南）」的大型國際嘉年華。",
+"2024-07-18 市府宣布「2024 TRENDY TAIPEI潮臺北」於9月2日至8日舉行，由文化局、產發局、資訊局、觀傳局合辦，稱為首年示範。",
+"2025年潮台北於8月25日至9月7日舉行，逾150場音樂演出、39場專業論壇，涵蓋音樂、藝術、影視、科技、遊戲、時尚六大主題，並含StartSphere Taipei新創活動。",
+"2026-08-05 中央社報導2026年潮台北於8月22日至9月6日舉行，逾150場演出、290組國內外團體；2025年14天約13萬人次參與。"
+],
+"id": "p22-media-06",
+"origin": "鏡週刊（2022-09-27）",
+"origin_url": "https://www.mirrormedia.mg/story/20220927inv005",
+"pledge": "每年舉辦類似 SXSW 的大型國際節慶，讓台北登上世界行事曆",
+"related": [
+{
+"item": "intl-trendy-taipei",
+"theme": "international"
+}
+],
+"sources": [
+{
+"published": "2022-10-19",
+"publisher": "數位時代",
+"title": "新創關鍵7問新市長！陳時中、黃珊珊、蔣萬安新創想像、政策一次看",
+"url": "https://www.bnext.com.tw/article/72157/pre-taipei-major-about-startup"
+},
+{
+"published": "2024-07-18",
+"publisher": "蕃新聞",
+"title": "台北市長蔣萬安：「2024 TRENDY TAIPEI潮臺北」正式啟動 音樂展演、國際論壇、主題演講超過百場",
+"url": "https://n.yam.com/Article/20240718674123"
+},
+{
+"published": "2025-08-19",
+"publisher": "TTG Asia",
+"title": "Taipei festival brings concerts, forums and public activations to the city",
+"url": "https://www.ttgasia.com/2025/08/19/taipei-festival-brings-concerts-forums-and-public-activations-to-the-city/"
+},
+{
+"published": "2026-08-05",
+"publisher": "中央社",
+"title": "潮台北系列活動8/22展開 逾150場音樂演出",
+"url": "https://www.cna.com.tw/news/aloc/202608050145.aspx"
+}
+],
+"status": "partial",
+"summary": "市府自2024年起每年舉辦「潮台北 TRENDY TAIPEI」，結合音樂、藝術、影視、科技、遊戲、時尚與新創論壇，形式接近原文所說的SXSW型跨域節慶；2024年為「首年示範」，2025、2026年續辦。2023年未舉辦，「每年」未完全達成；是否「登上世界行事曆」無客觀標準。"
+}

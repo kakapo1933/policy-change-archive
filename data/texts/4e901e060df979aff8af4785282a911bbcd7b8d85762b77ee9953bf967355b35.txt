@@ -1,0 +1,46 @@
+{
+"facts": [
+{
+"en": null,
+"tile": {
+"en": null,
+"zh": "每胎加碼 6 次"
+},
+"zh": "中央 3 次＋市府每胎加碼 6 次"
+},
+{
+"en": null,
+"zh": "產後一年內的家長，無條件"
+},
+{
+"en": null,
+"zh": "中央方案依其適用資格辦理"
+}
+],
+"flows": [
+"F1",
+"F10",
+"F11"
+],
+"id": "family-counsel",
+"name": {
+"en": "3+6 counseling",
+"zh": "3＋6 心理諮商"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "除了中央方案的 3 次服務，由市府為產後一年內的家長，無條件每胎再加碼 6 次；中央方案仍依其適用資格辦理。"
+},
+"sources": [
+"family"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "產後家長"
+}
+}

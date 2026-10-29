@@ -1,0 +1,38 @@
+{
+"category": "交通",
+"confidence": "medium",
+"critical": [],
+"deadline": null,
+"evidence": [
+"交通局 2024-07-03 表示，瑞光路 358 巷開口預計當年完成、堤頂交流道北上入口匝道預計 2025 年完成。",
+"2026-06-20 蔣萬安回應內湖交通問題時表示堤頂交流道北上引道已開設，並稱內湖車流旅行時間下降 6.07%–13%；報導未載明開設日期。",
+"2026 年 9 月沈伯洋提出興建跨基隆河自行車橋，蔣萬安回應市府約 2024 年評估過，工程面不可行，現以捷運東環段等路線改善為主。"
+],
+"id": "p22-transport-04",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "尋求新闢聯外道路：持續提升現有聯外道路服務水準，同時尋求新闢聯外道路的可能性。",
+"related": [],
+"sources": [
+{
+"published": "2024-07-03",
+"publisher": "TVBS 新聞網",
+"title": "分析／病急亂投醫？北市推「雙園巴士」 內科交通惡夢還是無解",
+"url": "https://news.tvbs.com.tw/politics/2538186"
+},
+{
+"published": "2026-06-20",
+"publisher": "Newtalk 新聞",
+"title": "蔣萬安回應內湖交通問題 曬出改善數據：已下降6.07%到13%",
+"url": "https://newtalk.tw/news/view/2026-06-20/1042350"
+},
+{
+"published": "2026-09-18",
+"publisher": "TVBS 地球黃金線",
+"title": "沈伯洋提9.5億蓋自行車橋解內湖塞車！蔣萬安回應、議員質疑「住過台北？」",
+"url": "https://cars.tvbs.com.tw/life/341866"
+}
+],
+"status": "unverifiable",
+"summary": "政見為「持續提升」與「尋求可能性」，無可衡量標準。相關作為：市府 2024 年規劃瑞光路 358 巷開口與堤頂交流道北上入口匝道，2026 年 6 月市府稱堤頂交流道北上引道已開設；未查到新闢聯外道路的具體計畫。"
+}

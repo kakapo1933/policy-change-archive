@@ -1,0 +1,38 @@
+{
+"category": "勞工",
+"confidence": "medium",
+"critical": [],
+"deadline": null,
+"evidence": [
+"臺北市職能發展學院114年度開辦照顧服務員專班23班、培訓692人、就業率90%，免訓練費，結訓當天可領證；連續4年獲勞動部評鑑優等。",
+"115年1–5月運用就安基金辦理照顧服務員專班10班、訓練293人。",
+"113年與臺北市信義婦女支持培力中心合作，在廣慈社宅開設照顧服務員課程2班。"
+],
+"id": "p22-labor-11",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "輔導因照顧長輩離開職場的市民，重返職場。有意投入長照之市民，市府輔導取得長照服務人員資格。",
+"related": [],
+"sources": [
+{
+"published": "2026-07-28",
+"publisher": "臺北市政府勞動局",
+"title": "打造長照即戰力！北市照服專班就業率達9成 臺北市政府連續4年蟬聯勞動部優等評鑑",
+"url": "https://bola.gov.taipei/News_Content.aspx?n=098B457D83590D7F&sms=72544237BBE4C5F6&s=F52907CF956DCDE1"
+},
+{
+"published": "2026-07",
+"publisher": "臺北市政府勞動局",
+"title": "臺北市議會第14屆第8次定期大會 臺北市政府勞動局工作報告（115年1月至6月）",
+"url": "https://www-ws.gov.taipei/001/Upload/307/relfile/63006/9671324/8ffff2bd-b86f-4eaf-98cb-800423f9abca.pdf"
+},
+{
+"published": "2024-04",
+"publisher": "臺北市政府勞動局",
+"title": "臺北市議會第14屆第3次定期大會 臺北市政府勞動局工作報告（112年7月至12月）",
+"url": "https://www-ws.gov.taipei/001/Upload/307/relfile/63006/9149282/190e48d7-5926-4df8-ad4f-670fb2465daa.pdf"
+}
+],
+"status": "partial",
+"summary": "市府輔導取得長照資格的部分有實績：114年開辦23個照顧服務員專班、培訓692人，就業率90%。但未查到針對「因照顧長輩離職者」的重返職場專案。"
+}

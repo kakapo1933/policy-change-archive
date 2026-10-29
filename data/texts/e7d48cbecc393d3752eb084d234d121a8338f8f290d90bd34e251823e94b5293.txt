@@ -1,0 +1,6 @@
+{
+"detail": "建構南北、東西軸線捷運路網，串聯北士科、台北AI園區、內科、南軟四大科技產業聚落。",
+"short": "台北XY軸捷運，串聯四大園區！",
+"source": "https://www.cna.com.tw/news/aipl/202610080124.aspx",
+"tag": "台北XY軸"
+}

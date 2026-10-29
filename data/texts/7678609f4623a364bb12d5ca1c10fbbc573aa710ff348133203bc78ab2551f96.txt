@@ -1,0 +1,28 @@
+{
+"date": "2023-12-03",
+"facts": [
+"2023-11-02 取得使用執照",
+"2023-12-03 亞洲棒球錦標賽為首場正式賽事",
+"市長稱大巨蛋用途須以運動賽事為主"
+],
+"id": "culture-dome",
+"sources": [
+{
+"published": "2023-11-03",
+"publisher": "中央社",
+"url": "https://www.cna.com.tw/news/ahel/202311035001.aspx"
+},
+{
+"published": "2023-12-03",
+"publisher": "中央社",
+"url": "https://www.cna.com.tw/news/aspt/202312030081.aspx"
+},
+{
+"published": "2024-11-01",
+"publisher": "中央社",
+"url": "https://www.cna.com.tw/news/aloc/202411010101.aspx"
+}
+],
+"status": "done",
+"title": "臺北大巨蛋啟用與營運"
+}

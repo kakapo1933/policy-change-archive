@@ -1,0 +1,6 @@
+{
+"detail": "AI教育白皮書：師生AI助理、教師配發AI PC、高中AI Lab每校300萬元，並在北士科設立AI教育中心。",
+"short": "4年92億，AI教育領航！",
+"source": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=B469C4B80810E020&sms=72544237BBE4C5F6",
+"tag": "教育心安"
+}

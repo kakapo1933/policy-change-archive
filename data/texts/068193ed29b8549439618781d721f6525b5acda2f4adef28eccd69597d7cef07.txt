@@ -1,0 +1,40 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "5 項指標每季評分公開"
+},
+{
+"en": null,
+"zh": "維護預算與評分連動"
+}
+],
+"flows": [
+"F1",
+"F3",
+"F5",
+"F6",
+"F7"
+],
+"id": "transport-maintain",
+"name": {
+"en": null,
+"zh": "河濱車道評分"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "鋪面、標線、照明、指標與越堤動線 5 項指標每季評分公開，維護預算跟著評分走。"
+},
+"sources": [
+"transport"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "自行車通勤族"
+}
+}

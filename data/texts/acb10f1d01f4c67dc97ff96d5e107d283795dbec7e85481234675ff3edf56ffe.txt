@@ -1,0 +1,43 @@
+{
+"category": "居住",
+"confidence": "medium",
+"critical": [],
+"deadline": null,
+"evidence": [
+"2023-03-07 市府宣布「都更5箭」：降門檻（7599）、都更單元及事業計畫全面開放併送、150 速審專案、代拆、增設電梯補助由 250 萬提高至 300 萬元。",
+"2026-09-14 報導：文山木柵段公辦都更案（4 棟）即將完工，市府分回 282 戶作為「幸福住宅」；市府稱過去三年都更平均每年報核件數是上任前 8 年平均的 2.4 倍。",
+"「臺北市多元興辦社會住宅潛力基地及第一階段推動期程」調整公告列 21 處、約 6,813 戶，其中公辦都更 7 處 473 戶、誠正國中 100 戶、東園國小宿舍及健康服務中心基地 100 戶。"
+],
+"id": "p22-housing-06",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "未來會透過公辦都更、校園改建BOT等等，解決居住問題",
+"related": [
+{
+"item": "housing-public-renewal",
+"theme": "housing"
+}
+],
+"sources": [
+{
+"published": "2023-03-07",
+"publisher": "NOWnews",
+"title": "六都平均屋齡最老！蔣萬安宣布北市啟動「都更五箭」",
+"url": "https://www.nownews.com/news/6073839"
+},
+{
+"published": "2026-09-14",
+"publisher": "經濟日報",
+"title": "不讓釘子戶卡都更...上任後首例代拆案將完工 蔣萬安親曝執行背後壓力",
+"url": "https://money.udn.com/money/story/5621/9753175"
+},
+{
+"published": null,
+"publisher": "臺北市政府都市發展局",
+"title": "調整公告「臺北市多元興辦社會住宅潛力基地及第一階段推動期程」",
+"url": "https://udd.gov.taipei/assets/9dRAn8BqRiBPkRth9jjfFU/attachs/調整公告「臺北市多元興辦社會住宅潛力基地及第一階段推動期程」.pdf"
+}
+],
+"status": "partial",
+"summary": "公辦都更已推出多項專案（2023-03 7599、2024-03 575 等）並開放都更單元與事業計畫併送，木柵段公辦都更案將完工，市府分回 282 戶。校園改建方面，社宅潛力基地只列入誠正國中（100 戶）與東園國小宿舍基地（100 戶），本次查核未查得以 BOT 方式完成的校園改建住宅案。"
+}

@@ -1,0 +1,51 @@
+{
+"facts": [
+{
+"en": null,
+"tile": {
+"en": null,
+"zh": "0–6 歲"
+},
+"zh": "0–6 歲免費接種"
+}
+],
+"flows": [
+"F1",
+"F2",
+"F3",
+"F4",
+"F8",
+"F9",
+"F11"
+],
+"id": "welfare-vaccine",
+"name": {
+"en": "Enterovirus vaccine",
+"zh": "腸病毒疫苗"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "初期啟動疫苗補助"
+},
+"stages": [
+"short"
+]
+},
+"plain": {
+"en": null,
+"zh": "推行 0 至 6 歲幼兒免費接種腸病毒疫苗，守住兒少健康防線。"
+},
+"sources": [
+"welfare"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "0–6 歲幼兒"
+}
+}

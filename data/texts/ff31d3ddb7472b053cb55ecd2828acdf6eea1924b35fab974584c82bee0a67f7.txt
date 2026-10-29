@@ -1,0 +1,23 @@
+{
+"date": "2026-10-16",
+"facts": [
+"2026-10-16 宣布，公辦都更 7599 第一階段門檻擬由 75% 降至 50%",
+"大街廓更新：3,000 平方公尺以上基地優先、提高容積獎勵",
+"更新案加入托老、托幼與幸福住宅；未公布實施日期"
+],
+"id": "housing-renewal-new",
+"sources": [
+{
+"published": "2026-10-17",
+"publisher": "自由時報",
+"url": "https://news.ltn.com.tw/news/politics/breakingnews/5609883"
+},
+{
+"published": "2026-10-17",
+"publisher": "東森新聞",
+"url": "https://news.ebc.net.tw/news/living/576224"
+}
+],
+"status": "proposal",
+"title": "都更新政：門檻擬降至 50% 與大街廓更新"
+}

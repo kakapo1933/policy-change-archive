@@ -1,0 +1,6 @@
+{
+"fact": "2024年首創「幸福住宅」，以都更分回住宅專門出租給新婚及育兒家庭。",
+"short": "幸福住宅，新婚育兒住得起！",
+"source": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=B395A3F378442611&sms=72544237BBE4C5F6",
+"tag": "居住"
+}

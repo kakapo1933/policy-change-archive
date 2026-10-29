@@ -1,0 +1,23 @@
+{
+"date": "2026-06-08",
+"facts": [
+"校長每月加發 3,000、主任 2,000、組長 1,000 元",
+"追溯自 2025-09-01，約 4,313 人受惠",
+"2026-08-01 起公立國中小增置 303 名行政人力"
+],
+"id": "family-teachers",
+"sources": [
+{
+"published": "2026-06-08",
+"publisher": "中央社（聯合新聞網）",
+"url": "https://udn.com/news/story/6885/9553381"
+},
+{
+"published": "2026-01-14",
+"publisher": "民報",
+"url": "https://www.peoplenews.tw/?p=12026"
+}
+],
+"status": "done",
+"title": "教師兼行政獎勵金與行政人力"
+}

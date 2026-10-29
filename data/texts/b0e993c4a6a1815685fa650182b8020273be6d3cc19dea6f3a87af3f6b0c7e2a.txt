@@ -1,0 +1,36 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "獨立書店與社區小店申請加入"
+},
+{
+"en": null,
+"zh": "逐步擴大可使用範圍"
+}
+],
+"flows": [
+"F1",
+"F9",
+"F10",
+"F18"
+],
+"id": "card-shops",
+"name": {
+"en": "Certified local shops",
+"zh": "親子同行認證小店"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "辦理在地活動的獨立書店與社區小店可申請認證加入，逐步擴大能使用的服務與活動。"
+},
+"sources": [
+"card"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": null
+}

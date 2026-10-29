@@ -1,0 +1,22 @@
+{
+"date": "2025-11-25",
+"facts": [
+"近 3 年都更報核 353 件，年均 117 件",
+"2023 年公辦都更第一階段門檻由 90% 降至 75%"
+],
+"id": "housing-renewal",
+"sources": [
+{
+"published": "2025-11-25",
+"publisher": "中央社（聯合新聞網）",
+"url": "https://udn.com/news/story/7323/9161223"
+},
+{
+"published": "2023-03-03",
+"publisher": "台灣好新聞",
+"url": "https://n.yam.com/Article/20230303919141"
+}
+],
+"status": "in_progress",
+"title": "都市更新與危老重建"
+}

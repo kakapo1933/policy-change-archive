@@ -1,0 +1,22 @@
+{
+"date": "2026-04-30",
+"facts": [
+"2022-11 開工（前任期間），預計 2027 年底完工",
+"市府估可分回約 606 億元產權"
+],
+"id": "development-twin-towers",
+"sources": [
+{
+"published": "2026-04-30",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9474307"
+},
+{
+"published": "",
+"publisher": "台北雙星官網",
+"url": "https://www.taipeitwins.com/tw/developmentProgress"
+}
+],
+"status": "in_progress",
+"title": "西區門戶：台北雙星（北車 C1/D1）"
+}

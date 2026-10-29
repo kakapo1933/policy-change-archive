@@ -1,0 +1,6 @@
+{
+"detail": "北士科：輝達＋AI產業鏈；內科：硬體、資通訊與運算；南港：生技與軟體，串成基隆河AI產業廊帶。",
+"short": "北士科、內科、南港，AI一條龍！",
+"source": "https://futurecity.cw.com.tw/article/4105",
+"tag": "產業心安"
+}

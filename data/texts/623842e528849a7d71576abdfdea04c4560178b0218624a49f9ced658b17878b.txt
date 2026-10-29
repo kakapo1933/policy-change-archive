@@ -1,0 +1,50 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "跨基隆河自行車專用橋"
+},
+{
+"en": null,
+"zh": "銜接民生社區與內湖科技園區"
+}
+],
+"flows": [
+"F1",
+"F3",
+"F5",
+"F6",
+"F7"
+],
+"id": "transport-bridge",
+"name": {
+"en": "Yingfeng–Gangqian cycle bridge",
+"zh": "迎風—港墘自行車橋"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第 1–2 年細部設計與招標；第 3–4 年完工啟用"
+},
+"stages": [
+"year1-2",
+"year3-4"
+]
+},
+"plain": {
+"en": null,
+"zh": "興建跨基隆河的自行車專用橋，直接銜接民生社區與內湖科技園區。"
+},
+"sources": [
+"transport"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "自行車通勤族"
+}
+}

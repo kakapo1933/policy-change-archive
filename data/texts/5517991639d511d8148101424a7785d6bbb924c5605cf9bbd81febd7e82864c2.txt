@@ -1,0 +1,55 @@
+{
+"facts": [
+{
+"en": null,
+"tile": {
+"en": null,
+"zh": "15–65 歲"
+},
+"zh": "15–65 歲"
+},
+{
+"en": null,
+"zh": "產後媽媽額外加碼"
+}
+],
+"flows": [
+"F1",
+"F2",
+"F3",
+"F4",
+"F8",
+"F9",
+"F11"
+],
+"id": "welfare-counsel",
+"name": {
+"en": "Counseling",
+"zh": "免費心理諮商"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "初期啟動各年齡層心理諮商"
+},
+"stages": [
+"short"
+]
+},
+"plain": {
+"en": null,
+"zh": "推行涵蓋 15 至 65 歲的免費心理諮商計畫，產後媽媽另外加碼。"
+},
+"sources": [
+"welfare"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "15–65 歲市民"
+}
+}

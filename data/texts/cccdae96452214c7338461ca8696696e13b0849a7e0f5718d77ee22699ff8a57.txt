@@ -1,0 +1,33 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "地方首長、議員、智庫、企業、僑界"
+}
+],
+"flows": [
+"F1",
+"F5",
+"F6",
+"F15",
+"F20"
+],
+"id": "diplomacy-forum",
+"name": {
+"en": "Infinite Cities forum",
+"zh": "無限城合作網絡"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "以國際城市的連結為基礎，拓展與地方首長、議員、智庫、企業及僑界的合作。"
+},
+"sources": [
+"diplomacy"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": null
+}

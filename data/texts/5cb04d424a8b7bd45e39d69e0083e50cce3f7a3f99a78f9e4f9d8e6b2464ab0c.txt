@@ -1,0 +1,42 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "台北通客語學習集點"
+},
+{
+"en": null,
+"zh": "客家廊帶與商圈使用"
+},
+{
+"en": null,
+"zh": "支持客家友善店家"
+}
+],
+"flows": [
+"F1",
+"F18"
+],
+"id": "hakka-points",
+"name": {
+"en": null,
+"zh": "出門講客語"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "整合「台北通App」發行數位幣，學習客語可累積點數至客家商圈折抵消費。"
+},
+"sources": [
+"hakka-ltn",
+"hakka-nextapple"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "市民"
+}
+}

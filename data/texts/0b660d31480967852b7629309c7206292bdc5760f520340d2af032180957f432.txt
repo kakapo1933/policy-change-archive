@@ -1,0 +1,6 @@
+{
+"fact": "老舊公寓增設電梯補助由250萬元加碼到300萬元。",
+"short": "老公寓加電梯，補助300萬！",
+"source": "https://uro.gov.taipei/News_Content.aspx?n=FDB0CAB1DD42E805&s=769626A517E39257&sms=72544237BBE4C5F6",
+"tag": "都更"
+}

@@ -1,0 +1,17 @@
+{
+"date": "2025",
+"facts": [
+"標籤：歡迎長者、學生、青年、設籍、租補",
+"配合租金補貼的房東，每戶最高可減免地價稅、房屋稅 1 萬元"
+],
+"id": "housing-friendly",
+"sources": [
+{
+"published": "2025-08-04",
+"publisher": "台灣英文新聞",
+"url": "https://www.taiwannews.com.tw/zh/news/6170923"
+}
+],
+"status": "done",
+"title": "友善屋源租屋標籤"
+}

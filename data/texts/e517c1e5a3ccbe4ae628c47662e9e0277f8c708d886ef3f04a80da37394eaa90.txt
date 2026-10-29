@@ -1,0 +1,37 @@
+{
+"date": "2025-02",
+"facts": [
+"2023-08 U18 世界盃青棒賽（天母等 3 球場）；2023-12-03 亞洲棒球錦標賽為大巨蛋首場正式比賽",
+"2024-11 世界棒球 12 強賽 B 組預賽於大巨蛋與天母舉行，中華隊於該屆奪冠",
+"2025-02 世界棒球經典賽資格賽於大巨蛋舉行，中華隊取得正賽資格；各賽事主辦權多由中華棒協取得"
+],
+"id": "intl-baseball",
+"sources": [
+{
+"published": "2023-12-01",
+"publisher": "中央社",
+"title": "亞錦賽3日登場 中華電轉播首推巨蛋視角鳥瞰全場",
+"url": "https://www.cna.com.tw/news/aspt/202312010216.aspx"
+},
+{
+"published": "2023-12-05",
+"publisher": "數位時代",
+"title": "2023亞洲棒球錦標賽賽程",
+"url": "https://www.bnext.com.tw/article/77685/2023-asian-baseball-championship"
+},
+{
+"published": "2024-10-02",
+"publisher": "中央社",
+"title": "世界棒球12強賽程 中華隊11/13首戰韓國",
+"url": "https://www.cna.com.tw/news/aspt/202410025005.aspx"
+},
+{
+"published": "2024-11-16",
+"publisher": "遠見雜誌",
+"title": "2024世界棒球12強賽 B組賽事資訊",
+"url": "https://www.gvm.com.tw/article/117027"
+}
+],
+"status": "done",
+"title": "大巨蛋與天母的國際棒球賽事"
+}

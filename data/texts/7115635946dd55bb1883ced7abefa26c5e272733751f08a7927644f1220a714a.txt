@@ -1,0 +1,41 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "串聯士林夜市與故宮"
+},
+{
+"en": null,
+"zh": "裝備租借、置物櫃、更衣室、洗鞋區"
+},
+{
+"en": null,
+"zh": "中英日韓四語導覽、即時步道狀態、生態季節導覽預約"
+}
+],
+"flows": [
+"F1",
+"F7"
+],
+"id": "trails-north",
+"name": {
+"en": "Jiantan visitor centre",
+"zh": "劍潭登山觀光中心"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "整合登山服務的據點，串聯士林夜市與故宮，提供裝備租借、置物更衣與洗鞋，以及四語導覽、即時步道狀態與生態季節導覽預約。"
+},
+"sources": [
+"trails"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "登山客與旅客"
+}
+}

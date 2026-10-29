@@ -1,0 +1,46 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "補足大眾運動需求"
+},
+{
+"en": null,
+"zh": "新興與適應運動"
+}
+],
+"flows": [
+"F1",
+"F7",
+"F8",
+"F13"
+],
+"id": "sport-huabo",
+"name": {
+"en": "Huabo flagship sport center",
+"zh": "花博旗艦運動中心"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第 1 年啟動、第 2–3 年完成改建可行性評估"
+},
+"stages": [
+"year1",
+"year2-3"
+]
+},
+"plain": {
+"en": null,
+"zh": "改建花博旗艦運動中心，補足大眾運動需求，並增設新興與適應運動空間。"
+},
+"sources": [
+"sport"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": null
+}

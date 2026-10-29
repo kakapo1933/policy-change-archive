@@ -1,0 +1,23 @@
+{
+"date": "2026-08-03",
+"facts": [
+"截至 2026-08-03 第一期整體進度逾 85%",
+"約 9.5 公里，9 座地下車站及 1 座機廠，無人駕駛",
+"公視報導最快 2027 年底完工；市長稱明年完工"
+],
+"id": "transport-wanda",
+"sources": [
+{
+"published": "2026-08-03",
+"publisher": "公視新聞網",
+"url": "https://news.pts.org.tw/article/820556"
+},
+{
+"published": "2026-09-07",
+"publisher": "中央社（聯合新聞網）",
+"url": "https://udn.com/news/story/7323/9739546"
+}
+],
+"status": "in_progress",
+"title": "捷運萬大線第一期"
+}

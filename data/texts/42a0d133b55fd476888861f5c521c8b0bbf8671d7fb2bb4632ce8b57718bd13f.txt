@@ -1,0 +1,48 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "重點捷運站旁、登山口"
+},
+{
+"en": null,
+"zh": "利用零碎時間運動"
+}
+],
+"flows": [
+"F1",
+"F7",
+"F8",
+"F13"
+],
+"id": "sport-hub",
+"name": {
+"en": "Sport hub",
+"zh": "運動驛站"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第 1 年盤點捷運站旁與登山口"
+},
+"stages": [
+"year1"
+]
+},
+"plain": {
+"en": null,
+"zh": "在重點捷運站旁與登山口設運動驛站，讓運動能排進行程的空檔。"
+},
+"sources": [
+"sport"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "通勤族與登山客"
+}
+}

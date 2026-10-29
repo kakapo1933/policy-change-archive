@@ -1,0 +1,45 @@
+{
+"category": "勞工",
+"confidence": "low",
+"critical": [],
+"deadline": null,
+"evidence": [
+"勞動局113年9月議會報告規劃辦理臺北市政府、台北大眾捷運公司等機關委外廠商所僱勞工勞動條件專案檢查。",
+"114年自辦4項專案（含市府各機關委外廠商僱用勞工勞動條件專案）合計檢查802家事業單位；報告未單獨列出該專案家數與違規情形。",
+"《臺北市政府推動業務委託民間辦理補充規定》2026-10-16修正全文，第5點第4款規定業務委外屬勞務承攬性質者，應依勞動部「政府機關（構）運用勞務承攬參考原則」定期辦理檢核作業；未查得該款是否為本次新增，也未查得檢核結果公開。",
+"勞條健檢師115年將「本府各機關局處」列為主動入場輔導對象。"
+],
+"id": "p22-labor-21",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "提升勞動權益：持續檢討市府運用勞務承攬情形。",
+"related": [],
+"sources": [
+{
+"published": "2024-09",
+"publisher": "臺北市政府勞動局",
+"title": "臺北市議會第14屆第4次定期大會 臺北市政府勞動局工作報告（113年1月至6月）",
+"url": "https://www-ws.gov.taipei/001/Upload/307/relfile/63006/9281110/7cf1a0e2-faa0-4bee-b596-0a09df6f4bda.pdf"
+},
+{
+"published": "2026-04",
+"publisher": "臺北市政府勞動局",
+"title": "臺北市議會第14屆第7次定期大會 臺北市政府勞動局工作報告（114年7月至12月）",
+"url": "https://www-ws.gov.taipei/001/Upload/307/relfile/63006/9555885/7b44608d-2659-4f2f-b4bc-6e0d6f21e8ea.pdf"
+},
+{
+"published": "2026-10-16",
+"publisher": "臺北市法規查詢系統",
+"title": "臺北市政府推動業務委託民間辦理補充規定",
+"url": "https://laws.gov.taipei/law/LawSearch/LawArticleContent/FL066674"
+},
+{
+"published": "2026-07",
+"publisher": "臺北市政府勞動局",
+"title": "臺北市議會第14屆第8次定期大會 臺北市政府勞動局工作報告（115年1月至6月）",
+"url": "https://www-ws.gov.taipei/001/Upload/307/relfile/63006/9671324/8ffff2bd-b86f-4eaf-98cb-800423f9abca.pdf"
+}
+],
+"status": "partial",
+"summary": "勞動局自2024年起將「臺北市政府各機關委外廠商僱用勞工勞動條件專案」列為自辦專案檢查；市府2026-10-16修正的業務委外補充規定，要求勞務承攬性質的委外業務定期辦理檢核。但未查到市府全面檢討各機關運用勞務承攬情形的報告或檢核結果。"
+}

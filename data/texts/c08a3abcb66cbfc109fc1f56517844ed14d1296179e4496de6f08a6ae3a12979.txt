@@ -1,0 +1,46 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "符合國際賽事"
+},
+{
+"en": null,
+"zh": "城市主場"
+}
+],
+"flows": [
+"F1",
+"F7",
+"F8",
+"F13"
+],
+"id": "sport-football",
+"name": {
+"en": "Guandu international football stadium",
+"zh": "關渡國際足球場"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第 1 年啟動、第 2–3 年完成可行性評估"
+},
+"stages": [
+"year1",
+"year2-3"
+]
+},
+"plain": {
+"en": null,
+"zh": "規劃符合國際賽事的關渡國際足球場，建立台北的城市主場。"
+},
+"sources": [
+"sport"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": null
+}

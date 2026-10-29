@@ -1,0 +1,18 @@
+{
+"date": "2024-10-09",
+"facts": [
+"單案補助最高 1,500 萬元",
+"對象為設立 1–8 年、近 3 年募資至少 500 萬元的新創",
+"另提供 30 萬元 AI 算力資源"
+],
+"id": "industry-startup",
+"sources": [
+{
+"published": "2024-10-09",
+"publisher": "大紀元",
+"url": "https://www.epochtimes.com/b5/24/10/9/n14347267.htm"
+}
+],
+"status": "done",
+"title": "新創拔尖計畫"
+}

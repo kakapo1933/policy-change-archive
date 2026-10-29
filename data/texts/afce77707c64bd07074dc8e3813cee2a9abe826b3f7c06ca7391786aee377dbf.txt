@@ -1,0 +1,32 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "人才互換、產業投資、可負擔住宅"
+}
+],
+"flows": [
+"F1",
+"F5",
+"F6",
+"F15"
+],
+"id": "diplomacy-talent",
+"name": {
+"en": "Overseas talent and industry",
+"zh": "人才與產業帶回台北"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "訪美期間已與紐澤西州長討論人才互換、產業投資及可負擔住宅，把經驗帶回台北。"
+},
+"sources": [
+"diplomacy"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": null
+}

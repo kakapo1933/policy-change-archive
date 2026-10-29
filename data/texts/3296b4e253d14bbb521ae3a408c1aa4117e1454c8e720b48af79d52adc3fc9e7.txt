@@ -1,0 +1,58 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "學校四周 150 公尺為原則"
+},
+{
+"en": null,
+"zh": "車道縮減、抬升行穿線、減速丘、行人庇護島"
+},
+{
+"en": null,
+"zh": "上下學時段性速限"
+},
+{
+"en": null,
+"zh": "8 年內完成全市 150 多所國小"
+}
+],
+"flows": [
+"F1",
+"F3",
+"F5",
+"F6",
+"F7"
+],
+"id": "transport-school",
+"name": {
+"en": "School zones",
+"zh": "通學區"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第 3–4 年累計 50 所；第 5–8 年完成全市 150 多所"
+},
+"stages": [
+"year3-4",
+"year5-8"
+]
+},
+"plain": {
+"en": null,
+"zh": "學校四周 150 公尺用全市統一工程規格改善，先用低成本設施試辦，目標通學區零死亡。"
+},
+"sources": [
+"transport"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "國小學童與家長"
+}
+}

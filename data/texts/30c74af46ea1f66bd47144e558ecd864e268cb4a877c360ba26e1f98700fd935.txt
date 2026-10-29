@@ -1,0 +1,52 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "擴大教師協助方案（EAP）"
+},
+{
+"en": null,
+"zh": "心理支持與諮商資源"
+}
+],
+"flows": [
+"F1",
+"F3",
+"F4",
+"F6",
+"F10",
+"F11",
+"F12",
+"F14"
+],
+"id": "education-eap",
+"name": {
+"en": "Teacher EAP",
+"zh": "教師 EAP"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "短期啟動教師心理支持"
+},
+"stages": [
+"short"
+]
+},
+"plain": {
+"en": null,
+"zh": "擴大教師協助方案，增加可近的心理支持與諮商資源，壓力不必由老師獨自承擔。"
+},
+"sources": [
+"education"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "第一線教師"
+}
+}

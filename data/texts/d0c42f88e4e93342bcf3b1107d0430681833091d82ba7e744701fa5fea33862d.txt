@@ -1,0 +1,40 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "盥洗、置物、租借"
+},
+{
+"en": null,
+"zh": "鼓勵大樓增設淋浴設施"
+}
+],
+"flows": [
+"F1",
+"F3",
+"F5",
+"F6",
+"F7"
+],
+"id": "transport-hub",
+"name": {
+"en": "Sport hub",
+"zh": "運動驛站"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "提供盥洗、置物與租借服務，並以綠建築與容積獎勵鼓勵大樓增設淋浴設施。"
+},
+"sources": [
+"transport"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "騎車、運動通勤的市民"
+}
+}

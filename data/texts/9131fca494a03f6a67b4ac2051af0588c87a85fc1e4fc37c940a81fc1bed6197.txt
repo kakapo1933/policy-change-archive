@@ -1,0 +1,17 @@
+{
+"date": "2025-12",
+"facts": [
+"報導稱 2025 年 PM2.5 平均 11.0μg/m³",
+"空品維護區增至 17 處，目標 2030 年全市涵蓋"
+],
+"id": "environment-air",
+"sources": [
+{
+"published": "2025-12-12",
+"publisher": "墨新聞",
+"url": "https://news.pchome.com.tw/public/morenews/20251212/index-76554956502657350016.html"
+}
+],
+"status": "in_progress",
+"title": "空氣品質維護區擴大"
+}

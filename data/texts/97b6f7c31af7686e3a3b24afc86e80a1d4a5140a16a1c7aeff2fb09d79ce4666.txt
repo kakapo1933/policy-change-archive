@@ -1,0 +1,48 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "實質獎金與行政獎勵"
+},
+{
+"en": null,
+"zh": "活化重大專案獎勵機制"
+}
+],
+"flows": [
+"F1",
+"F2",
+"F11",
+"F12"
+],
+"id": "civil-award",
+"name": {
+"en": "Project rewards",
+"zh": "重大專案獎勵台"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第 1–8 個月訂定專案獎金規範細則"
+},
+"stages": [
+"m1-8"
+]
+},
+"plain": {
+"en": null,
+"zh": "願意扛起艱鉅任務、完成重大專案的同仁，給予有感的實質獎金與行政獎勵。"
+},
+"sources": [
+"civil"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "承擔重大專案的同仁"
+}
+}

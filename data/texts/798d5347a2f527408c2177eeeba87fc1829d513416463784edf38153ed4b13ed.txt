@@ -1,0 +1,47 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "50 歲以上"
+}
+],
+"flows": [
+"F1",
+"F2",
+"F3",
+"F4",
+"F8",
+"F9",
+"F11"
+],
+"id": "welfare-shingles",
+"name": {
+"en": "Shingles vaccine",
+"zh": "皮蛇疫苗"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "初期啟動疫苗補助"
+},
+"stages": [
+"short"
+]
+},
+"plain": {
+"en": null,
+"zh": "擴大提供 50 歲以上市民皮蛇疫苗補助。"
+},
+"sources": [
+"welfare"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "50 歲以上市民"
+}
+}

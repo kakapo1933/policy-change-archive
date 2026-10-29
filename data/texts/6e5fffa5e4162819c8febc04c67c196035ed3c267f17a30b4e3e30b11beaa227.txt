@@ -1,0 +1,56 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "退場學校用地"
+},
+{
+"en": null,
+"zh": "住宿型機構空間"
+},
+{
+"en": null,
+"zh": "實體社區共照據點"
+}
+],
+"flows": [
+"F1",
+"F2",
+"F3",
+"F4",
+"F8",
+"F9",
+"F11",
+"F16"
+],
+"id": "welfare-care",
+"name": {
+"en": "Residential long-term care",
+"zh": "住宿型長照與共照據點"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "長期完成住宿型機構與共照據點"
+},
+"stages": [
+"long"
+]
+},
+"plain": {
+"en": null,
+"zh": "藉由退場學校用地增加住宿型機構空間，並完成社區共照據點。"
+},
+"sources": [
+"welfare"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "長者與家庭"
+}
+}

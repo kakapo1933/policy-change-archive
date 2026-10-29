@@ -1,0 +1,38 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "與敬老卡服務銜接"
+},
+{
+"en": null,
+"zh": "增加三代共同出門的機會"
+}
+],
+"flows": [
+"F1",
+"F9",
+"F10"
+],
+"id": "card-elders",
+"name": {
+"en": "Grandparent connections",
+"zh": "祖孫相伴"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "與敬老卡適用服務銜接，祖父母陪孩子參加活動時，兩邊的支持資源一起發揮作用。"
+},
+"sources": [
+"card"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "祖父母與孫輩"
+}
+}

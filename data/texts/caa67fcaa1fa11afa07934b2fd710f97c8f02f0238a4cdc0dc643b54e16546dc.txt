@@ -1,0 +1,51 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "填補夜間照護人力"
+},
+{
+"en": null,
+"zh": "媒合企業與學校移工訓練"
+}
+],
+"flows": [
+"F1",
+"F2",
+"F3",
+"F4",
+"F8",
+"F9",
+"F11"
+],
+"id": "welfare-hourly",
+"name": {
+"en": "Hourly migrant care",
+"zh": "鐘點移工"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "長期媒合企業與學校移工訓練"
+},
+"stages": [
+"long"
+]
+},
+"plain": {
+"en": null,
+"zh": "規劃以鐘點移工填補夜間人力的缺口，配合中央政策媒合移工訓練。"
+},
+"sources": [
+"welfare"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "需要夜間照護的家庭"
+}
+}

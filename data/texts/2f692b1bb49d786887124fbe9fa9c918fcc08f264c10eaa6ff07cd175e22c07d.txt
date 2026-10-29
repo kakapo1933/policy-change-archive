@@ -1,0 +1,6 @@
+{
+"fact": "2024年11月世界12強棒球賽B組預賽在大巨蛋開打，開幕戰湧入3.3萬名球迷。",
+"short": "12強在大巨蛋，3.3萬人應援！",
+"source": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=2A997DBAA3CA84DF",
+"tag": "運動"
+}

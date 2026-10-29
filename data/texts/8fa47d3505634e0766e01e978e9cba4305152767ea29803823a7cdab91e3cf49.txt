@@ -1,0 +1,46 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "活化校園閒置空間作為供餐場域"
+},
+{
+"en": null,
+"zh": "了解食物供應及經營管理的知識"
+}
+],
+"flows": [
+"F1",
+"F14"
+],
+"id": "lunch-literacy",
+"name": {
+"en": "Food education",
+"zh": "食農教育"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第三階段"
+},
+"stages": [
+"stage3"
+]
+},
+"plain": {
+"en": null,
+"zh": "營養午餐食農教育可借鏡東京經驗，導入商業機制促進在地小農與校園合作，並進一步活化校園閒置空間作為供餐場域，讓學生享用優質的在地食材，同時了解食物供應及經營管理的知識。"
+},
+"sources": [
+"lunch"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "學生"
+}
+}

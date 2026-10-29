@@ -1,0 +1,37 @@
+{
+"category": "勞工",
+"confidence": "high",
+"critical": [],
+"deadline": null,
+"evidence": [
+"111年底北市共675家工會、累積團體協約159件；115年5月底共702家工會、累積團體協約215件（115年1–5月新增9件）。",
+"勞動局自114年起訂定年度獎勵工會及事業單位簽訂團體協約實施計畫；115年1–5月獎勵15家單位、11件團體協約。"
+],
+"id": "p22-labor-17",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "輔導勞工成立、加入工會，鼓勵雇主與工會簽訂團協。",
+"related": [],
+"sources": [
+{
+"published": "2023-04",
+"publisher": "臺北市政府勞動局",
+"title": "臺北市議會第14屆第1次定期大會 臺北市政府勞動局工作報告（111年7月至12月）",
+"url": "https://www-ws.gov.taipei/001/Upload/307/relfile/63006/9078134/d5383fb0-ebc4-434d-bd1b-383c3a59c0cc.pdf"
+},
+{
+"published": "2025-04",
+"publisher": "臺北市政府勞動局",
+"title": "臺北市議會第14屆第5次定期大會 臺北市政府勞動局工作報告（113年7月至12月）",
+"url": "https://www-ws.gov.taipei/001/Upload/307/relfile/63006/9384166/799ddd14-8383-47f5-9bbf-939487541d7b.pdf"
+},
+{
+"published": "2026-07",
+"publisher": "臺北市政府勞動局",
+"title": "臺北市議會第14屆第8次定期大會 臺北市政府勞動局工作報告（115年1月至6月）",
+"url": "https://www-ws.gov.taipei/001/Upload/307/relfile/63006/9671324/8ffff2bd-b86f-4eaf-98cb-800423f9abca.pdf"
+}
+],
+"status": "done",
+"summary": "勞動局持續輔導工會籌組，並自2025年起訂定「獎勵工會及事業單位簽訂團體協約實施計畫」發給獎勵金；北市工會數由2022年底675家增至2026年5月702家，累積團體協約由159件增至215件。"
+}

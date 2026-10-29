@@ -1,0 +1,17 @@
+{
+"date": "2026-09-17",
+"facts": [
+"導入 AI 心電圖輔助判讀，協助辨識疑似急性心肌梗塞等高風險病人",
+"中興院區設西區急重症心血管中心"
+],
+"id": "care-hospital-ai",
+"sources": [
+{
+"published": "2026-09-17",
+"publisher": "臺北市立聯合醫院",
+"url": "https://health.gov.taipei/News_Content.aspx?n=BB5A41BA1E6CA260&sms=72544237BBE4C5F6&s=68EA79645BEBD7DC"
+}
+],
+"status": "in_progress",
+"title": "北市聯醫 AI 心電圖與心血管救治整合"
+}

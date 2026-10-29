@@ -1,0 +1,54 @@
+{
+"category": "市政",
+"confidence": "medium",
+"critical": [],
+"deadline": null,
+"evidence": [
+"2023-12-03 亞洲棒球錦標賽在台北大巨蛋開幕。",
+"2025-05-17至05-30 雙北世界壯年運動會舉行，創歷屆參賽人次最多等紀錄；雙北於2020-10-22擊敗巴黎、伯斯取得主辦權（早於本任期）。",
+"2024-11 遠見雜誌（體育局廣編）介紹文山運動中心智能羽球場等數據紀錄設施，未提及資料中心。",
+"2016年體育局議會報告已有「競技運動體能資料庫」（逾5,000筆），屬前任既有措施。"
+],
+"id": "p22-civic-08",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "建制體育運動資料中心，發展競技運動、爭取舉辦國際賽事",
+"related": [
+{
+"item": "culture-masters",
+"theme": "international"
+},
+{
+"item": "culture-olympic",
+"theme": "international"
+}
+],
+"sources": [
+{
+"published": "2023-12-02",
+"publisher": "中央社",
+"title": "亞錦賽3日台韓大巨蛋對戰 王貞治勉勵台灣隊",
+"url": "https://www.cna.com.tw/news/aspt/202312020177.aspx"
+},
+{
+"published": "2025-05-30",
+"publisher": "公視新聞網",
+"title": "雙北世壯運今晚閉幕 創選手最年長等「十大之最」",
+"url": "https://news.pts.org.tw/article/753802"
+},
+{
+"published": "2020-10-22",
+"publisher": "公視新聞網",
+"title": "2025世界壯年運動會 雙北將首度聯名主辦",
+"url": "https://news.pts.org.tw/article/497939"
+},
+{
+"published": "2024-11-14",
+"publisher": "遠見雜誌",
+"title": "智慧運動大環境 臺北市擘劃運動首都願景（臺北市政府體育局廣告）",
+"url": "https://www.gvm.com.tw/article/117091"
+}
+],
+"status": "partial",
+"summary": "國際賽事方面，任內台北大巨蛋舉辦2023亞洲棒球錦標賽，並與新北合辦2025世界壯年運動會（主辦權於2020年前任市府時取得）；但未查到市府建置「體育運動資料中心」的公開資料，也未查得任內新爭取到的大型國際綜合賽會主辦權。"
+}

@@ -1,0 +1,38 @@
+{
+"category": "勞工",
+"confidence": "low",
+"critical": [],
+"deadline": null,
+"evidence": [
+"環保局110年度法定預算（任前）已編列救災人員意外保險費：4,876人×500元，計2,438,000元。",
+"112、113年度維持4,876人、每人330元；114年度起投保人數增為6,540人（每人330元，計2,158,200元），115年度相同。",
+"未查到市府在任內為其他高危險職類人員新增額外意外險的政策或新聞。"
+],
+"id": "p22-labor-16",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "為市府僱用的高危險職類人員額外投保意外險，使其無後顧之憂。",
+"related": [],
+"sources": [
+{
+"published": "2021",
+"publisher": "臺北市政府環境保護局",
+"title": "臺北市政府環境保護局110年度單位法定預算",
+"url": "https://www-ws.gov.taipei/001/Upload/363/relfile/16952/5540/bf4c81ae-9d3b-49ad-a950-a580f09b7185.pdf"
+},
+{
+"published": "2025",
+"publisher": "臺北市政府環境保護局",
+"title": "臺北市政府環境保護局114年度單位法定預算",
+"url": "https://www-ws.gov.taipei/001/Upload/363/relfile/16952/5540/f4ce5cba-b007-4378-a12d-449147aebab8.pdf"
+},
+{
+"published": "2026",
+"publisher": "臺北市政府環境保護局",
+"title": "臺北市政府環境保護局115年度單位法定預算",
+"url": "https://www-ws.gov.taipei/001/Upload/363/relfile/16952/5540/9c3479a8-a75a-4a4e-9218-13eaeadbbd00.pdf"
+}
+],
+"status": "partial",
+"summary": "環保局預算中有「各類災害發生期間救災人員投保意外保險費」，任內114年度起把投保人數由4,876人增為6,540人；但此項在任前（110年度）就已編列，只涵蓋災害期間的救災人員，未查到市府另為其他高危險職類人員額外投保的新措施。"
+}

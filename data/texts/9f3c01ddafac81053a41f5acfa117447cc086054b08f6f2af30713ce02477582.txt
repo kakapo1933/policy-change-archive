@@ -1,0 +1,6 @@
+{
+"fact": "2023年起推動「臺北交通安心行」35項行動，2025年A1死亡事故件數創歷史新低。",
+"short": "交通安心行，行人更安全！",
+"source": "https://www.roadsafety.taipei/News_Content.aspx?n=0B635774A27B603D&s=0917A5508A2ADDBB&sms=72544237BBE4C5F6",
+"tag": "交通"
+}

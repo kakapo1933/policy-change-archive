@@ -1,0 +1,53 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "家庭教育中心串連家庭一站通、育兒解憂、心理諮商"
+},
+{
+"en": null,
+"zh": "重新檢視特教助理員配置、增加特教人力"
+}
+],
+"flows": [
+"F1",
+"F3",
+"F4",
+"F6",
+"F10",
+"F11",
+"F12",
+"F14"
+],
+"id": "education-special",
+"name": {
+"en": "Special education",
+"zh": "特教支持"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "短期盤點特教人力；中期建立跨局處家庭支持"
+},
+"stages": [
+"short",
+"mid"
+]
+},
+"plain": {
+"en": null,
+"zh": "補上特殊教育的斷點：擴大家庭教育中心串連資源，校園重新檢視特教助理員並增加人力。"
+},
+"sources": [
+"education"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "特教學生與家庭"
+}
+}

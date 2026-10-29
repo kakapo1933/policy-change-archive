@@ -1,0 +1,6 @@
+{
+"fact": "2026年7月起敬老愛心卡每月點數由480點提高到600點，YouBike電輔車前30分鐘免費。",
+"short": "敬老卡升級600點，長輩笑呵呵！",
+"source": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=54A4E5FD9C772BD8&sms=72544237BBE4C5F6",
+"tag": "長者"
+}

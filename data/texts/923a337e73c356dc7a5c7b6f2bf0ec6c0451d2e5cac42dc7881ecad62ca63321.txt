@@ -1,0 +1,22 @@
+{
+"date": "2026-09-03",
+"facts": [
+"市長稱規劃打造南軟到北士科的科技廊道",
+"構想串連南港、內科、北士科及社子島"
+],
+"id": "industry-corridor",
+"sources": [
+{
+"published": "2026-09-03",
+"publisher": "新頭殼",
+"url": "https://newtalk.tw/news/view/2026-09-03/1057562"
+},
+{
+"published": "2025-12-17",
+"publisher": "經濟日報",
+"url": "https://money.udn.com/money/story/5621/9208541"
+}
+],
+"status": "proposal",
+"title": "南港—內科—北士科科技廊帶"
+}

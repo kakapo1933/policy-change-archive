@@ -1,0 +1,23 @@
+{
+"date": "2026-07-15",
+"facts": [
+"2026-07-15 建照申請掛件",
+"黃仁勳稱預計 2026 年底動工、2030 年啟用",
+"截至查證日未見動工報導；都審尚待送件，周邊高壓電塔地下化仍在進行"
+],
+"id": "industry-nvidia-build",
+"sources": [
+{
+"published": "2026-07-16",
+"publisher": "中時新聞網",
+"url": "https://www.chinatimes.com/realtimenews/20260716003821-260405"
+},
+{
+"published": "2026-05-27",
+"publisher": "中央社",
+"url": "https://www.cna.com.tw/news/afe/202605270059.aspx"
+}
+],
+"status": "in_progress",
+"title": "輝達北士科總部興建進度"
+}

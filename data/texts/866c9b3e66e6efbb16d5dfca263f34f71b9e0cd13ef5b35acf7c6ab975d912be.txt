@@ -1,0 +1,6 @@
+{
+"fact": "推動「校校有公托」，預計2026年底新增16處公托、620個名額；任內總托育人數成長53.5%。",
+"short": "校校有公托，爸媽好安心！",
+"source": "https://www.gov.taipei/News_Content.aspx?n=2044902FC839D045&s=F4979C77DBCEAE5E&sms=72544237BBE4C5F6",
+"tag": "育兒"
+}

@@ -1,0 +1,38 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "無限城國際論壇"
+},
+{
+"en": null,
+"zh": "全球客家樞紐"
+}
+],
+"flows": [
+"F1",
+"F20"
+],
+"id": "hakka-forum",
+"name": {
+"en": null,
+"zh": "世界有客家"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "把客家精神帶進「無限城」國際論壇，讓國際看見客家的勤奮與人和自然共存，推動台北成為全球客家樞紐。"
+},
+"sources": [
+"hakka-ltn",
+"hakka-nextapple"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "國際交流"
+}
+}

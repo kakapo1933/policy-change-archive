@@ -1,0 +1,6 @@
+{
+"fact": "斥資18億元的淡水河水岸空間環境營造工程已開工，預計2028年底全區完工。",
+"short": "淡水河岸變身台北塞納河！",
+"source": "https://www.gov.taipei/News_Content.aspx?n=2044902FC839D045&s=3421448E5A31D2FA&sms=72544237BBE4C5F6",
+"tag": "環境"
+}

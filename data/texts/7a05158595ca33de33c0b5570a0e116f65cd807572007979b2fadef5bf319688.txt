@@ -1,0 +1,42 @@
+{
+"facts": [
+{
+"en": null,
+"tile": {
+"en": null,
+"zh": "0、2、5 歲"
+},
+"zh": "0 歲出生閱讀袋、2 歲語言探索袋、5 歲入學準備袋"
+},
+{
+"en": null,
+"zh": "圖書館借閱證與家長共讀指南"
+}
+],
+"flows": [
+"F1",
+"F9",
+"F10"
+],
+"id": "card-reading",
+"name": {
+"en": "Reading bags",
+"zh": "分齡閱讀禮袋"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "0 歲出生閱讀袋、2 歲語言探索袋、5 歲入學準備袋，搭配圖書館借閱證與家長共讀指南。"
+},
+"sources": [
+"card"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "0、2、5 歲的孩子與家長"
+}
+}

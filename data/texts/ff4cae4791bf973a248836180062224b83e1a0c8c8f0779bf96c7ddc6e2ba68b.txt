@@ -1,0 +1,58 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "駕駛座告警優先序與螢幕配置重新設計"
+},
+{
+"en": null,
+"zh": "折返點休息納入班表"
+},
+{
+"en": null,
+"zh": "直接補貼駕駛薪資"
+},
+{
+"en": null,
+"zh": "低運量路段改以需求反應式公車（DRTS）或小型巴士"
+}
+],
+"flows": [
+"F1",
+"F3",
+"F5",
+"F6",
+"F7"
+],
+"id": "transport-bus",
+"name": {
+"en": "Bus driver rest stops",
+"zh": "公車安全改革"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第 1–2 年人因工程與補貼修訂；第 3–4 年分區路網重整"
+},
+"stages": [
+"year1-2",
+"year3-4"
+]
+},
+"plain": {
+"en": null,
+"zh": "重新設計駕駛座告警與螢幕，休息時間納入班表，補貼改看服務可靠度與勞動條件。"
+},
+"sources": [
+"transport"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "公車駕駛與乘客"
+}
+}

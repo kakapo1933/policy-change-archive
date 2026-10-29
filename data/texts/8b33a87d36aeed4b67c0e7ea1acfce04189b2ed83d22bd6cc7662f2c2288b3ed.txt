@@ -1,0 +1,6 @@
+{
+"fact": "連續7年事故最多的公館圓環改為正交號誌路口，啟用首月事故由18件降到10件。",
+"short": "公館圓環改造，車禍大減！",
+"source": "https://dot.gov.taipei/News_Content.aspx?n=D739A9F6B5C0AB95&s=42F909CB8D28C395&sms=72544237BBE4C5F6",
+"tag": "交通"
+}

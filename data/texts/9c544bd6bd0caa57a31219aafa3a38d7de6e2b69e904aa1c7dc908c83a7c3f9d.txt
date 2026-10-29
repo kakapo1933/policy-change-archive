@@ -1,0 +1,17 @@
+{
+"date": "2026-01-01",
+"facts": [
+"對象：2026-01-01 後出生、體重 1,500 公克以下",
+"每名新生兒一次性 2 萬元"
+],
+"id": "family-lbw",
+"sources": [
+{
+"published": "2026-01-02",
+"publisher": "臺北市社會局",
+"url": "https://dosw.gov.taipei/cp.aspx?n=ACD77E2297887D0B"
+}
+],
+"status": "done",
+"title": "極低出生體重兒營養品津貼"
+}

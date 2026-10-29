@@ -1,0 +1,37 @@
+{
+"date": "2026-04-28",
+"facts": [
+"2025-06 出席巴黎「巴黎協定」10 週年市長峰會並發言；出訪未簽署文件",
+"2026-03-19 舉辦台北國際城市論壇（第 2 屆），與德國德勒斯登市長簽署交流合作備忘錄（MOU，非姊妹市）",
+"2026-04-28 資訊局與東京都數位服務局簽署數位合作 MOU（局處層級）"
+],
+"id": "culture-diplomacy",
+"sources": [
+{
+"published": "2026-03-19",
+"publisher": "中央社",
+"title": "台北德勒斯登簽MOU（中央社 2026-03-19）",
+"url": "https://www.cna.com.tw/news/aloc/202603190132.aspx"
+},
+{
+"published": "2026-03-19",
+"publisher": "聯合報",
+"title": "2026台北國際城市論壇 蔣萬安推廣台北美食",
+"url": "https://udn.com/news/story/7323/9389856"
+},
+{
+"published": "2026-04-28",
+"publisher": "聯合報",
+"title": "「新雙城」模式 台北、東京今簽MOU確立每年數位實體交流",
+"url": "https://udn.com/news/story/7323/9469620"
+},
+{
+"published": "2025-06-24",
+"publisher": "台灣英文新聞（中央社稿）",
+"title": "蔣萬安巴黎市長峰會分享台北經驗（中央社）",
+"url": "https://www.taiwannews.com.tw/zh/news/6140779"
+}
+],
+"status": "done",
+"title": "城市外交：合作備忘錄與國際論壇"
+}

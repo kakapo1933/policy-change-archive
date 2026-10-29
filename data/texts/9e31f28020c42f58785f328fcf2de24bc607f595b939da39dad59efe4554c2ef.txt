@@ -1,0 +1,18 @@
+{
+"date": "2023-04-04",
+"facts": [
+"生育獎勵：第 1 胎 4 萬、第 2 胎 4.5 萬、第 3 胎起 5 萬",
+"友善托育補助每月加 1,000 元",
+"社宅育兒租金補助每童每月 1,000 元"
+],
+"id": "family-birth",
+"sources": [
+{
+"published": "2023-03-21",
+"publisher": "NOWnews",
+"url": "https://www.nownews.com/news/6087441"
+}
+],
+"status": "done",
+"title": "生育獎勵金與托育補助調升"
+}

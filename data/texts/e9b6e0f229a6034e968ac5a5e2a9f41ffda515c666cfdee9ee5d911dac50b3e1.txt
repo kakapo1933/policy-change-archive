@@ -1,0 +1,6 @@
+{
+"detail": "2027年起敬老卡每月另加300點，可在超市、超商、藥局使用，也可搭貓纜、藍色公路；第二代卡讓用不完的點數累積到下個月。",
+"short": "二代敬老卡，點數能累積！",
+"source": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=54A4E5FD9C772BD8&sms=72544237BBE4C5F6",
+"tag": "長者心安"
+}

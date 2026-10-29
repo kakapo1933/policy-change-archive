@@ -1,0 +1,41 @@
+{
+"category": "動物保護",
+"confidence": "medium",
+"critical": [
+"工程經費由5.8億元增至14.58億元遭質疑，市長回應主因為物價上漲及缺工（公視2024-07-29）。",
+"完工時程由市府2023年規劃的2026年11月延至2027年9月底，將晚於本屆任期屆滿。"
+],
+"deadline": "儘速（未定明確期限）",
+"evidence": [
+"2023-11-01市府新聞稿：新動物之家可收容至少1,300隻犬貓，原預計2024年6月開工、2026年11月完工。",
+"2024-07-29動土典禮，經費由5.8億元增至14.58億元，市長歸因於物價上漲與缺工。",
+"工務局大地工程處專區：主體工程2024-08-01開工，預定2027年9月底完工。"
+],
+"id": "p22-animal-06",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "提昇動物收容品質：儘速動工內湖動物之家，提供友善流浪動物空間，並訂定「友善動物收容作業指引」。",
+"related": [],
+"sources": [
+{
+"published": "2023-11-01",
+"publisher": "臺北市政府（動物保護處）",
+"title": "許流浪動物一個新家 打造全新設計的臺北市動物之家",
+"url": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=9B9221C3022C6C0D"
+},
+{
+"published": "2024-07-29",
+"publisher": "公視新聞網",
+"title": "北市傳虐狗案遭疑冷處理 蔣萬安要動保處積極處理",
+"url": "https://news.pts.org.tw/article/707104"
+},
+{
+"published": "2024-08-05",
+"publisher": "臺北市政府工務局大地工程處",
+"title": "臺北市動物之家（重要工程專區）",
+"url": "https://www.geo.gov.taipei/News_Content.aspx?n=C8437AEC6330AE7C&sms=B831ADCA9D9ED4FC&s=D2DA7AD583CED2B6"
+}
+],
+"status": "partial",
+"summary": "內湖動物之家新建工程已於2024-07-29動土（上任約19個月），工務局預定2027年9月底完工，尚未啟用；「友善動物收容作業指引」未查得已訂定之公開資料。"
+}

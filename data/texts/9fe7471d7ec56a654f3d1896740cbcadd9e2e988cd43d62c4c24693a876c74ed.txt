@@ -1,0 +1,23 @@
+{
+"date": "2026-10-08",
+"facts": [
+"約 300 公頃：AI 產業 100、中央公園 110、永續生活 90 公頃",
+"市府估約 200 家企業、就業 6.5 萬人（市府說法）",
+"市府稱可解除約 570 公頃受航高限制的更新地區"
+],
+"id": "development-songshan",
+"sources": [
+{
+"published": "2026-10-08",
+"publisher": "中央社",
+"url": "https://cna.com.tw/news/aipl/202610080124.aspx"
+},
+{
+"published": "2026-10-21",
+"publisher": "中央社",
+"url": "https://www.cna.com.tw/news/aipl/202610210062.aspx"
+}
+],
+"status": "proposal",
+"title": "提案：松山機場遷移、打造臺北 AI 園區"
+}

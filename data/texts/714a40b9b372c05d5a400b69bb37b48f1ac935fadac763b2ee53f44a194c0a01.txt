@@ -1,0 +1,6 @@
+{
+"fact": "跨年夜逾40萬人在信義區跨年，捷運單日運量282萬人次創新高，凌晨2時10分完成疏散。",
+"short": "跨年40萬人，兩點就疏散完！",
+"source": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=C232D6EB0259014A",
+"tag": "城市"
+}

@@ -1,0 +1,37 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "捷運站到登山口接駁"
+},
+{
+"en": null,
+"zh": "步道分級與安全資訊"
+}
+],
+"flows": [
+"F1",
+"F7"
+],
+"id": "trails-shuttle",
+"name": {
+"en": "Metro shuttles",
+"zh": "最後一哩接駁"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "從捷運站到登山口補上最後一哩路，增開接駁並重新檢視步道分級與安全資訊。"
+},
+"sources": [
+"trails"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "長者、行動不便者、不開車的市民"
+}
+}

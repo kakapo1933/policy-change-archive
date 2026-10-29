@@ -1,0 +1,37 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "全校決定加價，市府補足弱勢學生價差"
+},
+{
+"en": null,
+"zh": "優先補足弱勢與特殊需求學生"
+}
+],
+"flows": [
+"F1",
+"F14"
+],
+"id": "lunch-subsidy",
+"name": {
+"en": "Support for disadvantaged students",
+"zh": "弱勢補差額"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "全校決定加價提升品質時，由市府替弱勢學生補足價差，讓每個孩子一起吃得更好。"
+},
+"sources": [
+"lunch"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "弱勢與特殊需求學生"
+}
+}

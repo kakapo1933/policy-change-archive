@@ -1,0 +1,17 @@
+{
+"date": "2023-11-09",
+"facts": [
+"2023-11-09 動工，1 棟 32 層商辦及 3 棟 37 層住宅",
+"民間投資 351 億元，預計 2030 年完工"
+],
+"id": "development-nangang-star",
+"sources": [
+{
+"published": "2023-11-09",
+"publisher": "自由時報",
+"url": "https://ec.ltn.com.tw/article/breakingnews/4484556"
+}
+],
+"status": "in_progress",
+"title": "東區門戶：南港之星公辦都更"
+}

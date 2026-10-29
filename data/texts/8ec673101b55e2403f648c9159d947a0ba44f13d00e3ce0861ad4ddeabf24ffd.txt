@@ -1,0 +1,31 @@
+{
+"category": "動物保護",
+"confidence": "medium",
+"critical": [],
+"deadline": null,
+"evidence": [
+"2024-06-18、06-25北市142所國小首度供應友善飼養雞蛋，113學年度起擴及國中與完全中學共227校、約17萬學生，年經費約170萬元，由臺北農產公司第三方監測蛋源。",
+"2025年10月教育局以「為什麼我們要吃友善雞蛋？」為學校午餐通訊主題辦理宣導。"
+],
+"id": "p22-animal-08",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "推廣友善畜禽水產品",
+"related": [],
+"sources": [
+{
+"published": "2024-06-14",
+"publisher": "聯合報",
+"title": "北市學校營養午餐升級吃「友善蛋」 國小生6月這2天搶先嘗鮮",
+"url": "https://udn.com/news/story/6898/8031714"
+},
+{
+"published": "2025-10",
+"publisher": "臺北市政府教育局（北市學校網站轉載）",
+"title": "臺北市政府教育局114年度第93期「學校午餐通訊-為什麼我們要吃友善雞蛋？」實施計畫",
+"url": "https://www.hpsh.tp.edu.tw/uploads/1760574712528He0ycPPm.pdf"
+}
+],
+"status": "partial",
+"summary": "教育局自2024-06起於學校營養午餐供應友善雞蛋，113學年度擴及227校約17萬名學生；未查得友善畜類肉品或水產品的推廣作為。"
+}

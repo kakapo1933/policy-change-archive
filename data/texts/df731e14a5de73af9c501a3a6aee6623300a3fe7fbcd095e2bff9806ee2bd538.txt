@@ -1,0 +1,46 @@
+{
+"facts": [
+{
+"en": null,
+"tile": {
+"en": null,
+"zh": "未滿 2 歲"
+},
+"zh": "未滿 2 歲兒童家庭"
+},
+{
+"en": null,
+"zh": "免費 6 次"
+},
+{
+"en": null,
+"zh": "餵奶、洗澡、居家安全"
+}
+],
+"flows": [
+"F1",
+"F10",
+"F11"
+],
+"id": "family-home",
+"name": {
+"en": "Home parenting guidance",
+"zh": "到宅育兒指導"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "未滿 2 歲兒童家庭的免費到宅育兒指導擴充至 6 次，提供餵奶、洗澡與居家安全等實際協助。"
+},
+"sources": [
+"family"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "新手家庭"
+}
+}

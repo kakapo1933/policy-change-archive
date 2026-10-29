@@ -1,0 +1,24 @@
+{
+"category": "文化",
+"confidence": "medium",
+"critical": [],
+"deadline": null,
+"evidence": [
+"2024-12 市府就職二週年文化施政回顧（臺北文學館、臺北戲劇獎、文資修復等）未提及社區大學或長照場域藝術教育。"
+],
+"id": "p22-culture-01",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "透過社區大學和長照場域推動終身藝術教育",
+"related": [],
+"sources": [
+{
+"published": "2024-12-26",
+"publisher": "蕃新聞（台灣好新聞）",
+"title": "台北隊就職二週年 致力打造文化首都",
+"url": "https://n.yam.com/Article/20241226133911"
+}
+],
+"status": "unverifiable",
+"summary": "政見未設定數量、預算或期限等可衡量標準，無法判斷是否兌現；亦未查到市府以「社區大學／長照場域終身藝術教育」為名的具體計畫報導。"
+}

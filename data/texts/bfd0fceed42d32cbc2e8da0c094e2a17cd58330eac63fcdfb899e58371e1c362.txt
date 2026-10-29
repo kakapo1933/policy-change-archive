@@ -1,0 +1,44 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "副市長層級統籌"
+},
+{
+"en": null,
+"zh": "整合都發、教育、文化、工務、公燈、大地"
+}
+],
+"flows": [
+"F1",
+"F5",
+"F13"
+],
+"id": "forest-committee",
+"name": {
+"en": "Urban forest committee",
+"zh": "都市森林委員會"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第一階段完成委員會分工"
+},
+"stages": [
+"stage1"
+]
+},
+"plain": {
+"en": null,
+"zh": "副市長層級統籌，整合都發、教育、文化、工務、公燈、大地等業務。"
+},
+"sources": [
+"forest"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": null
+}

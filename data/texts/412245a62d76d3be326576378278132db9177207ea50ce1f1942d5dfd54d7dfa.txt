@@ -1,0 +1,23 @@
+{
+"date": "2026-08-31",
+"facts": [
+"2025-04 啟動，每週免費兌換 1 瓶鮮奶或豆漿",
+"2026-08-31 起擴及國中生",
+"總受惠約 28.9 萬人"
+],
+"id": "family-milk",
+"sources": [
+{
+"published": "2025-03-13",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/6885/8604112"
+},
+{
+"published": "2026-08-04",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9668555"
+}
+],
+"status": "done",
+"title": "生生喝鮮奶"
+}

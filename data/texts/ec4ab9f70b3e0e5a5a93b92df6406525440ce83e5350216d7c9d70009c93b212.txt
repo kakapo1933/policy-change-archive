@@ -1,0 +1,51 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "運用閒置土地規劃口袋公園"
+},
+{
+"en": null,
+"tile": {
+"en": null,
+"zh": "3-30-300"
+},
+"zh": "3-30-300：窗前 3 棵樹、綠覆率 30%、300 公尺內有公園"
+}
+],
+"flows": [
+"F1",
+"F5",
+"F13"
+],
+"id": "forest-parks",
+"name": {
+"en": "Pocket parks",
+"zh": "口袋公園"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第二階段示範改造"
+},
+"stages": [
+"stage2"
+]
+},
+"plain": {
+"en": null,
+"zh": "運用閒置土地規劃口袋公園，讓每位市民 300 公尺內都能走到有綠蔭的公園。"
+},
+"sources": [
+"forest"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "所有市民"
+}
+}

@@ -1,0 +1,23 @@
+{
+"date": "2026-07",
+"facts": [
+"北市首座地下管涵式滯洪設施，滯洪量 3.2 萬噸",
+"全長約 1.1 公里，市府斥資 17 億元",
+"預計 2029 年底完工"
+],
+"id": "safety-flood",
+"sources": [
+{
+"published": "2026-07-19",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9636468"
+},
+{
+"published": "2026-07-19",
+"publisher": "世界日報",
+"url": "https://www.worldjournal.com/wj/amp/story/121221/9637211"
+}
+],
+"status": "in_progress",
+"title": "敦北地下大排滯洪工程"
+}

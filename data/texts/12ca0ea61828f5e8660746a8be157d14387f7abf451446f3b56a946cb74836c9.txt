@@ -1,0 +1,48 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "10 億元基金規模、年營運 5 億元"
+},
+{
+"en": null,
+"zh": "培育樹醫生等綠領人才"
+},
+{
+"en": null,
+"zh": "改革採購評選"
+}
+],
+"flows": [
+"F1",
+"F5",
+"F13"
+],
+"id": "forest-fund",
+"name": {
+"en": "Maintenance fund",
+"zh": "維運基金與綠領人才"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第一階段完成基金設計"
+},
+"stages": [
+"stage1"
+]
+},
+"plain": {
+"en": null,
+"zh": "設置都市森林維運基金，並培育樹醫生、園藝工程與園藝經理等綠領人才。"
+},
+"sources": [
+"forest"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": null
+}

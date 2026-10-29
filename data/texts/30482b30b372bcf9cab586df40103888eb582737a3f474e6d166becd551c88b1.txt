@@ -1,0 +1,37 @@
+{
+"date": "2025-11-13",
+"facts": [
+"臺北市至今與 39 國 53 個城市締結姊妹市（市府秘書處資料，2026-10 檢視）",
+"任內新增姊妹市 2 個：聖文森金石城（2024-05-21）、聖克里斯多福巴士底市（2025-11-13）",
+"另新增友誼市 2 個：日本松山市（2024-10-11，僅市府頁面記載）、美國蒙哥馬利郡（2025-03-19）"
+],
+"id": "intl-sister-cities",
+"sources": [
+{
+"published": "2025-11-14",
+"publisher": "臺北市政府秘書處",
+"title": "拉丁美洲及加勒比海地區各姊妹市",
+"url": "https://sec.gov.taipei/News_Content.aspx?n=6DB01D28DCD9FC33&sms=48505C64570D47D6&s=859D438228425B4A"
+},
+{
+"published": "2025-11-14",
+"publisher": "中央社",
+"title": "巴士底市與臺北市締結姊妹市",
+"url": "https://www.cna.com.tw/news/aipl/202511140112.aspx"
+},
+{
+"published": "2025-11-19",
+"publisher": "聖克里斯多福及尼維斯駐多倫多總領事館",
+"title": "Formal Ties with Two Major Cities in Taiwan will be Beneficial, says Ambassador Francis",
+"url": "https://skncgtoronto.gov.kn/?p=14242"
+},
+{
+"published": "2024-06-25",
+"publisher": "新頭殼",
+"title": "高雄與巴士底市締結姊妹市",
+"url": "https://newtalk.tw/news/view/2024-06-25/925328"
+}
+],
+"status": "done",
+"title": "姊妹市與友誼市"
+}

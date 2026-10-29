@@ -1,0 +1,53 @@
+{
+"facts": [
+{
+"en": null,
+"tile": {
+"en": null,
+"zh": "每區 3–5 處"
+},
+"zh": "每區 3–5 處特色運動據點"
+},
+{
+"en": null,
+"zh": "畸零地設置口袋公園"
+}
+],
+"flows": [
+"F1",
+"F7",
+"F8",
+"F13"
+],
+"id": "sport-spots",
+"name": {
+"en": "Neighborhood sport spaces",
+"zh": "巷口運動據點"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第 1 年盤點畸零地；第 2–3 年完成 10 項社區微型運動場所改造"
+},
+"stages": [
+"year1",
+"year2-3"
+]
+},
+"plain": {
+"en": null,
+"zh": "盤點公有閒置空間，每區新增 3–5 處特色運動據點，畸零地設口袋公園。"
+},
+"sources": [
+"sport"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "社區居民"
+}
+}

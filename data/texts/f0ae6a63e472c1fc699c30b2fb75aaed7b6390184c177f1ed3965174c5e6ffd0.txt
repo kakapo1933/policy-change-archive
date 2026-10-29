@@ -1,0 +1,6 @@
+{
+"fact": "推動「捷運六線齊發2.0」：萬大線一期進度逾87%，環狀線南北環、東環段全面動工。",
+"short": "捷運六線齊發，路網再升級！",
+"source": "https://www.dorts.gov.taipei/News_Content_table.aspx?n=41977EB83537C82B&sms=72544237BBE4C5F6&s=D8ABB89B8585209E",
+"tag": "交通"
+}

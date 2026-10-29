@@ -1,0 +1,17 @@
+{
+"date": "2026-04-27",
+"facts": [
+"市府委託顧問評估，營區約 3 公頃",
+"產發局預計 2026 年底提出評估建議"
+],
+"id": "industry-songnan",
+"sources": [
+{
+"published": "2026-04-27",
+"publisher": "公視新聞網",
+"url": "https://news.pts.org.tw/article/805647"
+}
+],
+"status": "proposal",
+"title": "松南營區 AI 產業園區可行性評估"
+}

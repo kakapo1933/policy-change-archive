@@ -1,0 +1,6 @@
+{
+"fact": "2026年臺北市獲頒「李光耀世界城市獎」特別獎，是臺灣第一座獲獎城市；這個獎被譽為「城市界諾貝爾」。",
+"short": "台北拿下李光耀世界城市獎特別獎！",
+"source": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=24E5DA3682F57D7C&sms=72544237BBE4C5F6",
+"tag": "城市"
+}

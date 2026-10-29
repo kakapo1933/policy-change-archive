@@ -1,0 +1,6 @@
+{
+"fact": "2025年臺北的國外旅客數、旅宿平均住用率及住宿餐飲產值均為六都第一。",
+"short": "觀光六都第一，台北最吸睛！",
+"source": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=F8CCBCAA56D7712A&sms=72544237BBE4C5F6",
+"tag": "觀光"
+}

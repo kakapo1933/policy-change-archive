@@ -1,0 +1,42 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "單身女性專屬"
+},
+{
+"en": null,
+"zh": "整合心理、社福及醫療資源"
+}
+],
+"flows": [
+"F1",
+"F2",
+"F3",
+"F4",
+"F8",
+"F9",
+"F11"
+],
+"id": "welfare-single",
+"name": {
+"en": "Single-person support hotline",
+"zh": "單身不孤獨專線"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "單身女性專屬的服務專線，整合心理、社福及醫療資源，並提供一站式身心理健康支持。"
+},
+"sources": [
+"welfare"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "單身女性"
+}
+}

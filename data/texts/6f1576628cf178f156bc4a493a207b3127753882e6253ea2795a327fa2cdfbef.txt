@@ -1,0 +1,23 @@
+{
+"date": "2026-08-30",
+"facts": [
+"2026-08-30 通車，新增 R01 廣慈／奉天宮站為端點",
+"自象山站東延約 1.4 公里，一座新站",
+"北捷預估每日增加約 2 萬人次運量"
+],
+"id": "transport-xinyi-east",
+"sources": [
+{
+"published": "2026-08-30",
+"publisher": "自由時報",
+"url": "https://news.ltn.com.tw/news/Taipei/breakingnews/5557116"
+},
+{
+"published": "2026-08-20",
+"publisher": "TVBS",
+"url": "https://news.tvbs.com.tw/life/4010084"
+}
+],
+"status": "done",
+"title": "捷運信義線東延段通車"
+}

@@ -1,0 +1,28 @@
+{
+"date": "2026-06-01",
+"facts": [
+"2026-01 宣布推無菸城市，原則禁止、例外開放",
+"西門町商圈 2026-06-01 起除吸菸區外全面禁菸",
+"全市指定吸菸區 267 處，負壓式 12 處（2026-08）"
+],
+"id": "care-smokefree",
+"sources": [
+{
+"published": "2026-01-13",
+"publisher": "公視新聞網",
+"url": "https://news.pts.org.tw/article/790492"
+},
+{
+"published": "2026-08-27",
+"publisher": "中央社",
+"url": "https://cna.com.tw/news/aloc/202608270313.aspx"
+},
+{
+"published": "",
+"publisher": "台灣英文新聞",
+"url": "https://www.taiwannews.com.tw/zh/news/6373200"
+}
+],
+"status": "in_progress",
+"title": "無菸城市"
+}

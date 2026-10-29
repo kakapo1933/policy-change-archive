@@ -1,0 +1,39 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "長達半年的互換交流"
+},
+{
+"en": null,
+"zh": "基層人員參與"
+}
+],
+"flows": [
+"F1",
+"F5",
+"F6",
+"F15"
+],
+"id": "diplomacy-exchange",
+"name": {
+"en": "Six-month staff exchange",
+"zh": "基層公務員半年互換"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "不只首長出訪，執行層面的基層公務員也能進行長達半年的互換交流。"
+},
+"sources": [
+"diplomacy"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "基層公務員"
+}
+}

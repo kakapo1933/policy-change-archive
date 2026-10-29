@@ -1,0 +1,48 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "心理諮商、正念紓壓、運動課程、健康諮詢"
+},
+{
+"en": null,
+"zh": "依個人需求自由組合"
+}
+],
+"flows": [
+"F1",
+"F2",
+"F11",
+"F12"
+],
+"id": "civil-eap",
+"name": {
+"en": "EAP points",
+"zh": "EAP 點數自選亭"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第 1–8 個月建置 EAP 點數自選系統"
+},
+"stages": [
+"m1-8"
+]
+},
+"plain": {
+"en": null,
+"zh": "員工協助方案升級為點數自選制，心理諮商、正念紓壓、運動課程、健康諮詢自由組合。"
+},
+"sources": [
+"civil"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "市府同仁"
+}
+}

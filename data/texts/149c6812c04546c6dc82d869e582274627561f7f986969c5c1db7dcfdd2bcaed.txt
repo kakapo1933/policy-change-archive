@@ -1,0 +1,18 @@
+{
+"date": "2025-08-27",
+"facts": [
+"總經費 18 億元，分四區段施作",
+"大稻埕至敦煌步道拓寬 6 公尺，2025-08-27 動工",
+"全案預計 2028 年底完成"
+],
+"id": "environment-river",
+"sources": [
+{
+"published": "2025-08-28",
+"publisher": "世界日報",
+"url": "https://www.worldjournal.com/wj/story/121221/8968366"
+}
+],
+"status": "in_progress",
+"title": "淡水河河岸活化計畫"
+}

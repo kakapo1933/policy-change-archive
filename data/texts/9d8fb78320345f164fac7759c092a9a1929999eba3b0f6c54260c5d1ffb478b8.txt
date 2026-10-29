@@ -1,0 +1,34 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "茶葉、糖業、煤礦、打石、溫泉"
+},
+{
+"en": null,
+"zh": "茶葉路徑連結大稻埕、南港與文山"
+}
+],
+"flows": [
+"F1",
+"F7"
+],
+"id": "trails-industry",
+"name": {
+"en": "Industrial heritage trail",
+"zh": "產業文化遺跡徑"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "把茶葉、糖業、煤礦、打石與溫泉等產業記憶寫進路線，例如從北投街區走進溫泉山徑。"
+},
+"sources": [
+"trails"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": null
+}

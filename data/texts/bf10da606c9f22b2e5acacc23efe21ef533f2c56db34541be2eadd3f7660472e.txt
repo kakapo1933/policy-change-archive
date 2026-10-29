@@ -1,0 +1,28 @@
+{
+"date": "2026-04-17",
+"facts": [
+"全長約 13.25 公里，10 站 1 機廠，分 6 標",
+"CF763 標 2024-12 開工，CF720 標 2026-04-17 開工",
+"捷運局稱環狀線朝 2032 年全線通車邁進"
+],
+"id": "transport-circular-east",
+"sources": [
+{
+"published": "2025-11-08",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9126590"
+},
+{
+"published": "2026-04-20",
+"publisher": "中時新聞網",
+"url": "https://house.chinatimes.com/20260420001376-264410"
+},
+{
+"published": "2026-04-17",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9447843"
+}
+],
+"status": "in_progress",
+"title": "捷運環狀線東環段"
+}

@@ -1,0 +1,42 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "北市與客庄中小學結盟計畫"
+},
+{
+"en": null,
+"zh": "寒暑假互訪常態化"
+},
+{
+"en": null,
+"zh": "桃竹苗與六堆客庄文化體驗"
+}
+],
+"flows": [
+"F1",
+"F17"
+],
+"id": "hakka-schools",
+"name": {
+"en": null,
+"zh": "兒童有互訪"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "推動「北市與客庄中小學結盟計畫」，寒暑假互訪常態化，讓孩子到桃竹苗與六堆客庄文化體驗。"
+},
+"sources": [
+"hakka-ltn",
+"hakka-nextapple"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "國中小學生"
+}
+}

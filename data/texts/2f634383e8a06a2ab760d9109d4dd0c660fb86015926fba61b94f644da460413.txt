@@ -1,0 +1,39 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "照明、人車動線"
+},
+{
+"en": null,
+"zh": "休憩、急救設備"
+}
+],
+"flows": [
+"F1",
+"F7",
+"F8",
+"F13"
+],
+"id": "sport-river",
+"name": {
+"en": "Riverside improvements",
+"zh": "河濱公園改善"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "改善河濱公園的照明、人車動線，以及休憩、急救等設備，成為安全便利的運動場域。"
+},
+"sources": [
+"sport"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "河濱運動的市民"
+}
+}

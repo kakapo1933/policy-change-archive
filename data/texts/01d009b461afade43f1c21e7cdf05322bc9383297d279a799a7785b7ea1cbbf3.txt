@@ -1,0 +1,36 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "路口改善與居民參與"
+},
+{
+"en": null,
+"zh": "以小學通學路為核心"
+}
+],
+"flows": [
+"F1",
+"F5",
+"F6",
+"F15"
+],
+"id": "diplomacy-hoboken",
+"name": {
+"en": "Hoboken school safety",
+"zh": "霍博肯通學路經驗"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "借鏡霍博肯的路口改善與居民參與，以小學通學路為核心推動交通零死亡示範。"
+},
+"sources": [
+"diplomacy"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": null
+}

@@ -1,0 +1,6 @@
+{
+"detail": "增設負壓吸菸區，擴大西門町、迪化街、心中山、信義四大商圈無菸範圍，並導入AI偵測與語音勸導。",
+"short": "無菸商圈再擴大！",
+"source": "https://www.gov.taipei/News_Content.aspx?n=2044902FC839D045&s=63455203FD0A1669",
+"tag": "城市心安"
+}

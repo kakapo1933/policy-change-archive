@@ -1,0 +1,23 @@
+{
+"date": "2023-10-03",
+"facts": [
+"海砂屋、耐震不足建物適用，容積獎勵最高 100%",
+"6 至 7 樓住宅須每 4 年辦公安申報",
+"截至 2026-04-28 申報率 27.2%"
+],
+"id": "safety-building",
+"sources": [
+{
+"published": "2023-10-03",
+"publisher": "中央社",
+"url": "https://www.cna.com.tw/news/aloc/202310030129.aspx"
+},
+{
+"published": "2026-04-29",
+"publisher": "經濟日報",
+"url": "https://money.udn.com/money/story/5621/9470829"
+}
+],
+"status": "in_progress",
+"title": "防災型都更與老屋公安申報"
+}

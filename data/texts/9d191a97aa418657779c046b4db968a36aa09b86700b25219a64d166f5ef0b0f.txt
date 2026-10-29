@@ -1,0 +1,53 @@
+{
+"facts": [
+{
+"en": null,
+"tile": {
+"en": "Peak hours",
+"zh": "尖峰時段"
+},
+"zh": "08:00–10:00、17:00–19:00"
+},
+{
+"en": null,
+"zh": "前 30 分鐘免費"
+}
+],
+"flows": [
+"F1",
+"F3",
+"F5",
+"F6",
+"F7"
+],
+"id": "transport-bike",
+"name": {
+"en": "YouBike 2.0E",
+"zh": "YouBike 2.0E 尖峰免費"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第 1–2 年試辦尖峰免費"
+},
+"stages": [
+"year1-2"
+]
+},
+"plain": {
+"en": null,
+"zh": "尖峰時段騎 YouBike 2.0E 前 30 分鐘免費，讓自行車成為日常通勤工具。"
+},
+"sources": [
+"transport"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "自行車通勤族"
+}
+}

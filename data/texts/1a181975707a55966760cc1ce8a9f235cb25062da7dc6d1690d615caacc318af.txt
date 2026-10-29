@@ -1,0 +1,47 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "斷來源、教拒絕、轉治療、司法為輔"
+},
+{
+"en": null,
+"zh": "校園周邊販售熱點與電子煙載具查緝"
+},
+{
+"en": null,
+"zh": "篩檢、簡短處遇及轉介治療（SBIRT）"
+}
+],
+"flows": [
+"F1",
+"F3",
+"F4",
+"F6",
+"F10",
+"F11",
+"F12",
+"F14"
+],
+"id": "education-prevention",
+"name": {
+"en": "Drug prevention and safety",
+"zh": "校園反毒"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "反毒採「斷來源、教拒絕、轉治療、司法為輔」四層策略，需要協助的孩子優先進入治療與輔導。"
+},
+"sources": [
+"education"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "學生"
+}
+}

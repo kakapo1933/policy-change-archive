@@ -1,0 +1,48 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "優先公共設施再製"
+},
+{
+"en": null,
+"zh": "高值產品、生物炭、土壤改良、建材"
+},
+{
+"en": null,
+"zh": "生質能發電為最後處理方式"
+}
+],
+"flows": [
+"F1",
+"F5",
+"F13"
+],
+"id": "forest-wood",
+"name": {
+"en": "Reclaimed wood bank",
+"zh": "廢木料銀行"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第三階段建立"
+},
+"stages": [
+"stage3"
+]
+},
+"plain": {
+"en": null,
+"zh": "廢木料優先做成公共設施，再發展高值產品、生物炭、土壤改良與建材，最後才發電。"
+},
+"sources": [
+"forest"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": null
+}

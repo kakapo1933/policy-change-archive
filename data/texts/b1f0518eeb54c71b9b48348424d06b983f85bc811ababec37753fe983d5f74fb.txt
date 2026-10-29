@@ -1,0 +1,6 @@
+{
+"fact": "大巨蛋2023年11月取得使用執照，12月2日正式啟用。",
+"short": "大巨蛋終於啟用，謝謝市長！",
+"source": "https://www.farglorydome.com.tw/park-detail/13__2/",
+"tag": "運動"
+}

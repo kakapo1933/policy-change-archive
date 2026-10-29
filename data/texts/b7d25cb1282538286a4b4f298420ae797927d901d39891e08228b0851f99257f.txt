@@ -1,0 +1,46 @@
+{
+"category": "市政",
+"confidence": "medium",
+"critical": [
+"2026-02 議員李明賢指出，北市產業發展基金申請件數在2023至2025年明顯下降，擔心新創環境變差"
+],
+"deadline": null,
+"evidence": [
+"2023-09 市府推出「新創三箭」（投資金、匯人才、促成交），新增創新加速（最高300萬元）、主題式研發等補助項目。",
+"2024-08-13 發布《臺北市新創拔尖補助申請須知》，三階段合計最高補助1,500萬元；申請者必須已取得創投或天使投資人投資，市府本身是補助，不入股。",
+"2026-02-03 產發局表示，2024年起每年編列2億元公務預算，2026年增至2.5億元；2023年至2025-11共核定345案、補助逾5.6億元。",
+"查到的市府新設公司是北捷遊憩公司（2025），經營小巨蛋、兒童新樂園與貓纜，與新創投資無關。"
+],
+"id": "p22-civic-06",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "成立城市級投資公司，讓市民一起當新創公司股東，盤點市府資源擘劃沙河專區，快速驗證新創商業模式。",
+"related": [
+{
+"item": "industry-startup",
+"theme": "industry"
+}
+],
+"sources": [
+{
+"published": "2026-02-03",
+"publisher": "經濟日報",
+"title": "北市產業基金申請少...議員憂新創環境變差 產發局曝原因",
+"url": "https://money.udn.com/money/amp/story/5621/9305579"
+},
+{
+"published": "2024-08-13",
+"publisher": "臺北市法規查詢系統",
+"title": "臺北市新創拔尖補助申請須知",
+"url": "https://laws.gov.taipei/law/LawSearch/LawPrint/FL103934?type=0"
+},
+{
+"published": "2023-12-04",
+"publisher": "INSIDE",
+"title": "一年過去了，怎麼看台北市市長蔣萬安的「新創三箭」？",
+"url": "https://www.inside.com.tw/article/33512-taipei-city-mayor-entrepreneurship-policies"
+}
+],
+"status": "not_done",
+"summary": "未查到市府成立「城市級投資公司」讓市民成為新創股東，或設立「沙河專區」的公開資料。任內扶植新創以產業發展獎補助為主（新創三箭、新創拔尖補助），屬於補助，不是市府入股投資。距任期屆滿約兩個月，也沒有查到籌設中的相關作為。"
+}

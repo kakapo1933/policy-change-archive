@@ -1,0 +1,42 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "個案管理師到家訪視"
+},
+{
+"en": null,
+"zh": "家庭教育陪伴師支持"
+},
+{
+"en": null,
+"zh": "轉介政府資源"
+}
+],
+"flows": [
+"F1",
+"F10",
+"F11"
+],
+"id": "family-manager",
+"name": {
+"en": "Family case managers",
+"zh": "育兒解憂計畫"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "個案管理師訪視申請服務的家庭，了解需求、提供協助並轉介政府資源，搭配家庭教育陪伴師。"
+},
+"sources": [
+"family"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "申請服務的家庭"
+}
+}

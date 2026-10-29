@@ -1,0 +1,22 @@
+{
+"date": "2025-04-16",
+"facts": [
+"南環 CF670 標 2025-03-30 開工，長 3.5 公里、4 站",
+"北環 CF690B 標 2025-04-16 開工，南北環 8 標全數動工"
+],
+"id": "transport-circular-ns",
+"sources": [
+{
+"published": "2025-03-30",
+"publisher": "臺北市政府",
+"url": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&sms=72544237BBE4C5F6&s=82A1924A60A5F21E"
+},
+{
+"published": "2025-04-16",
+"publisher": "臺北市政府秘書處",
+"url": "https://sec.gov.taipei/News_Content.aspx?n=49B4C3242CB7658C&s=6F737450ED53D3BF"
+}
+],
+"status": "in_progress",
+"title": "捷運環狀線南環段、北環段動工"
+}

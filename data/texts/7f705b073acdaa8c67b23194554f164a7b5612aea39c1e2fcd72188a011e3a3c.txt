@@ -1,0 +1,36 @@
+{
+"category": "育兒",
+"confidence": "medium",
+"critical": [],
+"deadline": null,
+"evidence": [
+"2023-03-21 市府宣布育有 2 名以上 0–6 歲子女家庭申請社宅採加籤制度，入住機會提高為 2 倍，適用華榮市場公辦都更與福星社宅（預計 2023 年底完工招租）。",
+"《臺北市社會住宅出租辦法》（最新修正 2023-10-27）保留戶規定僅針對經濟或社會弱勢者，未列育兒或二胎家庭。"
+],
+"id": "p22-family-05",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "生第二胎，符合資格者可以優先入住社會住宅",
+"related": [
+{
+"item": "housing-happy",
+"theme": "housing"
+}
+],
+"sources": [
+{
+"published": "2023-03-21",
+"publisher": "遠見雜誌 城市學",
+"title": "蔣萬安拋催生政策！北市生育獎勵變4萬下月上路，私幼補5.2萬",
+"url": "https://city.gvm.com.tw/article/100885"
+},
+{
+"published": "2023-10-27",
+"publisher": "臺北市法規查詢系統",
+"title": "臺北市社會住宅出租辦法",
+"url": "https://laws.gov.taipei/law/LawSearch/LawPrint/FL071776?type=0"
+}
+],
+"status": "partial",
+"summary": "市府對育有 2 名以上 0–6 歲子女家庭於華榮市場公辦都更、福星社宅等案場採加籤（抽中機會 2 倍），提高入住機率，但並非保障優先入住，且未見納入《臺北市社會住宅出租辦法》的保留戶規定。"
+}

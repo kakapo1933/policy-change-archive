@@ -1,0 +1,23 @@
+{
+"date": "2026-07-03",
+"facts": [
+"4 年投入 92 億元推 AI 教育",
+"擬於北士科設 AI 教育中心",
+"116 學年起逐步降低班級人數"
+],
+"id": "family-ai-edu",
+"sources": [
+{
+"published": "2026-07-04",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9605903"
+},
+{
+"published": "2026-06-06",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9549703"
+}
+],
+"status": "proposal",
+"title": "AI 教育政策白皮書與教育白皮書 2.0"
+}

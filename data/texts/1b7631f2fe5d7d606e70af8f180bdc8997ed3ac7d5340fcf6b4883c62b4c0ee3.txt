@@ -1,0 +1,44 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "專責、專法、專款、專業"
+},
+{
+"en": null,
+"zh": "先有根域，才准種樹"
+}
+],
+"flows": [
+"F1",
+"F5",
+"F13"
+],
+"id": "forest-law",
+"name": {
+"en": "Urban forest ordinance",
+"zh": "都市林自治條例"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第一階段完成條例草案"
+},
+"stages": [
+"stage1"
+]
+},
+"plain": {
+"en": null,
+"zh": "制定台北都市林自治條例，讓種樹、養樹、管樹有專法依循。"
+},
+"sources": [
+"forest"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": null
+}

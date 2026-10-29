@@ -1,0 +1,18 @@
+{
+"date": "2026-10-15",
+"facts": [
+"2026-10-15 啟用，為新光人壽 BOT 案",
+"地上 19 層、地下 4 層，1–2 樓為客運轉運站",
+"連通南港車站，可轉乘台鐵、高鐵、板南線"
+],
+"id": "development-nangang-bus",
+"sources": [
+{
+"published": "2026-10-16",
+"publisher": "中時新聞網",
+"url": "https://www.chinatimes.com/realtimenews/20261016002898-260410"
+}
+],
+"status": "done",
+"title": "東區門戶：南港轉運站東站啟用"
+}

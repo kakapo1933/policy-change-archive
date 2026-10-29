@@ -1,0 +1,31 @@
+{
+"date": "2025-05-17",
+"facts": [
+"主辦權於 2020-10-22（柯文哲市長任內）由雙北聯名取得",
+"2025-05-17 至 30 舉行，亞洲首次舉辦；開幕典禮在大巨蛋",
+"報導指 107 國、35 種運動，報名 2 萬 5,746 人"
+],
+"id": "culture-masters",
+"sources": [
+{
+"published": "2020-10-22",
+"publisher": "公視新聞網",
+"title": "2025世界壯年運動會 雙北將首度聯名主辦",
+"url": "https://news.pts.org.tw/article/497939"
+},
+{
+"published": "2025-04-17",
+"publisher": "NOWnews今日新聞",
+"title": "世壯運5月17日台北大巨蛋開幕",
+"url": "https://www.nownews.com/news/6672363"
+},
+{
+"published": "2025-05-16",
+"publisher": "NOWnews今日新聞",
+"title": "世壯運明天開幕 2萬5746選手及隊職員報名",
+"url": "https://www.nownews.com/news/6683802"
+}
+],
+"status": "done",
+"title": "2025 雙北世界壯年運動會"
+}

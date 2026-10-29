@@ -1,0 +1,38 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "整合育兒窗口電話"
+},
+{
+"en": null,
+"zh": "專人協助銜接資源"
+}
+],
+"flows": [
+"F1",
+"F10",
+"F11"
+],
+"id": "family-hotline",
+"name": {
+"en": "Parenting hotline",
+"zh": "單一育兒專線"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "整合相關窗口電話，家長打同一支電話提問，由專人協助銜接資源。"
+},
+"sources": [
+"family"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "家長"
+}
+}

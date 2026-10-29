@@ -1,0 +1,52 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "市立高中、國中、國小"
+},
+{
+"en": null,
+"zh": "校管帳號、限定課堂時段、教師在場"
+}
+],
+"flows": [
+"F1",
+"F3",
+"F4",
+"F6",
+"F10",
+"F11",
+"F12",
+"F14"
+],
+"id": "education-ai",
+"name": {
+"en": "Classroom AI",
+"zh": "AI 教學工具"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "中期建立校園 AI 工具與安全使用機制"
+},
+"stages": [
+"mid"
+]
+},
+"plain": {
+"en": null,
+"zh": "補助學校採購教育版 AI 工具，用校管帳號、限定課堂時段、教師在場保護孩子。"
+},
+"sources": [
+"education"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "學生"
+}
+}

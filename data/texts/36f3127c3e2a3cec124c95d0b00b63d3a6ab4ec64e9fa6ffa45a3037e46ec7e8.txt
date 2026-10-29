@@ -1,0 +1,47 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "系統性研究與政策建議"
+},
+{
+"en": null,
+"zh": "打破局處障礙"
+}
+],
+"flows": [
+"F1",
+"F3",
+"F4"
+],
+"id": "institute-access",
+"name": {
+"en": "Accessible city design",
+"zh": "無障礙城市設計中心"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "中期設立"
+},
+"stages": [
+"mid"
+]
+},
+"plain": {
+"en": null,
+"zh": "設在台北研究院轄下，針對無障礙城市設計做系統性研究與建議，打破局處障礙。"
+},
+"sources": [
+"diplomacy",
+"welfare",
+"youth",
+"heart"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": null
+}

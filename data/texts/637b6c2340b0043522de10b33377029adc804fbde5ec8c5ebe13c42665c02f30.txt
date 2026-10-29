@@ -1,0 +1,17 @@
+{
+"date": "2025-09-03",
+"facts": [
+"文化局長稱擬串聯三館，朝「國際藝術村」願景",
+"北美館園區擴建計畫為新館長一大挑戰"
+],
+"id": "culture-museums",
+"sources": [
+{
+"published": "2025-09-03",
+"publisher": "中央社（經濟日報）",
+"url": "https://money.udn.com/money/story/7307/8981686"
+}
+],
+"status": "proposal",
+"title": "北美館、當代館、寶藏巖串聯構想"
+}

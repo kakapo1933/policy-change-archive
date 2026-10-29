@@ -1,0 +1,31 @@
+{
+"date": "2026-08-17",
+"facts": [
+"中華棒協 2026-08-14 宣布取得 2027 世界 12 強預賽、複賽與 2028 洛杉磯奧運最終資格賽主辦權，均在臺北舉行",
+"主辦權由中華棒協取得，市府稱提供行政協助",
+"賽程與場館尚待公布"
+],
+"id": "culture-olympic",
+"sources": [
+{
+"published": "2026-08-14",
+"publisher": "公視新聞網",
+"title": "台灣取得2027年12強及2028奧運最終資格賽主辦權",
+"url": "https://news.pts.org.tw/article/822493"
+},
+{
+"published": "2026-08-17",
+"publisher": "公視新聞網",
+"title": null,
+"url": "https://news.pts.org.tw/article/822826"
+},
+{
+"published": "2026-08-17",
+"publisher": "聯合報",
+"title": null,
+"url": "https://udn.com/news/story/7001/9696673"
+}
+],
+"status": "in_progress",
+"title": "2027 世界 12 強與 LA 奧運最終資格賽在臺北"
+}

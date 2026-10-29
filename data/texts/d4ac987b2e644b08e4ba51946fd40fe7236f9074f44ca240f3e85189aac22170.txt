@@ -1,0 +1,17 @@
+{
+"date": "2026-08-12",
+"facts": [
+"換發新卡後每月另加 300 點消費點數",
+"預計可用於超市、超商、藥局、農會"
+],
+"id": "care-senior-points",
+"sources": [
+{
+"published": "2026-08-12",
+"publisher": "墨新聞",
+"url": "https://news.pchome.com.tw/public/morenews/20260812/index-78654237707016350016.html"
+}
+],
+"status": "proposal",
+"title": "敬老卡消費點數"
+}

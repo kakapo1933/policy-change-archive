@@ -1,0 +1,50 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "哺乳室、紓壓休息區、運動空間、淋浴設備"
+},
+{
+"en": null,
+"zh": "先盤點所有機關空間，再分批優化"
+}
+],
+"flows": [
+"F1",
+"F2",
+"F11",
+"F12",
+"F19"
+],
+"id": "civil-office",
+"name": {
+"en": "Human-centered offices",
+"zh": "人性化辦公空間"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第 1–8 個月盤點；第 8–18 個月首批空間優化完成發包"
+},
+"stages": [
+"m1-8",
+"m8-18"
+]
+},
+"plain": {
+"en": null,
+"zh": "全面盤點並升級各單位的哺乳室、紓壓休息區、運動空間與淋浴設備。"
+},
+"sources": [
+"civil"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "市府同仁"
+}
+}

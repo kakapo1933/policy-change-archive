@@ -1,0 +1,33 @@
+{
+"category": "勞工",
+"confidence": "medium",
+"critical": [
+"議員李柏毅2025-11-27質詢指出警察、消防、護理師缺額嚴重，工務局、都發局報到率僅約3成，以「錢少、事多、離家遠」形容北市公務人力現況。"
+],
+"deadline": null,
+"evidence": [
+"2025-11-27 議會質詢時，人事處長表示北市府缺額率約5%、平均每年離職率約9%；市長表示已再發文人事總處爭取首都加給，並研議業務績效獎勵金。",
+"工務局等規劃工程人員留任獎金，自113年8月1日起任滿1年發給最高3萬元，3年、5年分別最高4.5萬、6萬元。"
+],
+"id": "p22-labor-19",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "提升勞動權益：全力補實預算員額。",
+"related": [],
+"sources": [
+{
+"published": "2025-11-27",
+"publisher": "聯合報",
+"title": "大缺「公」首都加給留才有望？蔣萬安：最快年底有方案",
+"url": "https://udn.com/news/story/7323/9167492"
+},
+{
+"published": "2025-09-28",
+"publisher": "自由時報",
+"title": "獨家》北市留任工程人才祭獎金 任滿1年給3萬",
+"url": "https://news.ltn.com.tw/news/politics/breakingnews/5193724"
+}
+],
+"status": "partial",
+"summary": "市府以爭取首都加給、工程人員留任獎金、研議績效獎勵金等方式留才，但缺額仍未補實：2025年11月人事處稱缺額率約5%、年離職率約9%。"
+}

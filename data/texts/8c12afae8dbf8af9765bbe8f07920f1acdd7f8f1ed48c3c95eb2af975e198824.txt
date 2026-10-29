@@ -1,0 +1,17 @@
+{
+"date": "2026-05-29",
+"facts": [
+"報導稱市長上任後長照床數新增 437 床",
+"老人日照中心 83 家，共可收托 3,879 人（2026-05）"
+],
+"id": "care-ltc",
+"sources": [
+{
+"published": "2026-05-29",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9533213"
+}
+],
+"status": "in_progress",
+"title": "長照床位與日照中心"
+}

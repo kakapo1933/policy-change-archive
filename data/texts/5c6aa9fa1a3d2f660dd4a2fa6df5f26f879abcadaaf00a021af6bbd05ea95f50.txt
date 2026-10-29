@@ -1,0 +1,25 @@
+{
+"category": "勞工",
+"confidence": "medium",
+"critical": [],
+"deadline": null,
+"evidence": [
+"114學年公立幼兒園增設7班112名，均為2歲專班；非營利幼兒園增加15班312名，其中2歲專班208名。",
+"115學年預計增設2歲專班13班208人、3–5歲班9班200人；教育局表示將把2歲專班增設需求納入校舍新（改）建規劃。"
+],
+"id": "p22-labor-06",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "完善職場托育：增加2歲專班，以滿足台北市需求為目標。",
+"related": [],
+"sources": [
+{
+"published": "2026-07-02",
+"publisher": "臺北市政府教育局",
+"title": "臺北市議會第14屆第8次定期大會 臺北市政府教育局工作報告",
+"url": "https://www-ws.gov.taipei/001/Upload/342/relfile/16605/9668117/9b340b92-6b15-4558-9b7a-45dac9722fd4.pdf"
+}
+],
+"status": "partial",
+"summary": "2歲專班持續增加：114學年公立及非營利幼兒園共增加2歲專班名額（公幼7班112名，非營利含2歲專班208名），115學年預計再增設13班208人。但沒有公開資料顯示已「滿足台北市需求」。"
+}

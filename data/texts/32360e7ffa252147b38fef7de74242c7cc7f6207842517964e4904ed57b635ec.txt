@@ -1,0 +1,18 @@
+{
+"date": "2026-07-30",
+"facts": [
+"T3、T4、T12 約 700、1,500、2,000 坪",
+"地上權 50 年可延長 20 年，三階段評選",
+"投標截止 2026-10-30"
+],
+"id": "industry-beishike-land",
+"sources": [
+{
+"published": "2026-07-30",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7240/9660037"
+}
+],
+"status": "in_progress",
+"title": "北士科最後 3 筆市有地招商"
+}

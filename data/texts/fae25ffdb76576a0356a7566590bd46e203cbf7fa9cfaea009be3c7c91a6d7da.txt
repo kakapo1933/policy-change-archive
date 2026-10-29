@@ -1,0 +1,53 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "每日一定次數前 10 分鐘免費"
+},
+{
+"en": null,
+"zh": "市府出資試辦 3 個月，後續與中央協商常態化"
+},
+{
+"en": null,
+"zh": "所有合法業者一律適用"
+}
+],
+"flows": [
+"F1",
+"F3",
+"F5",
+"F6",
+"F7"
+],
+"id": "transport-scooter",
+"name": {
+"en": "TPASS shared electric scooters",
+"zh": "TPASS 共享機車"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第 1–2 年啟動 3 個月試辦"
+},
+"stages": [
+"year1-2"
+]
+},
+"plain": {
+"en": null,
+"zh": "持記名 TPASS 騎共享電動機車，每日一定次數前 10 分鐘免費，並積極媒合共享運具業者與停車場合作。"
+},
+"sources": [
+"transport"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "持記名 TPASS 的市民"
+}
+}

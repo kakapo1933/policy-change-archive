@@ -1,0 +1,38 @@
+{
+"category": "勞工",
+"confidence": "medium",
+"critical": [],
+"deadline": null,
+"evidence": [
+"2023-12-13成立勞動政策諮詢會，由市長主持，專家學者3人、工會團體代表17人出席，提案由市長裁示權責局處處理。",
+"勞動政策諮詢會每年辦理1場（115年預計9月），並定期辦理市長與工會領袖座談（115年預計7月）。",
+"議員引述2025-11-21勞動政策諮詢會上，市長指示勞動局研議將照顧長輩、重症家屬者納入減少工時補助。"
+],
+"id": "p22-labor-22",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "提升勞動權益：強化台北市勞資政社會對話機制。",
+"related": [],
+"sources": [
+{
+"published": "2024-04",
+"publisher": "臺北市政府勞動局",
+"title": "臺北市議會第14屆第3次定期大會 臺北市政府勞動局工作報告（112年7月至12月）",
+"url": "https://www-ws.gov.taipei/001/Upload/307/relfile/63006/9149282/190e48d7-5926-4df8-ad4f-670fb2465daa.pdf"
+},
+{
+"published": "2026-07",
+"publisher": "臺北市政府勞動局",
+"title": "臺北市議會第14屆第8次定期大會 臺北市政府勞動局工作報告（115年1月至6月）",
+"url": "https://www-ws.gov.taipei/001/Upload/307/relfile/63006/9671324/8ffff2bd-b86f-4eaf-98cb-800423f9abca.pdf"
+},
+{
+"published": "2026-06-10",
+"publisher": "聯合報",
+"title": "擴大照顧 托老減工時 蔣萬安允研議",
+"url": "https://udn.com/news/story/7323/9556514"
+}
+],
+"status": "done",
+"summary": "市府於2023-12-13成立由市長主持的「勞動政策諮詢會」，之後每年辦理1場，並辦理「市長與工會領袖座談」；外送議題另有三方或四方座談。原文「強化」沒有量化標準，此處以新設常態機制判定。"
+}

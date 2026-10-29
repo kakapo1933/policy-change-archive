@@ -1,0 +1,38 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "親子共同參與課程"
+},
+{
+"en": null,
+"zh": "獲得額外獎勵點數"
+}
+],
+"flows": [
+"F1",
+"F9",
+"F10"
+],
+"id": "card-learning",
+"name": {
+"en": "Family education points",
+"zh": "家庭教育點數"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "親子一起上課可獲得額外獎勵點數，把課堂上的練習帶回日常相處。"
+},
+"sources": [
+"card"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "親子"
+}
+}

@@ -1,0 +1,23 @@
+{
+"date": "2026-03-01",
+"facts": [
+"行政院 2026-02-12 核定警勤加給表修正",
+"北市加成上限由 1 倍調至 1.3 倍，每月增 2,328–2,910 元",
+"北市府核定溯自 2026-03-01 生效"
+],
+"id": "safety-police-pay",
+"sources": [
+{
+"published": "2026-03-20",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9392934"
+},
+{
+"published": "2026-02-12",
+"publisher": "中時新聞網",
+"url": "https://www.chinatimes.com/realtimenews/20260212004757-260421"
+}
+],
+"status": "done",
+"title": "員警勤務繁重加成調至 1.3 倍"
+}

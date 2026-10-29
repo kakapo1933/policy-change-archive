@@ -1,0 +1,37 @@
+{
+"date": "2026-10",
+"facts": [
+"2024 年內政部表示由市府依權責決定後，市府要求遠雄完成防火避難驗證，開放大巨蛋辦演唱會；市長稱仍以運動賽事為主，演唱會屬臨時性使用",
+"2025-03 起依報導已宣布或舉辦的國際（非台灣）藝人場次包括：太妍、安德烈・波伽利、林俊傑、G-DRAGON、SUPER JUNIOR、TXT、i-dle、TWICE、ONE OK ROCK、aespa、BIGBANG",
+"2026-01-10 韓國金唱片獎首次移師台灣在大巨蛋舉行；演唱會與頒獎典禮均為民間主辦"
+],
+"id": "intl-dome-concerts",
+"sources": [
+{
+"published": "2024-06-27",
+"publisher": "中央社",
+"title": "大巨蛋辦演唱會 蔣萬安：依議會決議函詢內政部",
+"url": "https://www.cna.com.tw/news/aloc/202406270175.aspx"
+},
+{
+"published": "2024-07-31",
+"publisher": "公視新聞網",
+"title": "蔣萬安：8月消安審查通過 大巨蛋即可辦國慶晚會",
+"url": "https://news.pts.org.tw/article/707667"
+},
+{
+"published": "2024-11-01",
+"publisher": "中央社",
+"title": "大巨蛋114年中職檔期腰斬剩20場 蔣萬安：須以運動賽事為主",
+"url": "https://www.cna.com.tw/news/aloc/202411010101.aspx"
+},
+{
+"published": "2026-03-20",
+"publisher": "今周刊",
+"title": "TWICE台北應援地圖！9大打卡點、快閃店、主題車廂、台北塔點燈",
+"url": "https://www.businesstoday.com.tw/article/category/183030/post/202603160026/"
+}
+],
+"status": "done",
+"title": "大巨蛋開放國際藝人演唱會"
+}

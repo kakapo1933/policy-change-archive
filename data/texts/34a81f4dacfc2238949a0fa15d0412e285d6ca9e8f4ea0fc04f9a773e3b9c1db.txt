@@ -1,0 +1,42 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "8 年共 20 億元"
+},
+{
+"en": null,
+"zh": "市政實習、公共參與、與台北研究院合作"
+},
+{
+"en": null,
+"zh": "培養市民外交官，擴大「無限城」網絡"
+}
+],
+"flows": [
+"F1",
+"F12",
+"F15"
+],
+"id": "youth-dream",
+"name": {
+"en": "Taipei youth dreams program",
+"zh": "台北青年圓夢計畫"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "銜接中央海外圓夢基金，支持青年提案出國實踐，也投入市政實習、創業與國際交流。"
+},
+"sources": [
+"youth"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "台北青年"
+}
+}

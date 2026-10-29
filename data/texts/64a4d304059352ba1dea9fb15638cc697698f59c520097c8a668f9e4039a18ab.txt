@@ -1,0 +1,42 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "由下而上"
+},
+{
+"en": null,
+"zh": "檢視公共空間"
+}
+],
+"flows": [
+"F1",
+"F2",
+"F3",
+"F4",
+"F8",
+"F9",
+"F11"
+],
+"id": "welfare-safety",
+"name": {
+"en": "Women’s safety audit",
+"zh": "女性安全審計"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "由下而上推動女性安全審計，檢視公共空間哪裡讓人不安心。"
+},
+"sources": [
+"welfare"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "女性與所有使用公共空間的市民"
+}
+}

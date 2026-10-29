@@ -1,0 +1,23 @@
+{
+"date": "2026-09",
+"facts": [
+"115 學年度（2026-09）起公私立國中小全面免費",
+"每餐補助國小 87 元、國中 92 元",
+"預計受惠約 18 萬名學生"
+],
+"id": "family-lunch",
+"sources": [
+{
+"published": "2026-04-02",
+"publisher": "TVBS",
+"url": "https://news.tvbs.com.tw/politics/3168122"
+},
+{
+"published": "2026-01-06",
+"publisher": "公視新聞網",
+"url": "https://news.pts.org.tw/article/789320"
+}
+],
+"status": "done",
+"title": "公私立國中小營養午餐免費"
+}

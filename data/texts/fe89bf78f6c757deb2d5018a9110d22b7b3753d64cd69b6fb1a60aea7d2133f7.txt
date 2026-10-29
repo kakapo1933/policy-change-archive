@@ -1,0 +1,42 @@
+{
+"facts": [
+{
+"en": null,
+"tile": {
+"en": null,
+"zh": "6 個月–6 歲"
+},
+"zh": "滿 6 個月至 6 歲"
+},
+{
+"en": null,
+"zh": "每週固定時數免費臨托"
+}
+],
+"flows": [
+"F1",
+"F10",
+"F11"
+],
+"id": "family-respite",
+"name": {
+"en": "Weekly respite care",
+"zh": "每週免費臨托"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "滿 6 個月至 6 歲的孩子每週有固定時數的免費臨時托育，讓家長能休息、社交、處理自己的事。"
+},
+"sources": [
+"family"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "家長"
+}
+}

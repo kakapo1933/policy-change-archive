@@ -1,0 +1,37 @@
+{
+"category": "交通",
+"confidence": "medium",
+"critical": [],
+"deadline": null,
+"evidence": [
+"環狀線東環段 6 標中，CF763（2024 年底）、CF760（2025-11-08）、CF710（2026-02-04）、CF720（2026-04-17）已開工；截至 2026 年 3 月底環狀線整體進度 31.89%。",
+"基北北桃 1200 都會通定期票 2023-07-01 上路。"
+],
+"id": "p22-transport-07",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "打造以公共運輸為核心的智慧城市",
+"related": [],
+"sources": [
+{
+"published": "2026-04-17",
+"publisher": "Newtalk 新聞",
+"title": "內科交通解藥？捷運東環段「舊宗路」開工 未來往返信義僅14分",
+"url": "https://newtalk.tw/news/view/2026-04-17/1030338"
+},
+{
+"published": "2025-11-08",
+"publisher": "Newtalk 新聞",
+"title": "捷運東環段2站開工 蔣萬安盼打造台北國際名片",
+"url": "https://newtalk.tw/news/view/2025-11-08/1003439"
+},
+{
+"published": "2023-06-30",
+"publisher": "鏡週刊",
+"title": "基隆境內定期票年底前推出 公車+台鐵30天無限搭只要320元",
+"url": "https://www.mirrormedia.mg/story/20230630edi034"
+}
+],
+"status": "unverifiable",
+"summary": "政見為願景性質，無可衡量標準。相關作為包括捷運環狀線東環段 2024 年底起陸續動工、基北北桃 1200 都會通定期票上路、基北北桃減碳存摺推動綠色運輸。"
+}

@@ -1,0 +1,38 @@
+{
+"category": "交通",
+"confidence": "medium",
+"critical": [
+"TVBS 分析指雙園巴士僅服務兩園區間往來，約 1,700 人次相對內湖約 21 萬上班族有限；民進黨議員何孟樺批評既有誘因不足、Jump Bus 預約少人使用。交通局回應已多管齊下，內湖公車運量成長約 2 成（TVBS 2024-07-03）。"
+],
+"deadline": null,
+"evidence": [
+"2024-07-03「內科∞南軟巴士」上路，市府依問卷與走訪 200 多家企業，估計該路段平均每日約 1,700 人次需求。",
+"雙園巴士納入 Jump Bus 預約系統，供有拜訪行程的企業優先預約座位，一般乘客亦可搭乘。"
+],
+"id": "p22-transport-02",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "串接台北科技廊帶：內湖每天21萬人進出，人流車流過於實在太過龐大，我認為應該借力使力，將這股能量引導至南軟、內科、北士科的科技產業，有效推動區域產業發展聚落，用以舒緩分散內科園區交通壓力。",
+"related": [
+{
+"item": "industry-corridor",
+"theme": "industry"
+}
+],
+"sources": [
+{
+"published": "2024-07-03",
+"publisher": "TVBS 新聞網",
+"title": "內湖交通有救了？「內科∞南軟巴士」今上路 蔣萬安：盼緩解交通",
+"url": "https://news.tvbs.com.tw/politics/2537805"
+},
+{
+"published": "2024-07-03",
+"publisher": "TVBS 新聞網",
+"title": "分析／病急亂投醫？北市推「雙園巴士」 內科交通惡夢還是無解",
+"url": "https://news.tvbs.com.tw/politics/2538186"
+}
+],
+"status": "unverifiable",
+"summary": "政見未訂可衡量的指標（如分流人數或通勤量目標），無法判斷是否兌現；相關作為包括 2024-07-03 開行串連內科與南港軟體園區的「內科∞南軟巴士」（雙園巴士）。"
+}

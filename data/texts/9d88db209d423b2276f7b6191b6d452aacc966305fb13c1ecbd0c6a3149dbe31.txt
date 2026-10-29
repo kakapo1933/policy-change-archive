@@ -1,0 +1,49 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "專業運動指導"
+},
+{
+"en": null,
+"zh": "營養諮詢"
+}
+],
+"flows": [
+"F1",
+"F7",
+"F8",
+"F13"
+],
+"id": "sport-bus",
+"name": {
+"en": "Community sport bus",
+"zh": "社區運動小巴"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第 1 年試辦；第 2–3 年擴大巡迴路線"
+},
+"stages": [
+"year1",
+"year2-3"
+]
+},
+"plain": {
+"en": null,
+"zh": "運動小巴開到家門口，優先照顧因距離或行動不便而放棄運動的人，並提供運動指導與營養諮詢。"
+},
+"sources": [
+"sport"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "因距離或行動不便放棄運動的市民"
+}
+}

@@ -1,0 +1,28 @@
+{
+"date": "2026-10-21",
+"facts": [
+"交通部：需就國家整體角度審慎評估",
+"國防部長：松機屬國防韌性一環，需審慎評估",
+"10-21 市長稱跨部會小組尚未成立"
+],
+"id": "development-songshan-central",
+"sources": [
+{
+"published": "2026-10-08",
+"publisher": "中央社",
+"url": "https://cna.com.tw/news/aipl/202610080126.aspx"
+},
+{
+"published": "2026-10-14",
+"publisher": "中央社",
+"url": "https://cna.com.tw/news/aipl/202610140035.aspx"
+},
+{
+"published": "2026-10-21",
+"publisher": "公視新聞網",
+"url": "https://news.pts.org.tw/article/832289"
+}
+],
+"status": "proposal",
+"title": "松機遷移：中央回應"
+}

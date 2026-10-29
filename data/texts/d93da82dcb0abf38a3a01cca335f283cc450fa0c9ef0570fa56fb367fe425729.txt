@@ -1,0 +1,40 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "結合大學社會責任（USR）機制"
+},
+{
+"en": null,
+"zh": "大學以計畫模式研究市政議題"
+}
+],
+"flows": [
+"F1",
+"F3",
+"F4",
+"F6",
+"F10",
+"F11",
+"F12",
+"F14"
+],
+"id": "education-usr",
+"name": {
+"en": "University USR",
+"zh": "大學 USR 合作"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "市府列出市政痛點，大學透過社會責任計畫研究議題、提出市政建議。"
+},
+"sources": [
+"education"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": null
+}

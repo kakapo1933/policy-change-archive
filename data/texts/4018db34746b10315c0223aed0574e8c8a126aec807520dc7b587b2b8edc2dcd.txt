@@ -1,0 +1,6 @@
+{
+"fact": "2024-02-28起在臺北市借YouBike前30分鐘免費；臺北市YouBike累計騎乘已破5億人次，單日最高34.1萬次、全市1,821站，使用者整體滿意度96%。",
+"short": "YouBike前30分鐘免費！",
+"source": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&sms=72544237BBE4C5F6&s=5BDE6C39B424EA78",
+"tag": "交通"
+}

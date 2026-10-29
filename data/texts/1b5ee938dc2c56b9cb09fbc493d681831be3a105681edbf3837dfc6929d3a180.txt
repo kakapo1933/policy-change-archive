@@ -1,0 +1,23 @@
+{
+"date": "2026-02-11",
+"facts": [
+"2026-02-11 市府與台灣輝達簽約",
+"地上權 50 年可延長 20 年，權利金 122 億元",
+"輝達稱投入逾 400 億元、逾 1 萬個工作機會"
+],
+"id": "industry-nvidia-sign",
+"sources": [
+{
+"published": "2026-02-11",
+"publisher": "公視新聞網",
+"url": "https://news.pts.org.tw/article/794980"
+},
+{
+"published": "2026-02-11",
+"publisher": "民報",
+"url": "https://www.peoplenews.tw/articles/economic-news/16822"
+}
+],
+"status": "done",
+"title": "輝達海外總部落腳北士科 T17/T18（簽約）"
+}

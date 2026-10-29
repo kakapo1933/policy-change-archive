@@ -1,0 +1,51 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "與親子同行卡對齊"
+},
+{
+"en": null,
+"zh": "擴大至藝文活動、健身房等"
+}
+],
+"flows": [
+"F1",
+"F2",
+"F3",
+"F4",
+"F8",
+"F9",
+"F11"
+],
+"id": "welfare-elder",
+"name": {
+"en": "Senior card",
+"zh": "敬老卡升級"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "初期擴增敬老卡點數及範疇"
+},
+"stages": [
+"short"
+]
+},
+"plain": {
+"en": null,
+"zh": "敬老卡與親子同行卡對齊，擴大適用場館、地點及使用範疇，例如藝文活動、健身房。"
+},
+"sources": [
+"welfare"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "長者"
+}
+}

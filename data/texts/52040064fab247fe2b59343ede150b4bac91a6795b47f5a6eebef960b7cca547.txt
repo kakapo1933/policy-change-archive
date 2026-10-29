@@ -1,0 +1,52 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "國小雙導師"
+},
+{
+"en": null,
+"zh": "導師行政助理"
+}
+],
+"flows": [
+"F1",
+"F3",
+"F4",
+"F6",
+"F10",
+"F11",
+"F12",
+"F14"
+],
+"id": "education-teachers",
+"name": {
+"en": "Dual teachers",
+"zh": "雙導師"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "中期試辦"
+},
+"stages": [
+"mid"
+]
+},
+"plain": {
+"en": null,
+"zh": "試辦國小雙導師與導師行政助理，讓導師不再一個人扛全班。"
+},
+"sources": [
+"education"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "國小導師"
+}
+}

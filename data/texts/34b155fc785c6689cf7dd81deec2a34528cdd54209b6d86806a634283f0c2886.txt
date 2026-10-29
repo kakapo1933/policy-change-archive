@@ -1,0 +1,23 @@
+{
+"date": "2026-08-19",
+"facts": [
+"月子加菜金每胎 3 萬元不排富，預計 2027 年實施",
+"醫療性凍卵補助上限擬由 3.2 萬提高至 7.2 萬",
+"新生兒 8 小時免費臨托券，預定 2026-09 推出"
+],
+"id": "family-new-measures",
+"sources": [
+{
+"published": "2026-08-19",
+"publisher": "中央社",
+"url": "https://www.cna.com.tw/news/aloc/202608190132.aspx"
+},
+{
+"published": "2026-08-20",
+"publisher": "今周刊",
+"url": "https://www.businesstoday.com.tw/article/category/183030/post/202608200005/"
+}
+],
+"status": "proposal",
+"title": "2026 育兒新措施（分階段上路）"
+}

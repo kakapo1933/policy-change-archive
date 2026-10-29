@@ -1,0 +1,42 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "在宅醫療"
+},
+{
+"en": null,
+"zh": "接軌社區安全網"
+}
+],
+"flows": [
+"F1",
+"F2",
+"F3",
+"F4",
+"F8",
+"F9",
+"F11"
+],
+"id": "welfare-home",
+"name": {
+"en": "Home medical care",
+"zh": "在宅醫療"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "推動在宅醫療，讓醫療服務走進家中，與社區安全網無縫接軌。"
+},
+"sources": [
+"welfare"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "長者與行動不便者"
+}
+}

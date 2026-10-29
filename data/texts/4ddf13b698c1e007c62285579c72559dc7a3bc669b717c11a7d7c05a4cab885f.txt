@@ -1,0 +1,6 @@
+{
+"fact": "市府累計減債430億元，債務餘額由898億元降到468億元，市民人均負債由3.6萬元降到1.9萬元。",
+"short": "還債430億，人均負債不到2萬！",
+"source": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&sms=72544237BBE4C5F6&s=B891403FA10E2DBB",
+"tag": "財政"
+}

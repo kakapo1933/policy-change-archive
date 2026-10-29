@@ -1,0 +1,23 @@
+{
+"date": "2024-09-19",
+"facts": [
+"對象：婚後 2 年內或育有 0–6 歲子女家庭",
+"租金約為市價 7 折以下，另依所得補貼 3,000–11,000 元",
+"至 2026-01-31 釋出 7 處 175 戶，累計申請 6,987 件"
+],
+"id": "housing-happy",
+"sources": [
+{
+"published": "2024-09-19",
+"publisher": "臺北市都市發展局",
+"url": "https://udd.gov.taipei/events/fhqekzq-20370"
+},
+{
+"published": "2026-02-04",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9307693"
+}
+],
+"status": "in_progress",
+"title": "幸福住宅（新婚／育兒家庭租屋）"
+}

@@ -1,0 +1,23 @@
+{
+"date": "2026-10-06",
+"facts": [
+"市長稱北市社宅共 2 萬 4,860 戶（2026-10-06）",
+"景豐社宅二區 2026-10-06 動土，80 戶，預計 2030 年完工",
+"市府稱中央對北市社宅補助減列 53.1 億元"
+],
+"id": "housing-social",
+"sources": [
+{
+"published": "2026-10-06",
+"publisher": "中時新聞網",
+"url": "https://www.chinatimes.com/realtimenews/20261006003031-260407"
+},
+{
+"published": "2026-09-02",
+"publisher": "自立晚報",
+"url": "https://news.pchome.com.tw/public/idn/20260902/index-78829364365969224016.html"
+}
+],
+"status": "in_progress",
+"title": "社會住宅總量與新案"
+}

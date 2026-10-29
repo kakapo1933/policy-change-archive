@@ -1,0 +1,44 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "數位雙生、監控系統、動態健康履歷"
+},
+{
+"en": null,
+"zh": "改善、更新、移除三級分類，分三年處理"
+}
+],
+"flows": [
+"F1",
+"F5",
+"F13"
+],
+"id": "forest-twin",
+"name": {
+"en": "Street-tree digital twins",
+"zh": "路樹數位雙生"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第二階段，分三年逐步處理"
+},
+"stages": [
+"stage2"
+]
+},
+"plain": {
+"en": null,
+"zh": "用數位雙生、監控系統與動態健康履歷管理路樹，現有路樹分「改善、更新、移除」三級處理。"
+},
+"sources": [
+"forest"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": null
+}

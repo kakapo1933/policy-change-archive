@@ -1,0 +1,24 @@
+{
+"date": "2024-12-15",
+"facts": [
+"2024 臺北馬拉松晉升世界田徑總會（WA）金標籤賽事",
+"2024-12-15 約 2 萬 8,000 名跑者參賽，其中國際跑者 4,380 位，為歷年最多"
+],
+"id": "intl-marathon",
+"sources": [
+{
+"published": "2024-12-14",
+"publisher": "NOWnews今日新聞",
+"title": "2024臺北馬拉松周日開跑 晉升金標籤賽事",
+"url": "https://www.nownews.com/news/6610809"
+},
+{
+"published": "2024-07-17",
+"publisher": "創新聞（蕃新聞轉載）",
+"title": "金標籤賽事全臺唯一市區路線 臺北馬拉松報名正式啟動",
+"url": "https://n.yam.com/Article/20240716523665"
+}
+],
+"status": "done",
+"title": "臺北馬拉松晉升世界田徑金標籤"
+}

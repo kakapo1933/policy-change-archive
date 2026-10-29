@@ -1,0 +1,23 @@
+{
+"date": "2024-06-01",
+"facts": [
+"臺北市青年局 2024-06-01 成立",
+"實習後補助 1.5 萬元、弱勢青年 3 萬元",
+"提供創業「一案到底」輔導"
+],
+"id": "industry-youth",
+"sources": [
+{
+"published": "2025-11-25",
+"publisher": "NOWnews",
+"url": "https://www.nownews.com/news/6757833"
+},
+{
+"published": "2026-10-06",
+"publisher": "數位時代",
+"url": "https://www.bnext.com.tw/article/92509/taipei-mayor-2026-shen-chiang-tech-policy"
+}
+],
+"status": "done",
+"title": "青年局成立與青年職涯措施"
+}

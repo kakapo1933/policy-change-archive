@@ -1,0 +1,38 @@
+{
+"category": "動物保護",
+"confidence": "low",
+"critical": [],
+"deadline": null,
+"evidence": [
+"2026-06-18至09-04動保處於信義、文山、內湖、南港、士林、北投、大安7區山區鄰里辦理44場巡迴，每場免費提供100劑狂犬病疫苗，對象為3個月以上犬貓。",
+"《臺北市幸福犬貓認養VIP計畫》（2015年訂定，早於本任期）列有認養犬貓3年內每年多價混合疫苗及狂犬病疫苗預防注射各1次的優惠，條文未寫明是否免費。",
+"2026-01-01起寵物保險補助（最高3,000元）與絕育補助（公1,000元、母2,000元）上路，均以一年內有效的狂犬病預防注射為申請條件，疫苗本身不在補助範圍。"
+],
+"id": "p22-animal-11",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "補助動物預防針",
+"related": [],
+"sources": [
+{
+"published": "2026-06-04",
+"publisher": "自由時報",
+"title": "北市「這7區」山區鄰里犬貓狂犬病疫苗巡迴 6/18起開跑",
+"url": "https://news.ltn.com.tw/amp/news/Taipei/breakingnews/5460282"
+},
+{
+"published": "2015-06-23",
+"publisher": "臺北市法規查詢系統",
+"title": "臺北市幸福犬貓認養 VIP 計畫",
+"url": "https://laws.gov.taipei/law/LawSearch/LawExport/FL078370?type=0"
+},
+{
+"published": "2026-01-06",
+"publisher": "台灣英文新聞",
+"title": "毛孩福利再升級！台北市補助家犬貓絕育最高2千元、寵物保險補助3千元",
+"url": "https://www.taiwannews.com.tw/zh/news/6277225"
+}
+],
+"status": "partial",
+"summary": "查得動保處2026年於山區7個行政區辦理44場免費狂犬病疫苗巡迴注射；市府寵物保險及絕育補助以完成狂犬病注射為條件，但不補助疫苗本身。未查得多合一等其他預防針的普遍補助，也無法確認巡迴注射是否為本任期新增。"
+}

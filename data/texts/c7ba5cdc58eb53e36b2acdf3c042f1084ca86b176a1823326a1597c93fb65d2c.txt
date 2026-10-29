@@ -1,0 +1,49 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "全面盤點現有場館"
+},
+{
+"en": null,
+"zh": "無障礙與性別友善"
+}
+],
+"flows": [
+"F1",
+"F7",
+"F8",
+"F13"
+],
+"id": "sport-access",
+"name": {
+"en": null,
+"zh": "場館無障礙與性別友善"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第 1 年啟動檢討；第 2–3 年完成空間改善"
+},
+"stages": [
+"year1",
+"year2-3"
+]
+},
+"plain": {
+"en": null,
+"zh": "全面盤點並改善現有運動場館的無障礙與性別友善措施，全齡都能參與。"
+},
+"sources": [
+"sport"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "所有市民"
+}
+}

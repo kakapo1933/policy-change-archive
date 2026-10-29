@@ -1,0 +1,52 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "先盤點、刪除重複與過時流程"
+},
+{
+"en": null,
+"zh": "再導入數位工具與自動化"
+}
+],
+"flows": [
+"F1",
+"F3",
+"F4",
+"F6",
+"F10",
+"F11",
+"F12",
+"F14"
+],
+"id": "education-admin",
+"name": {
+"en": "Administrative support",
+"zh": "無痛行政"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "短期先改善行政流程"
+},
+"stages": [
+"short"
+]
+},
+"plain": {
+"en": null,
+"zh": "先盤點、刪除重複與過時的流程，再導入數位工具，讓老師把時間留給教學。"
+},
+"sources": [
+"education"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "教師"
+}
+}

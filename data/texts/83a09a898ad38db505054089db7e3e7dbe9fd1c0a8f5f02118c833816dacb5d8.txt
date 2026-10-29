@@ -1,0 +1,22 @@
+{
+"date": "2026-04-17",
+"facts": [
+"報導稱市府公務員約 6.2 萬人，缺額率約 11.27%",
+"調升主管職等、發放重大工程獎勵金"
+],
+"id": "safety-staffing",
+"sources": [
+{
+"published": "2026-04-17",
+"publisher": "TVBS",
+"url": "https://news.tvbs.com.tw/life/3161401"
+},
+{
+"published": "2026-09-15",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9755917"
+}
+],
+"status": "in_progress",
+"title": "市府人才留任措施"
+}

@@ -1,0 +1,38 @@
+{
+"category": "勞工",
+"confidence": "medium",
+"critical": [],
+"deadline": null,
+"evidence": [
+"113年首度辦理「友善育兒事業獎」（原名友善育兒企業獎），評獎7大項19分項；115年表揚綜合績優42家、單項績優24家，其中15家連續3年獲獎。",
+"115年3月起受理「補助事業單位於員工育兒期間減少工時實施計畫」，截至5月底360家事業單位申請、657名勞工實施育兒減少工時不減薪。",
+"勞動局新聞稿未提及得獎企業可獲補助或標案加分，主要為表揚並將案例製成電子書。"
+],
+"id": "p22-labor-23",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "推動實質功能的友善家庭企業認證，打造更友善家庭的企業環境",
+"related": [],
+"sources": [
+{
+"published": "2026-08-14",
+"publisher": "臺北市政府勞動局",
+"title": "友善育兒扎根臺北！ 蔣萬安表揚42家績優企業挺家庭 公私協力打造幸福職場",
+"url": "https://bola.gov.taipei/News_Content.aspx?n=098B457D83590D7F&sms=72544237BBE4C5F6&s=68F1C3CBE36D919F"
+},
+{
+"published": "2026-07",
+"publisher": "臺北市政府勞動局",
+"title": "臺北市議會第14屆第8次定期大會 臺北市政府勞動局工作報告（115年1月至6月）",
+"url": "https://www-ws.gov.taipei/001/Upload/307/relfile/63006/9671324/8ffff2bd-b86f-4eaf-98cb-800423f9abca.pdf"
+},
+{
+"published": "2024-09",
+"publisher": "臺北市政府勞動局",
+"title": "臺北市議會第14屆第4次定期大會 臺北市政府勞動局工作報告（113年1月至6月）",
+"url": "https://www-ws.gov.taipei/001/Upload/307/relfile/63006/9281110/7cf1a0e2-faa0-4bee-b596-0a09df6f4bda.pdf"
+}
+],
+"status": "partial",
+"summary": "市府自2024年起辦理「友善育兒事業獎」，依7大面向評選企業並表揚；2026年另推出補助企業讓員工育兒減少工時不減薪。但形式是年度獎項而非認證制度，未查到得獎企業可獲補助、標案加分等實質誘因。"
+}

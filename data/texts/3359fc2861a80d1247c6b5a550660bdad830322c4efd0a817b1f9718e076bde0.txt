@@ -1,0 +1,61 @@
+{
+"facts": [
+{
+"en": null,
+"tile": {
+"en": null,
+"zh": "117 學年度"
+},
+"zh": "117 學年度幼幼班每班 10 人、幼兒園 24 人"
+},
+{
+"en": null,
+"zh": "專任主任制度"
+},
+{
+"en": null,
+"zh": "教保人員行政減壓"
+}
+],
+"flows": [
+"F1",
+"F3",
+"F4",
+"F6",
+"F10",
+"F11",
+"F12",
+"F14"
+],
+"id": "education-preschool",
+"name": {
+"en": "Preschool principals",
+"zh": "公幼專任主任"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "117 學年度班級人數目標；中期試辦專任主任"
+},
+"stages": [
+"ay117",
+"mid"
+]
+},
+"plain": {
+"en": null,
+"zh": "降低幼兒園班級人數，公立幼兒園推動專任主任制度，減輕教保人員的行政負擔。"
+},
+"sources": [
+"education"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "幼教教保人員與幼兒"
+}
+}

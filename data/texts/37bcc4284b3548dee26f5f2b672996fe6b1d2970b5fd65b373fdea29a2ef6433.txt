@@ -1,0 +1,47 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "與中央合作升級"
+},
+{
+"en": null,
+"zh": "市民回報"
+}
+],
+"flows": [
+"F1",
+"F5",
+"F13"
+],
+"id": "forest-cool",
+"name": {
+"en": "Cooling map",
+"zh": "涼感地圖"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第三階段擴大"
+},
+"stages": [
+"stage3"
+]
+},
+"plain": {
+"en": null,
+"zh": "與中央合作升級涼感地圖，整合樹籍、氣象與市民回報資料。"
+},
+"sources": [
+"forest"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "所有市民"
+}
+}

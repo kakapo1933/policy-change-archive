@@ -1,0 +1,23 @@
+{
+"date": "2026-03-01",
+"facts": [
+"育有 12 歲以下子女，每日減 1 小時不減薪",
+"市府補助減少工時薪資 80%",
+"每人上限 1.5 萬元、每事業單位上限 10 萬元"
+],
+"id": "family-worktime",
+"sources": [
+{
+"published": "2026-02-25",
+"publisher": "TVBS",
+"url": "https://health.tvbs.com.tw/life/361237"
+},
+{
+"published": "2026-02-26",
+"publisher": "今周刊",
+"url": "https://www.businesstoday.com.tw/article/category/183034/post/202602260020/"
+}
+],
+"status": "done",
+"title": "父母育兒減少工時補助"
+}

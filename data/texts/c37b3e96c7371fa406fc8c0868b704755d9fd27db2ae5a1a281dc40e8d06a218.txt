@@ -1,0 +1,18 @@
+{
+"date": "2026-03-20",
+"facts": [
+"未滿 40 歲單身青年每月加碼 1,000 元",
+"45 歲以下已婚無子女家庭每月加碼 2,500 元",
+"育有 12 歲以下子女，每名每月加碼 1,000 元"
+],
+"id": "housing-rent-subsidy",
+"sources": [
+{
+"published": "2026-03-20",
+"publisher": "臺北市都市發展局",
+"url": "https://rent-allowance.udd.gov.taipei/documents/grade/%E8%87%BA%E5%8C%97%E5%B9%B8%E7%A6%8F%E7%A7%9F-%E6%B0%91%E9%96%93%E7%A7%9F%E5%B1%8B%E7%A7%9F%E9%87%91%E5%8A%A0%E7%A2%BC%E8%A3%9C%E8%B2%BC%E8%A8%88%E7%95%AB%E5%8F%8A%E9%99%84%E8%A1%A8.pdf"
+}
+],
+"status": "done",
+"title": "臺北幸福租：民間租屋租金加碼補貼"
+}

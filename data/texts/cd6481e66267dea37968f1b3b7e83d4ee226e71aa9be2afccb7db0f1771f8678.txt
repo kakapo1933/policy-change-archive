@@ -1,0 +1,37 @@
+{
+"date": "2025-12-28",
+"facts": [
+"2023-08 於上海舉行，簽署 3 項合作備忘錄（由雙方業務局處簽署）",
+"2024-12 於臺北舉行，簽署智慧醫療、小貓熊保育 2 項備忘錄",
+"2025-12 於上海舉行，簽署水治理、職業技能培訓 2 項備忘錄"
+],
+"id": "intl-twin-city-forum",
+"sources": [
+{
+"published": "2023-08-30",
+"publisher": "NOWnews今日新聞",
+"title": "雙城論壇開幕 蔣萬安致詞",
+"url": "https://www.nownews.com/news/6244687"
+},
+{
+"published": "2023-08-18",
+"publisher": "1111人力銀行產經新聞網（綜合報導）",
+"title": "蔣萬安將赴上海參與2023雙城論壇 聚焦科技簽3項MOU",
+"url": "https://www.1111.com.tw/news/jobns/152817"
+},
+{
+"published": "2024-12-17",
+"publisher": "公視新聞網",
+"title": "2024雙城論壇開幕",
+"url": "https://news.pts.org.tw/article/729184"
+},
+{
+"published": "2025-12-28",
+"publisher": "墨新聞（蕃新聞轉載）",
+"title": "蔣萬安赴上海臺北城市論壇 簽署交流合作備忘錄",
+"url": "https://n.yam.com/Article/20251228524734"
+}
+],
+"status": "done",
+"title": "臺北上海雙城論壇"
+}

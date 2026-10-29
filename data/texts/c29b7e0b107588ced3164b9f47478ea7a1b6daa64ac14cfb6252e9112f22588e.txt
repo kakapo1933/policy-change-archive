@@ -1,0 +1,6 @@
+{
+"fact": "「鮮奶週報－生生喝鮮奶」2025年4月上路，憑數位學生證每週到超商免費領1瓶鮮奶或豆漿；2026年擴大到國中，約28.9萬名學童受惠。",
+"short": "生生喝鮮奶，每週一瓶超有感！",
+"source": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=EA1F6FCB55E59DB4&sms=72544237BBE4C5F6",
+"tag": "教育"
+}

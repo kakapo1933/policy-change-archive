@@ -1,0 +1,6 @@
+{
+"fact": "「好孕專車」2023年7月1日上路，每胎提供8,000元電子乘車金；2026-10-01起提高到1萬元，效期延長到預產期後1年。",
+"short": "好孕專車，孕媽咪出門好安心！",
+"source": "https://dosw.gov.taipei/News_Content.aspx?n=592FE8F37325CACD&s=C7EBAAE4D808C192&sms=3E23A4A474688F76",
+"tag": "育兒"
+}

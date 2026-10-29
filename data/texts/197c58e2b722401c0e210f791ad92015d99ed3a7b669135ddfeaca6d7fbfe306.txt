@@ -1,0 +1,18 @@
+{
+"date": "2026-05-05",
+"facts": [
+"北市段約 11.02 公里，規劃為中運量系統",
+"綜合規劃第 5 版修正，2026-05-05 送新北轉交通部",
+"捷運局目標核定後 2 年內動工"
+],
+"id": "transport-minsheng",
+"sources": [
+{
+"published": "2026-05-08",
+"publisher": "工商時報",
+"url": "https://www.ctee.com.tw/news/20260508701651-431401"
+}
+],
+"status": "proposal",
+"title": "捷運民生汐止線報核"
+}

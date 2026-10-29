@@ -1,0 +1,61 @@
+{
+"facts": [
+{
+"en": null,
+"tile": {
+"en": null,
+"zh": "117 學年度"
+},
+"zh": "117 學年度國小每班 24 人、國中 25 人"
+},
+{
+"en": null,
+"zh": "減生不減師"
+},
+{
+"en": null,
+"zh": "增加專任輔導教師"
+}
+],
+"flows": [
+"F1",
+"F3",
+"F4",
+"F6",
+"F10",
+"F11",
+"F12",
+"F14",
+"F17"
+],
+"id": "education-class",
+"name": {
+"en": "Smaller classes",
+"zh": "小班教室"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "117 學年度達成班級人數目標"
+},
+"stages": [
+"ay117"
+]
+},
+"plain": {
+"en": null,
+"zh": "以「減生不減師」為原則，把少子化釋出的空間轉成更小的班級與更好的教學。"
+},
+"sources": [
+"education"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "國中小師生"
+}
+}

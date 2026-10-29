@@ -1,0 +1,30 @@
+{
+"date": "2025-09",
+"facts": [
+"2024-09 首屆示範，市府文化、產業、資訊、觀傳 4 局合辦，以北流為主場地，含 12 國 25 位國際音樂策展人與買家",
+"2025-08-27 至 09-07 第 2 屆，於台北 101 舉辦國際論壇，約 30 位國內外講者"
+],
+"id": "intl-trendy-taipei",
+"sources": [
+{
+"published": "2024-07-18",
+"publisher": "中央社訊息平台",
+"title": "2024 TRENDY TAIPEI潮臺北起跑記者會（訊息來源：臺北市政府文化局）",
+"url": "https://www.cna.com.tw/postwrite/chi/376672"
+},
+{
+"published": "2024-09-30",
+"publisher": "中央社訊息平台",
+"title": "2024潮臺北TRENDY TAIPEI（訊息來源：臺北市政府文化局）",
+"url": "https://www.cna.com.tw/postwrite/chi/382840"
+},
+{
+"published": "2025-08-27",
+"publisher": "台灣英文新聞",
+"title": "潮台北 TRENDY TAIPEI 登場",
+"url": "https://www.taiwannews.com.tw/zh/news/6188031"
+}
+],
+"status": "done",
+"title": "潮台北 TRENDY TAIPEI"
+}

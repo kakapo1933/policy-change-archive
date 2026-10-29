@@ -1,0 +1,44 @@
+{
+"category": "文化",
+"confidence": "low",
+"critical": [],
+"deadline": null,
+"evidence": [
+"相關作為：文化局 2024 年創設「臺北戲劇獎」，首屆吸引 55 組劇團、73 件作品參與，參賽條件為於台北市公有場地完成三場以上售票演出（與場地法規或劇場街無直接關係）。",
+"相關作為：文化局宣布 2027-01-01 起擴大街頭藝人「台北街藝之星」專屬表演點位與時段（非劇場展演空間）。",
+"《臺北市水源劇場場地使用收費基準》2012-03-21 訂定後未見修正；《臺北市中山堂管理所場地收費基準》最近修正為 2021-05-12（臺北市法規查詢系統，僅為抽查，不代表全部場館）。"
+],
+"id": "p22-culture-02",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "鬆綁藝文團體租借場地法規，參考韓國「劇場一條街」打造更多展演空間",
+"related": [],
+"sources": [
+{
+"published": "2025-07-14",
+"publisher": "鏡週刊",
+"title": "台北畫刊／臺北戲劇獎首登場 點亮劇場榮耀時刻",
+"url": "https://www.mirrormedia.mg/story/20250710cnt007"
+},
+{
+"published": "2026-07-21",
+"publisher": "聯合報",
+"title": "看表演不怕踩雷…台北街藝之星專屬表演地點、時段擴大",
+"url": "https://udn.com/news/story/7323/9641189"
+},
+{
+"published": "2012-03-21",
+"publisher": "臺北市法規查詢系統",
+"title": "臺北市水源劇場場地使用收費基準",
+"url": "https://laws.gov.taipei/law/LawSearch/LawPrint/FL064633?type=0"
+},
+{
+"published": "2021-05-12",
+"publisher": "臺北市法規查詢系統",
+"title": "臺北市中山堂管理所場地收費基準",
+"url": "https://laws.gov.taipei/law/LawSearch/LawPrint/FL064936?type=0"
+}
+],
+"status": "no_data",
+"summary": "未查到市府鬆綁藝文團體租借場地法規，或參考韓國大學路「劇場一條街」規劃劇場街區的公開資料。抽查文化局所屬水源劇場、中山堂的場地收費基準，最近一次修正都在 2022-12 就任前。"
+}

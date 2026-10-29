@@ -1,0 +1,42 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "彈性臨時托老券"
+},
+{
+"en": null,
+"zh": "無縫接軌社區安全網"
+}
+],
+"flows": [
+"F1",
+"F2",
+"F3",
+"F4",
+"F8",
+"F9",
+"F11"
+],
+"id": "welfare-respite",
+"name": {
+"en": "Respite vouchers",
+"zh": "臨時托老券"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "推出彈性的臨時托老券，讓照顧長輩的家人可以喘口氣。"
+},
+"sources": [
+"welfare"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "照顧長輩的家庭"
+}
+}

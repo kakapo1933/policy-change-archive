@@ -1,0 +1,43 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "借鏡東京經驗"
+},
+{
+"en": null,
+"zh": "導入商業機制，促進在地小農與校園合作"
+}
+],
+"flows": [
+"F1",
+"F14"
+],
+"id": "lunch-farm",
+"name": {
+"en": "Local farms",
+"zh": "在地小農田"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第三階段"
+},
+"stages": [
+"stage3"
+]
+},
+"plain": {
+"en": null,
+"zh": "借鏡東京經驗，導入商業機制促進在地小農與校園合作，讓學生享用優質的在地食材。"
+},
+"sources": [
+"lunch"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": null
+}

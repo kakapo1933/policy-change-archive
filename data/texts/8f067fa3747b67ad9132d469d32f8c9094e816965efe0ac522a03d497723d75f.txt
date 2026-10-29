@@ -1,0 +1,51 @@
+{
+"category": "青年",
+"confidence": "medium",
+"critical": [],
+"deadline": null,
+"evidence": [
+"2024-09-03 公視報導：青年局首推「青年實習津貼計畫」，對象為設籍北市滿6個月、18至未滿30歲的在學青年，須參與台北青年職涯發展中心提供的實習職缺；每人每月5,000元，低收及中低收入戶10,000元，每年最多3個月。",
+"2025-06-18 青年局成立一週年，市府表示已提供1,500個實習機會，實習津貼每人5,000元。",
+"2026-07-29 NOWnews報導，青年局將實習津貼年齡上限放寬至35歲、最高可領19,600元，並新增交通與健檢補助。",
+"產發局「新創三箭」中的「匯人才」與北科大、台科大合作，安排學生到新創企業實習（INSIDE 2023-12-04）；報導未提及見習津貼。",
+"查得資料未說明青年局實習津貼的實習單位是否以新創企業為限，也未見「合格新創企業」認定機制。"
+],
+"id": "p22-youth-01",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "提供見習津貼讓北市青年到合格新創企業實習",
+"related": [
+{
+"item": "industry-youth",
+"theme": "industry"
+}
+],
+"sources": [
+{
+"published": "2024-09-03",
+"publisher": "公視新聞網",
+"title": "台北市首推「青年實習津貼計畫」 哪些人可以申請？補助金有多少？",
+"url": "https://news.pts.org.tw/article/712935"
+},
+{
+"published": "2025-06-18",
+"publisher": "NOWnews今日新聞",
+"title": "青年局成立一週年 蔣萬安：持續協助青年發聲、實現夢想",
+"url": "https://www.nownews.com/news/6697020"
+},
+{
+"published": "2026-07-29",
+"publisher": "NOWnews今日新聞",
+"title": "ChatGPT、Claude免費用！北市青年局推AI補助 申請方式一次看",
+"url": "https://www.nownews.com/news/6861132"
+},
+{
+"published": "2023-12-04",
+"publisher": "INSIDE",
+"title": "一年過去了，怎麼看台北市市長蔣萬安的「新創三箭」？",
+"url": "https://www.inside.com.tw/article/33512-taipei-city-mayor-entrepreneurship-policies"
+}
+],
+"status": "partial",
+"summary": "青年局2024年推出「青年實習津貼計畫」，補助設籍北市青年實習每月5,000元（低收及中低收10,000元），2026年再放寬年齡、提高上限；但津貼適用於台北青年職涯發展中心提供的實習職缺，並非限定或專為「合格新創企業」設計。"
+}

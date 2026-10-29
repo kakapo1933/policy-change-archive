@@ -1,0 +1,19 @@
+{
+"description": "Taipei Policy Islands — unofficial 3D policy explorer",
+"devDependencies": {
+"esbuild": "0.25.10",
+"playwright": "^1.64.1",
+"three": "0.180.0"
+},
+"name": "chiang-wanan-policy-island",
+"private": true,
+"scripts": {
+"build:share": "node scripts/build-share.mjs dist",
+"build:three": "node scripts/build-three.mjs",
+"check:links": "node scripts/check-links.mjs",
+"check:three": "node scripts/build-three.mjs --check",
+"serve": "python3 -m http.server 8000",
+"test": "node tests/smoke.mjs"
+},
+"type": "module"
+}

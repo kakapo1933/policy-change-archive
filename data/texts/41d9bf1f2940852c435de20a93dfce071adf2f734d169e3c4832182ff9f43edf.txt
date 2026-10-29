@@ -1,0 +1,43 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "第三方機制"
+},
+{
+"en": null,
+"zh": "師生調和程序"
+}
+],
+"flows": [
+"F1",
+"F3",
+"F4",
+"F6",
+"F10",
+"F11",
+"F12",
+"F14"
+],
+"id": "education-mediation",
+"name": {
+"en": "Third-party mediation",
+"zh": "親師第三方機制"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "面對親師溝通與校園衝突，建立第三方機制與師生調和程序，讓家長與老師一起陪伴孩子。"
+},
+"sources": [
+"education"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "教師、家長與學生"
+}
+}

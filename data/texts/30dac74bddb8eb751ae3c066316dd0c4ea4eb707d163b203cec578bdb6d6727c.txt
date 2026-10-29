@@ -1,0 +1,41 @@
+{
+"category": "市政",
+"confidence": "medium",
+"critical": [
+"2023-12 INSIDE 專欄批評投資台北辦公室的英文新創地圖字體太小、地標沒有說明，對外籍創業者不友善。"
+],
+"deadline": "2025 年（計畫名稱所示）",
+"evidence": [
+"2023-11 產發局「臺北創業幫」舉辦 Global Health Tech Connects Taipei，邀新加坡、印度、立陶宛、捷克、美國等6組海外新創來台發表與媒合；蔣萬安表示希望增加國際人才留駐。",
+"2024-06 產發局「產業人才交流計畫」辦理「AI+ Taipei 創未來」國際新創比賽，入選團隊可獲國際機票與住宿補助，在台期間安排媒合與商務行程；徵件文未提及移居、簽證或居留配套。",
+"2023-12 INSIDE 專欄指出，「創業家任意通護照」原規劃2024年上路，當時尚未確定時程；本輪未查得其後實施的資料。",
+"以「人才首都」等關鍵字檢索，未查得市府提出或執行以此為名的計畫。"
+],
+"id": "p22-civic-07",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "推動「2025世界人才首都計畫」，吸引海外創業家無痛移居台北",
+"related": [],
+"sources": [
+{
+"published": "2023-12-04",
+"publisher": "INSIDE",
+"title": "一年過去了，怎麼看台北市市長蔣萬安的「新創三箭」？",
+"url": "https://www.inside.com.tw/article/33512-taipei-city-mayor-entrepreneurship-policies"
+},
+{
+"published": "2024-06-11",
+"publisher": "INSIDE",
+"title": "台北創業幫「AI+ Taipei 新創比賽」受海外熱烈迴響，火熱徵件中！",
+"url": "https://www.inside.com.tw/article/35239-TEH"
+},
+{
+"published": "2023-11-15",
+"publisher": "INSIDE",
+"title": "臺北創業幫 2023 Global Health Tech Connects Taipei 盛大開辦",
+"url": "https://www.inside.com.tw/article/33347-"
+}
+],
+"status": "not_done",
+"summary": "原文以2025年為期，但沒有查到以「2025世界人才首都計畫」為名的政策，也沒有查到協助海外創業家移居（簽證、居留、落地）的市府配套。查得的相關作為是產發局「臺北創業幫（TEH）」國際新創競賽與交流，補助入選的海外團隊短期來台的機票與住宿，屬於短期交流，沒有觸及「移居」這個核心。期限（2025年）已過。"
+}

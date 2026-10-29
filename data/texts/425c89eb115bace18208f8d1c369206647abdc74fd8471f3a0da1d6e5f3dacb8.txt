@@ -1,0 +1,47 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "整合教育、社政與警政數據"
+},
+{
+"en": null,
+"zh": "重大事故回溯與高風險預防"
+}
+],
+"flows": [
+"F1",
+"F3",
+"F4"
+],
+"id": "institute-child",
+"name": {
+"en": "Child safety governance",
+"zh": "兒少安全治理中心"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "中期設立"
+},
+"stages": [
+"mid"
+]
+},
+"plain": {
+"en": null,
+"zh": "跨局處整合教育、社政與警政數據，重大事故能回溯原因，高風險情況能提早預防。"
+},
+"sources": [
+"diplomacy",
+"welfare",
+"youth",
+"heart"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": null
+}

@@ -1,0 +1,44 @@
+{
+"category": "勞工",
+"confidence": "medium",
+"critical": [],
+"deadline": null,
+"evidence": [
+"2023-02-16勞動局辦理外送平台自治條例四方座談（學者、工會、業者、業管局處），並規劃每半年辦理定期座談。",
+"2024-08-16辦理三方交流座談，討論自治條例修正草案；2025年於2-26、9-18辦理2場座談，要求平台業者重視外送員交通風險。",
+"因中央法律已施行，勞動局2026年報告列為未來重點：廢止「臺北市外送平台業者管理自治條例」，並不定期邀集工會、業者協商。"
+],
+"id": "p22-labor-18",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "促進平台、商家、外送員溝通協商，契約對當事人充分揭露，健全外送市場定價功能，保障外送員權益。",
+"related": [],
+"sources": [
+{
+"published": "2023-04",
+"publisher": "臺北市政府勞動局",
+"title": "臺北市議會第14屆第1次定期大會 臺北市政府勞動局工作報告（111年7月至12月）",
+"url": "https://www-ws.gov.taipei/001/Upload/307/relfile/63006/9078134/d5383fb0-ebc4-434d-bd1b-383c3a59c0cc.pdf"
+},
+{
+"published": "2024-09",
+"publisher": "臺北市政府勞動局",
+"title": "臺北市議會第14屆第4次定期大會 臺北市政府勞動局工作報告（113年1月至6月）",
+"url": "https://www-ws.gov.taipei/001/Upload/307/relfile/63006/9281110/7cf1a0e2-faa0-4bee-b596-0a09df6f4bda.pdf"
+},
+{
+"published": "2026-04",
+"publisher": "臺北市政府勞動局",
+"title": "臺北市議會第14屆第7次定期大會 臺北市政府勞動局工作報告（114年7月至12月）",
+"url": "https://www-ws.gov.taipei/001/Upload/307/relfile/63006/9555885/7b44608d-2659-4f2f-b4bc-6e0d6f21e8ea.pdf"
+},
+{
+"published": "2026-07",
+"publisher": "臺北市政府勞動局",
+"title": "臺北市議會第14屆第8次定期大會 臺北市政府勞動局工作報告（115年1月至6月）",
+"url": "https://www-ws.gov.taipei/001/Upload/307/relfile/63006/9671324/8ffff2bd-b86f-4eaf-98cb-800423f9abca.pdf"
+}
+],
+"status": "partial",
+"summary": "勞動局任內每年辦理2場外送平台座談，並召開三方座談研議修正自治條例；2026年中央《外送員權益保障及外送平台管理法》施行後，市府改為廢止市自治條例並不定期進行社會對話。契約揭露與定價機制主要由中央法律規範，未查到市府促成平台與外送員協商定價的具體成果。"
+}

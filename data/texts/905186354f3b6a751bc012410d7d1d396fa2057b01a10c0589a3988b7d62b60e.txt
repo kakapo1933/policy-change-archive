@@ -1,0 +1,34 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "馬場町紀念公園、陳文成紀念廣場"
+},
+{
+"en": null,
+"zh": "二二八相關場域"
+}
+],
+"flows": [
+"F1",
+"F7"
+],
+"id": "trails-rights",
+"name": {
+"en": "Human rights trail",
+"zh": "人權記憶徑"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "把台北的人權記憶串成一條獨立的文化徑，走過紀念公園與相關場域。"
+},
+"sources": [
+"trails"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": null
+}

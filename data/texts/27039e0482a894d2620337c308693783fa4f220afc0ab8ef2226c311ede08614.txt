@@ -1,0 +1,6 @@
+{
+"fact": "被稱為「史上最難捷運工程」的信義線東延段於2026-08-30通車，新增廣慈/奉天宮站。",
+"short": "信義線東延通車，謝謝市長！",
+"source": "https://www.gov.taipei/News_Content.aspx?n=2044902FC839D045&sms=72544237BBE4C5F6&s=7785F3CF2DB7A1D8",
+"tag": "交通"
+}

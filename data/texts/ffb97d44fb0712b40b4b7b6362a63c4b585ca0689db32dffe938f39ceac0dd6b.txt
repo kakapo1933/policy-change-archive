@@ -1,0 +1,22 @@
+{
+"date": "2026-06-15",
+"facts": [
+"2026-06-15 於新加坡頒獎，臺北獲 Special Mention",
+"同獲表揚：安特衛普、布達佩斯、廣州、天津；首獎為倫敦"
+],
+"id": "culture-lky",
+"sources": [
+{
+"published": "2026-06-15",
+"publisher": "World Cities Summit",
+"url": "https://www.worldcitiessummit.com.sg/qql/slot/u337/Media%20Releases/2026/London%20Conferred%20Lee%20Kuan%20Yew%20World%20City%20Prize%20at%20Award%20Ceremony.pdf"
+},
+{
+"published": "2026-06-14",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/6656/9566040"
+}
+],
+"status": "done",
+"title": "李光耀世界城市獎特別表揚"
+}

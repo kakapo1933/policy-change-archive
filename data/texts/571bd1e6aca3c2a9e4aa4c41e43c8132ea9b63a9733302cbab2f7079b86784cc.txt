@@ -1,0 +1,42 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "家用不斷電系統補助"
+},
+{
+"en": null,
+"zh": "保障醫療維生安全"
+}
+],
+"flows": [
+"F1",
+"F2",
+"F3",
+"F4",
+"F8",
+"F9",
+"F11"
+],
+"id": "welfare-power",
+"name": {
+"en": "Backup power",
+"zh": "罕病不斷電"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "補助罕病患者家用不斷電系統，保障醫療維生安全。"
+},
+"sources": [
+"welfare"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "罕病患者"
+}
+}

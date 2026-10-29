@@ -1,0 +1,49 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "提高基層同仁健檢補助金額"
+},
+{
+"en": null,
+"zh": "擴大適用對象"
+}
+],
+"flows": [
+"F1",
+"F2",
+"F11",
+"F12"
+],
+"id": "civil-health",
+"name": {
+"en": "Health checks",
+"zh": "健檢補助站"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第 1–8 個月盤點；第 8–18 個月完成試行"
+},
+"stages": [
+"m1-8",
+"m8-18"
+]
+},
+"plain": {
+"en": null,
+"zh": "提高基層同仁的健檢補助金額並擴大適用對象：照顧市民的人，市府先幫他照顧好身體。"
+},
+"sources": [
+"civil"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "基層同仁"
+}
+}

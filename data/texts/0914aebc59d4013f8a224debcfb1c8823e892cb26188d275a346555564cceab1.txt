@@ -1,0 +1,44 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "至少五方代表"
+},
+{
+"en": null,
+"zh": "市府、居民、樹木專家、保險業者、都計或樹管委員"
+}
+],
+"flows": [
+"F1",
+"F5",
+"F13"
+],
+"id": "forest-consult",
+"name": {
+"en": "Five-party consultation",
+"zh": "移除前五方溝通"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第三階段建立"
+},
+"stages": [
+"stage3"
+]
+},
+"plain": {
+"en": null,
+"zh": "移除路樹前，市府、居民、樹木專家、保險業者、都計或樹管委員至少五方一起討論。"
+},
+"sources": [
+"forest"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": null
+}

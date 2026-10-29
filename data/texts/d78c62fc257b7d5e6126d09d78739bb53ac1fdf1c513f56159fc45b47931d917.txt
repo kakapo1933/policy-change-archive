@@ -1,0 +1,29 @@
+{
+"date": "2025-09-29",
+"facts": [
+"和平新生天橋橋齡 42 年，2024-11-19 起拆除",
+"公館圓環 2025-09-13 動工，09-29 改為一般路口",
+"公館圓環 2025-03 首次宣布後曾因抗議暫停",
+"市長稱公館圓環 2025-09-29 改制後至同年底，該路口事故降 50%"
+],
+"id": "transport-pedestrian",
+"sources": [
+{
+"published": "2024-11-03",
+"publisher": "公視新聞網",
+"url": "https://news.pts.org.tw/article/722442"
+},
+{
+"published": "2025-03-25",
+"publisher": "公視新聞網",
+"url": "https://news.pts.org.tw/article/743736"
+},
+{
+"published": "2026-01-28",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9294370"
+}
+],
+"status": "done",
+"title": "人本路口：和平新生天橋拆除、公館圓環改制"
+}

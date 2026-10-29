@@ -1,0 +1,47 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "回應原物料價格上漲、天然災害、市場供需"
+},
+{
+"en": null,
+"zh": "先盤點現行餐費與供餐成本"
+}
+],
+"flows": [
+"F1",
+"F14"
+],
+"id": "lunch-price",
+"name": {
+"en": "Flexible meal pricing",
+"zh": "彈性餐費機制"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第一階段盤點；第二階段建立調整機制"
+},
+"stages": [
+"stage1",
+"stage2"
+]
+},
+"plain": {
+"en": null,
+"zh": "餐費能隨原物料價格、天然災害與市場供需調整，避免成本壓力影響孩子的餐食品質。"
+},
+"sources": [
+"lunch"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "學生、學校與供餐業者"
+}
+}

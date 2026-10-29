@@ -1,0 +1,23 @@
+{
+"date": "2026-07",
+"facts": [
+"2026-07 起每月點數由 480 點增至 600 點",
+"2026-01-02 起可折抵北市聯醫門診掛號費",
+"計程車每趟折抵上限提高至 85 點"
+],
+"id": "care-senior-card",
+"sources": [
+{
+"published": "2026-01-07",
+"publisher": "工商時報",
+"url": "https://www.ctee.com.tw/news/20260107700994-431401"
+},
+{
+"published": "2026-07-27",
+"publisher": "風傳媒",
+"url": "https://www.storm.mg/article/11151718"
+}
+],
+"status": "done",
+"title": "敬老愛心卡擴充"
+}

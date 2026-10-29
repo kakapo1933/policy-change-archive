@@ -1,0 +1,49 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "表單填寫、數據整理、基礎行政流程自動化"
+},
+{
+"en": null,
+"zh": "不增加同仁額外研習負擔"
+}
+],
+"flows": [
+"F1",
+"F2",
+"F11",
+"F12"
+],
+"id": "civil-ai",
+"name": {
+"en": "AI support team",
+"zh": "AI 支援小隊基地"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第 1–8 個月組建 AI 派駐團隊；第 8–18 個月高重複業務啟動 AI 協作"
+},
+"stages": [
+"m1-8",
+"m8-18"
+]
+},
+"plain": {
+"en": null,
+"zh": "專業 AI 團隊進駐工作現場，把重複的填表、數據整理與基礎行政流程自動化。"
+},
+"sources": [
+"civil"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "基層同仁"
+}
+}

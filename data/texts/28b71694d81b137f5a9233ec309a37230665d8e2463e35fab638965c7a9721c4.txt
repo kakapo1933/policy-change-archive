@@ -1,0 +1,42 @@
+{
+"facts": [
+{
+"en": null,
+"tile": {
+"en": null,
+"zh": "每月 600 點"
+},
+"zh": "設籍台北 0–18 歲，每人每月 600 點"
+},
+{
+"en": null,
+"zh": "文化幣、運動幣、分齡閱讀禮袋"
+}
+],
+"flows": [
+"F1",
+"F7"
+],
+"id": "trails-card",
+"name": {
+"en": "Family card",
+"zh": "親子同行卡"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "文化徑與山林徑和親子同行卡串聯，支持全家一起探索城市。"
+},
+"sources": [
+"trails",
+"card"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "0–18 歲孩子與家長"
+}
+}

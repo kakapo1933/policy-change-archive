@@ -1,0 +1,47 @@
+{
+"category": "性別",
+"confidence": "medium",
+"critical": [
+"2022-12 就職當天即被議員（顏若芳等）批評政見跳票，指女性閣員僅約六分之一；蔣萬安回應三分之一是目標、「一定會逐步達成」，任用以專業為主、性別為重要考量之一。"
+],
+"deadline": null,
+"evidence": [
+"2022-12-26 就職：一級首長 31 人中女性 5 人，約六分之一（中央社）；今周刊計為 16%，為六都最低之一。",
+"2023-03-07：臺北市性別平等辦公室統計女性首長（含副市長，不含代理及兼任）比例 21.43%，稱為馬英九市長任內以來最高（READr 轉引）。",
+"2025-03-16 小內閣改組：余祥（觀傳局）、周羿希（青年局）、游竹萍（體育局，北市首位女性體育局長）接任，公視報導此次有 3 位女性接任局長。",
+"未查到 2025 年改組後或 2026 年市府公布的女性閣員整體人數與比例。"
+],
+"id": "p22-gender-01",
+"origin": "READr 政見資料庫",
+"origin_url": "https://whoareyou.readr.tw/politics/443",
+"pledge": "女性閣員提升到三分之一",
+"related": [],
+"sources": [
+{
+"published": "2022-12-26",
+"publisher": "中央社",
+"title": "小內閣3分之1女性政見跳票？蔣萬安：逐步達成",
+"url": "https://www.cna.com.tw/news/aloc/202212260043.aspx"
+},
+{
+"published": "2022-12-26",
+"publisher": "今周刊",
+"title": "「高跟鞋」難打進派系平衡組閣？六都小內閣北市桃園女首長比率僅1成多！",
+"url": "https://www.businesstoday.com.tw/article/category/80392/post/202212260019/"
+},
+{
+"published": "2023-10-19",
+"publisher": "READr",
+"title": "蔣萬安 - 女性閣員提升到三分之一｜READr 政商人物資料庫",
+"url": "https://whoareyou.readr.tw/politics/detail/5522"
+},
+{
+"published": "2025-03-16",
+"publisher": "公視新聞網",
+"title": "台北市府小內閣改組 6局處首長異動",
+"url": "https://news.pts.org.tw/article/742383"
+}
+],
+"status": "partial",
+"summary": "就任時一級首長 31 人中女性 5 人（約 16%，約六分之一）；2023-03 性平辦統計女性首長（含副市長）比例 21.43%；2025-03 小內閣改組，有 3 位女性接任局處首長。查無市府公布的最新整體比例，現有資料均未達三分之一。"
+}

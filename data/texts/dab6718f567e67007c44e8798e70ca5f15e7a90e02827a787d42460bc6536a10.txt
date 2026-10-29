@@ -1,0 +1,6 @@
+{
+"fact": "任內前三年社會住宅完工4,805戶，2026年預計再完工1,975戶。",
+"short": "社宅完工4805戶，安居台北！",
+"source": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=B395A3F378442611&sms=72544237BBE4C5F6",
+"tag": "居住"
+}

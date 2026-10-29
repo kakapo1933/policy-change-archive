@@ -1,0 +1,53 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "青年體育海外實習"
+},
+{
+"en": null,
+"zh": "國際社區型運動賽事"
+},
+{
+"en": null,
+"zh": "運動平權、運動外交"
+}
+],
+"flows": [
+"F1",
+"F7",
+"F8",
+"F13"
+],
+"id": "sport-intern",
+"name": {
+"en": "Overseas sport internships",
+"zh": "國際舞台"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "第 1 年擴大實習、試辦賽事；第 2–3 年擴大舉辦"
+},
+"stages": [
+"year1",
+"year2-3"
+]
+},
+"plain": {
+"en": null,
+"zh": "市府帶頭推動青年體育海外實習，並舉辦國際社區型運動賽事，讓運動交流常態化。"
+},
+"sources": [
+"sport"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "台北青年"
+}
+}

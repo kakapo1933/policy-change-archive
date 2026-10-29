@@ -1,0 +1,23 @@
+{
+"date": "2026-06-22",
+"facts": [
+"2026 年擇動物園等封閉園區試辦接駁",
+"2027 年北士科沙盒、公車專用道測試",
+"目標 2029 年上路，需中央協助修法發照"
+],
+"id": "transport-autonomous",
+"sources": [
+{
+"published": "2026-06-22",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/6656/9579959"
+},
+{
+"published": "2026-06-22",
+"publisher": "公視新聞網",
+"url": "https://news.pts.org.tw/article/814192"
+}
+],
+"status": "proposal",
+"title": "無人自駕公車分階段計畫"
+}

@@ -1,0 +1,39 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "凱達格蘭文化館、原住民文化主題公園、臺北市客家文化主題公園"
+},
+{
+"en": null,
+"zh": "四四南村、中心新村、蟾蜍山煥民新村"
+},
+{
+"en": null,
+"zh": "台北車站方格大廳、台北清真寺"
+}
+],
+"flows": [
+"F1",
+"F7",
+"F18"
+],
+"id": "trails-diverse",
+"name": {
+"en": "Diverse communities trail",
+"zh": "多元族群徑"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "把原住民、眷村與國宅、客家與新移民的記憶納入文化徑。"
+},
+"sources": [
+"trails"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": null
+}
