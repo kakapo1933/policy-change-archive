@@ -83,7 +83,7 @@ class DiscoveryTests(unittest.TestCase):
         entries=[{'type':'blob','path':p,'size':10} for p in ['index.html','data/policies.json','main.js','src/main.tsx','docs/cover.html','vendor/lib.js','admin/index.html','assets/photo.png','package-lock.json','tests/test.js']]
         result=discovery.discover(site,lambda url:(json.dumps({'tree':entries}).encode(),200,{}),[])
         self.assertEqual({s['name'] for s in result.sources},{'index.html','data/policies.json','main.js','src/main.tsx'})
-        self.assertEqual(result.coverage['repository_files'],3)
+        self.assertEqual(result.coverage['repository_files'],4)
 
 
 class CrawlIntegrationTests(unittest.TestCase):
