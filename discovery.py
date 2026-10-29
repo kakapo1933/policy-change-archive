@@ -321,7 +321,9 @@ def discover(site: dict, getter, previous_history: list[dict], sleep=time.sleep)
                 cfg.get("repository_raw_base") and url.startswith(cfg["repository_raw_base"].rstrip("/") + "/")
             )
             if permitted and (robots is None or robots is False or not canonical(url, host, prefixes) or robots.can_fetch("PolicyWatch", url)):
-                result.sources.append({"id": sid, "url": url, "name": rec.get("name") or unquote(urlsplit(url).path), "type": rec.get("kind") or "html", "discovered_by": "previously-observed", "listed": False})
+                # Failed or capped discovery cannot establish that a page was unlisted.
+                listing_complete = not errors and not hit_cap and robots is not False
+                result.sources.append({"id": sid, "url": url, "name": rec.get("name") or unquote(urlsplit(url).path), "type": rec.get("kind") or "html", "discovered_by": "previously-observed", "listed": False if listing_complete else None})
 
     for rec in previous_history:
         sid = rec.get("source_id", "")

@@ -76,6 +76,20 @@ class DiscoveryTests(unittest.TestCase):
         result = discovery.discover(site, lambda u: (discovery.body_from_json(data), 200, {}), [])
         self.assertEqual(result.sources[0]['name'], '公車安全改革')
 
+    def test_incomplete_manifest_does_not_falsely_mark_unlisted(self):
+        raw = 'https://raw.githubusercontent.com/demo/example/main/'
+        src = raw + 'index.html'
+        tree = 'https://api.github.com/repos/demo/example/git/trees/main?recursive=1'
+        site = {'id':'demo','homepage':'https://github.com/demo/example','sources':[],
+                'crawl':{'repository_tree':tree,'repository_raw_base':raw}}
+        prior = [{'site_id':'demo','source_id':discovery.source_id(src),'url':src,'name':'index.html','kind':'html','status':'ok'}]
+        def getter(url):
+            raise HTTPError(url, 503, 'Service unavailable', {}, None)
+        found = discovery.discover(site,getter,prior)
+        self.assertFalse(found.coverage['complete'])
+        self.assertEqual(len(found.sources),1)
+        self.assertIsNone(found.sources[0]['listed'])
+
     def test_repo_manifest_filter(self):
         root='https://raw.githubusercontent.com/demo/example/main'
         tree='https://api.github.com/repos/demo/example/git/trees/main?recursive=1'
