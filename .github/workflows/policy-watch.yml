@@ -29,34 +29,44 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          fetch-depth: 0
           persist-credentials: true
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Run unit tests
         run: python3 -m unittest discover -s tests -v
-      - name: Capture and compare
-        id: capture
-        continue-on-error: true
-        run: python3 monitor.py
-      - name: Validate output
+      - name: Capture and commit with safe retry
+        shell: bash
         run: |
-          python3 -m json.tool data/history.json > /dev/null
-          python3 -m json.tool data/summary.json > /dev/null
-      - name: Commit observations
-        run: |
+          set -euo pipefail
           git config user.name 'policy-change-archive[bot]'
           git config user.email 'policy-change-archive[bot]@users.noreply.github.com'
-          git add data/
-          if ! git diff --cached --quiet; then
+          for attempt in 1 2 3; do
+            # Never overwrite newer observations if main advanced during a run.
+            git fetch origin main
+            git checkout -B main origin/main
+            git clean -fd data/
+            capture_rc=0
+            python3 monitor.py || capture_rc=$?
+            python3 -m json.tool data/history.json > /dev/null
+            python3 -m json.tool data/summary.json > /dev/null
+            git add data/
+            if git diff --cached --quiet; then
+              exit "$capture_rc"
+            fi
             git commit -m 'chore: archive daily observations'
-            git push
-          fi
-      - name: Report errors
-        if: steps.capture.outcome == 'failure'
-        run: |
-          echo "::warning::One or more sources failed to capture. Check data/history.json."
-          echo "Capture failures were saved for audit." >> "$GITHUB_STEP_SUMMARY"
+            if git push origin HEAD:main; then
+              if [ "$capture_rc" -ne 0 ]; then
+                echo '::error::All monitored sources failed; error records were saved.'
+              fi
+              exit "$capture_rc"
+            fi
+            echo "::warning::main advanced during capture (attempt $attempt); recapturing from latest history."
+            sleep 2
+          done
+          echo '::error::Could not persist observations after three attempts; no history was overwritten.'
+          exit 1
 
   publish:
     needs: capture
@@ -82,8 +92,6 @@ jobs:
           touch public/.nojekyll
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - name: Upload static site
         uses: actions/upload-pages-artifact@v4
         with:
