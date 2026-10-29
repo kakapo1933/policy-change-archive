@@ -67,6 +67,15 @@ class DiscoveryTests(unittest.TestCase):
         self.assertEqual(len(updated.missing_virtual),1)
         self.assertIn('gym', updated.missing_virtual[0]['url'])
 
+    def test_bilingual_policy_titles_are_human_readable(self):
+        root = 'https://demo.example'
+        url = root + '/policies.json'
+        site = {'id':'demo', 'homepage':root+'/', 'sources':[{'id':'policies','url':url,'type':'json'}],
+                'crawl':{'policy_datasets':[{'source_id':'policies','kind':'heart-policies'}]}}
+        data = {'islands':[{'buildings':[{'id':'bus','name':{'zh':'公車安全改革','en':'Bus safety'}, 'detail':'改善公車政策'}]}]}
+        result = discovery.discover(site, lambda u: (discovery.body_from_json(data), 200, {}), [])
+        self.assertEqual(result.sources[0]['name'], '公車安全改革')
+
     def test_repo_manifest_filter(self):
         root='https://raw.githubusercontent.com/demo/example/main'
         tree='https://api.github.com/repos/demo/example/git/trees/main?recursive=1'
