@@ -1,0 +1,86 @@
+{
+  "sites": [
+    {
+      "id": "heart",
+      "name": "HEART 政策島",
+      "owner": "沈伯洋政策網站",
+      "homepage": "https://puma.taipei/heart-island",
+      "sources": [
+        {
+          "id": "homepage",
+          "name": "政策島首頁",
+          "url": "https://puma.taipei/heart-island",
+          "type": "html"
+        },
+        {
+          "id": "policies",
+          "name": "HEART 政策原始資料",
+          "url": "https://puma.taipei/heart-island-assets/policies.json",
+          "type": "json"
+        }
+      ],
+      "comparison_sources": [
+        "policies"
+      ]
+    },
+    {
+      "id": "encore",
+      "name": "臺北安可大舞台",
+      "owner": "競選相關平台",
+      "homepage": "https://encore.taipei/",
+      "sources": [
+        {
+          "id": "homepage",
+          "name": "安可大舞台首頁",
+          "url": "https://encore.taipei/",
+          "type": "html"
+        },
+        {
+          "id": "platform",
+          "name": "黃金十年政見原始資料",
+          "url": "https://raw.githubusercontent.com/dAAAb/encore-taipei/main/src/data/platform.json",
+          "type": "json"
+        },
+        {
+          "id": "achievements",
+          "name": "施政成績原始資料",
+          "url": "https://raw.githubusercontent.com/dAAAb/encore-taipei/main/src/data/achievements.json",
+          "type": "json"
+        }
+      ],
+      "comparison_sources": [
+        "platform",
+        "achievements"
+      ]
+    },
+    {
+      "id": "policy-island",
+      "name": "臺北施政島",
+      "owner": "獨立創作者專案（非北市府官網）",
+      "homepage": "https://github.com/bounce12340/chiang-wanan-policy-island",
+      "sources": [
+        {
+          "id": "homepage",
+          "name": "首頁原始碼",
+          "url": "https://raw.githubusercontent.com/bounce12340/chiang-wanan-policy-island/main/index.html",
+          "type": "html"
+        },
+        {
+          "id": "policies",
+          "name": "政策原始資料",
+          "url": "https://raw.githubusercontent.com/bounce12340/chiang-wanan-policy-island/main/data/policies.json",
+          "type": "json"
+        },
+        {
+          "id": "pledges",
+          "name": "2022 政見追蹤資料",
+          "url": "https://raw.githubusercontent.com/bounce12340/chiang-wanan-policy-island/main/data/pledges2022.json",
+          "type": "json"
+        }
+      ],
+      "comparison_sources": [
+        "policies"
+      ]
+    }
+  ]
+}

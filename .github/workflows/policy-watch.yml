@@ -1,0 +1,92 @@
+name: Policy Change Archive — daily evidence snapshots
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "monitor.py"
+      - "targets.json"
+      - "site/**"
+      - "tests/**"
+      - "README.md"
+      - ".github/workflows/policy-watch.yml"
+  schedule:
+    - cron: "17 1 * * *" # 09:17 Asia/Taipei; best effort
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: policy-archive-daily
+  cancel-in-progress: false
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run unit tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Capture and compare
+        id: capture
+        continue-on-error: true
+        run: python3 monitor.py
+      - name: Validate output
+        run: |
+          python3 -m json.tool data/history.json > /dev/null
+          python3 -m json.tool data/summary.json > /dev/null
+      - name: Commit observations
+        run: |
+          git config user.name 'policy-change-archive[bot]'
+          git config user.email 'policy-change-archive[bot]@users.noreply.github.com'
+          git add data/
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: archive daily observations'
+            git push
+          fi
+      - name: Report errors
+        if: steps.capture.outcome == 'failure'
+        run: |
+          echo "::warning::One or more sources failed to capture. Check data/history.json."
+          echo "Capture failures were saved for audit." >> "$GITHUB_STEP_SUMMARY"
+
+  publish:
+    needs: capture
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Prepare static website
+        run: |
+          mkdir -p public/site public/data
+          cp site/index.html public/site/index.html
+          cp -r data/. public/data/
+          printf '<!doctype html><html lang="zh-Hant-TW"><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=./site/"><title>政策變更檔案館</title><a href="./site/">前往監測站</a></html>\n' > public/index.html
+          touch public/.nojekyll
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - name: Upload static site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: public
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

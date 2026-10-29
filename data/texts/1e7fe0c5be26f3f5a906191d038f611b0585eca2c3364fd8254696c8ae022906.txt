@@ -1,0 +1,1696 @@
+{
+"meta": {
+"campaign": {
+"facts": [
+"2026-09-29 競選辦公室成立，主軸「台北安可」，競辦稱意指「安居樂業，大有可為」",
+"2026-10-21 表示若連任將做滿 4 年任期",
+"2026-10-26 競選總部成立；2026-11-12 起依法請假投入選戰"
+],
+"sources": [
+{
+"published": "2026-09-29",
+"publisher": "中央社",
+"url": "https://www.cna.com.tw/news/aipl/202609290204.aspx"
+},
+{
+"published": "2026-10-21",
+"publisher": "公視新聞網",
+"url": "https://news.pts.org.tw/article/832289"
+},
+{
+"published": "2026-10-22",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/124652/9829847"
+},
+{
+"published": "2026-10-21",
+"publisher": "ETtoday",
+"url": "https://www.ettoday.net/news/20261021/3258312.htm"
+}
+]
+},
+"platformNote": "截至 2026-10-23，尚未查得蔣萬安發表完整的連任政見白皮書；「連任政見」類只收錄競選期間（2026-09-29 競選辦公室成立後）公開提出的未來承諾。",
+"term": "2022-12-25 就任；2026-11-28 地方選舉",
+"title": "臺北施政島",
+"updated": "2026-10-23"
+},
+"themes": [
+{
+"color": "#2f7dd3",
+"id": "transport",
+"items": [
+{
+"date": "2026-08-30",
+"facts": [
+"2026-08-30 通車，新增 R01 廣慈／奉天宮站為端點",
+"自象山站東延約 1.4 公里，一座新站",
+"北捷預估每日增加約 2 萬人次運量"
+],
+"id": "transport-xinyi-east",
+"sources": [
+{
+"published": "2026-08-30",
+"publisher": "自由時報",
+"url": "https://news.ltn.com.tw/news/Taipei/breakingnews/5557116"
+},
+{
+"published": "2026-08-20",
+"publisher": "TVBS",
+"url": "https://news.tvbs.com.tw/life/4010084"
+}
+],
+"status": "done",
+"title": "捷運信義線東延段通車"
+},
+{
+"date": "2026-08-03",
+"facts": [
+"截至 2026-08-03 第一期整體進度逾 85%",
+"約 9.5 公里，9 座地下車站及 1 座機廠，無人駕駛",
+"公視報導最快 2027 年底完工；市長稱明年完工"
+],
+"id": "transport-wanda",
+"sources": [
+{
+"published": "2026-08-03",
+"publisher": "公視新聞網",
+"url": "https://news.pts.org.tw/article/820556"
+},
+{
+"published": "2026-09-07",
+"publisher": "中央社（聯合新聞網）",
+"url": "https://udn.com/news/story/7323/9739546"
+}
+],
+"status": "in_progress",
+"title": "捷運萬大線第一期"
+},
+{
+"date": "2025-04-16",
+"facts": [
+"南環 CF670 標 2025-03-30 開工，長 3.5 公里、4 站",
+"北環 CF690B 標 2025-04-16 開工，南北環 8 標全數動工"
+],
+"id": "transport-circular-ns",
+"sources": [
+{
+"published": "2025-03-30",
+"publisher": "臺北市政府",
+"url": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&sms=72544237BBE4C5F6&s=82A1924A60A5F21E"
+},
+{
+"published": "2025-04-16",
+"publisher": "臺北市政府秘書處",
+"url": "https://sec.gov.taipei/News_Content.aspx?n=49B4C3242CB7658C&s=6F737450ED53D3BF"
+}
+],
+"status": "in_progress",
+"title": "捷運環狀線南環段、北環段動工"
+},
+{
+"date": "2026-04-17",
+"facts": [
+"全長約 13.25 公里，10 站 1 機廠，分 6 標",
+"CF763 標 2024-12 開工，CF720 標 2026-04-17 開工",
+"捷運局稱環狀線朝 2032 年全線通車邁進"
+],
+"id": "transport-circular-east",
+"sources": [
+{
+"published": "2025-11-08",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9126590"
+},
+{
+"published": "2026-04-20",
+"publisher": "中時新聞網",
+"url": "https://house.chinatimes.com/20260420001376-264410"
+},
+{
+"published": "2026-04-17",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9447843"
+}
+],
+"status": "in_progress",
+"title": "捷運環狀線東環段"
+},
+{
+"date": "2026-05-05",
+"facts": [
+"北市段約 11.02 公里，規劃為中運量系統",
+"綜合規劃第 5 版修正，2026-05-05 送新北轉交通部",
+"捷運局目標核定後 2 年內動工"
+],
+"id": "transport-minsheng",
+"sources": [
+{
+"published": "2026-05-08",
+"publisher": "工商時報",
+"url": "https://www.ctee.com.tw/news/20260508701651-431401"
+}
+],
+"status": "proposal",
+"title": "捷運民生汐止線報核"
+},
+{
+"date": "2024-02-28",
+"facts": [
+"2024-02-28 起恢復騎乘前 30 分鐘免費，超過後依原費率計費"
+],
+"id": "transport-youbike",
+"sources": [
+{
+"published": "2024-02-27",
+"publisher": "環境資訊中心",
+"url": "https://e-info.org.tw/node/238570"
+}
+],
+"status": "done",
+"title": "YouBike 前 30 分鐘免費恢復實施"
+},
+{
+"date": "2025-09-29",
+"facts": [
+"和平新生天橋橋齡 42 年，2024-11-19 起拆除",
+"公館圓環 2025-09-13 動工，09-29 改為一般路口",
+"公館圓環 2025-03 首次宣布後曾因抗議暫停",
+"市長稱公館圓環 2025-09-29 改制後至同年底，該路口事故降 50%"
+],
+"id": "transport-pedestrian",
+"sources": [
+{
+"published": "2024-11-03",
+"publisher": "公視新聞網",
+"url": "https://news.pts.org.tw/article/722442"
+},
+{
+"published": "2025-03-25",
+"publisher": "公視新聞網",
+"url": "https://news.pts.org.tw/article/743736"
+},
+{
+"published": "2026-01-28",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9294370"
+}
+],
+"status": "done",
+"title": "人本路口：和平新生天橋拆除、公館圓環改制"
+},
+{
+"date": "2025-12-22",
+"facts": [
+"市長核定 4 年計畫，稱公共運輸路權高於汽機車",
+"2026 年完成 1,080 處公車站紅線延伸至少 5 公尺",
+"2028 年底前調整 90 處公車彎漸變段"
+],
+"id": "transport-bus",
+"sources": [
+{
+"published": "2025-12-22",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9219232"
+}
+],
+"status": "in_progress",
+"title": "公車駕駛道路環境改善計畫（2025–2028）"
+},
+{
+"date": "2026-06-22",
+"facts": [
+"2026 年擇動物園等封閉園區試辦接駁",
+"2027 年北士科沙盒、公車專用道測試",
+"目標 2029 年上路，需中央協助修法發照"
+],
+"id": "transport-autonomous",
+"sources": [
+{
+"published": "2026-06-22",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/6656/9579959"
+},
+{
+"published": "2026-06-22",
+"publisher": "公視新聞網",
+"url": "https://news.pts.org.tw/article/814192"
+}
+],
+"status": "proposal",
+"title": "無人自駕公車分階段計畫"
+}
+],
+"name": "交通",
+"summary": "捷運路網延伸、公車路權、YouBike 與行人友善路口改造。"
+},
+{
+"color": "#c0603a",
+"id": "development",
+"items": [
+{
+"date": "2026-10-08",
+"facts": [
+"約 300 公頃：AI 產業 100、中央公園 110、永續生活 90 公頃",
+"市府估約 200 家企業、就業 6.5 萬人（市府說法）",
+"市府稱可解除約 570 公頃受航高限制的更新地區"
+],
+"id": "development-songshan",
+"sources": [
+{
+"published": "2026-10-08",
+"publisher": "中央社",
+"url": "https://cna.com.tw/news/aipl/202610080124.aspx"
+},
+{
+"published": "2026-10-21",
+"publisher": "中央社",
+"url": "https://www.cna.com.tw/news/aipl/202610210062.aspx"
+}
+],
+"status": "proposal",
+"title": "提案：松山機場遷移、打造臺北 AI 園區"
+},
+{
+"date": "2026-10-21",
+"facts": [
+"交通部：需就國家整體角度審慎評估",
+"國防部長：松機屬國防韌性一環，需審慎評估",
+"10-21 市長稱跨部會小組尚未成立"
+],
+"id": "development-songshan-central",
+"sources": [
+{
+"published": "2026-10-08",
+"publisher": "中央社",
+"url": "https://cna.com.tw/news/aipl/202610080126.aspx"
+},
+{
+"published": "2026-10-14",
+"publisher": "中央社",
+"url": "https://cna.com.tw/news/aipl/202610140035.aspx"
+},
+{
+"published": "2026-10-21",
+"publisher": "公視新聞網",
+"url": "https://news.pts.org.tw/article/832289"
+}
+],
+"status": "proposal",
+"title": "松機遷移：中央回應"
+},
+{
+"date": "2026-04-30",
+"facts": [
+"2022-11 開工（前任期間），預計 2027 年底完工",
+"市府估可分回約 606 億元產權"
+],
+"id": "development-twin-towers",
+"sources": [
+{
+"published": "2026-04-30",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9474307"
+},
+{
+"published": "",
+"publisher": "台北雙星官網",
+"url": "https://www.taipeitwins.com/tw/developmentProgress"
+}
+],
+"status": "in_progress",
+"title": "西區門戶：台北雙星（北車 C1/D1）"
+},
+{
+"date": "2026-10-15",
+"facts": [
+"2026-10-15 啟用，為新光人壽 BOT 案",
+"地上 19 層、地下 4 層，1–2 樓為客運轉運站",
+"連通南港車站，可轉乘台鐵、高鐵、板南線"
+],
+"id": "development-nangang-bus",
+"sources": [
+{
+"published": "2026-10-16",
+"publisher": "中時新聞網",
+"url": "https://www.chinatimes.com/realtimenews/20261016002898-260410"
+}
+],
+"status": "done",
+"title": "東區門戶：南港轉運站東站啟用"
+},
+{
+"date": "2023-11-09",
+"facts": [
+"2023-11-09 動工，1 棟 32 層商辦及 3 棟 37 層住宅",
+"民間投資 351 億元，預計 2030 年完工"
+],
+"id": "development-nangang-star",
+"sources": [
+{
+"published": "2023-11-09",
+"publisher": "自由時報",
+"url": "https://ec.ltn.com.tw/article/breakingnews/4484556"
+}
+],
+"status": "in_progress",
+"title": "東區門戶：南港之星公辦都更"
+}
+],
+"name": "城市發展",
+"summary": "松山機場遷移構想、東西區門戶等大型開發案。"
+},
+{
+"color": "#6c5ce7",
+"id": "industry",
+"items": [
+{
+"date": "2026-02-11",
+"facts": [
+"2026-02-11 市府與台灣輝達簽約",
+"地上權 50 年可延長 20 年，權利金 122 億元",
+"輝達稱投入逾 400 億元、逾 1 萬個工作機會"
+],
+"id": "industry-nvidia-sign",
+"sources": [
+{
+"published": "2026-02-11",
+"publisher": "公視新聞網",
+"url": "https://news.pts.org.tw/article/794980"
+},
+{
+"published": "2026-02-11",
+"publisher": "民報",
+"url": "https://www.peoplenews.tw/articles/economic-news/16822"
+}
+],
+"status": "done",
+"title": "輝達海外總部落腳北士科 T17/T18（簽約）"
+},
+{
+"date": "2026-07-15",
+"facts": [
+"2026-07-15 建照申請掛件",
+"黃仁勳稱預計 2026 年底動工、2030 年啟用",
+"截至查證日未見動工報導；都審尚待送件，周邊高壓電塔地下化仍在進行"
+],
+"id": "industry-nvidia-build",
+"sources": [
+{
+"published": "2026-07-16",
+"publisher": "中時新聞網",
+"url": "https://www.chinatimes.com/realtimenews/20260716003821-260405"
+},
+{
+"published": "2026-05-27",
+"publisher": "中央社",
+"url": "https://www.cna.com.tw/news/afe/202605270059.aspx"
+}
+],
+"status": "in_progress",
+"title": "輝達北士科總部興建進度"
+},
+{
+"date": "2026-07-30",
+"facts": [
+"T3、T4、T12 約 700、1,500、2,000 坪",
+"地上權 50 年可延長 20 年，三階段評選",
+"投標截止 2026-10-30"
+],
+"id": "industry-beishike-land",
+"sources": [
+{
+"published": "2026-07-30",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7240/9660037"
+}
+],
+"status": "in_progress",
+"title": "北士科最後 3 筆市有地招商"
+},
+{
+"date": "2026-09-03",
+"facts": [
+"市長稱規劃打造南軟到北士科的科技廊道",
+"構想串連南港、內科、北士科及社子島"
+],
+"id": "industry-corridor",
+"sources": [
+{
+"published": "2026-09-03",
+"publisher": "新頭殼",
+"url": "https://newtalk.tw/news/view/2026-09-03/1057562"
+},
+{
+"published": "2025-12-17",
+"publisher": "經濟日報",
+"url": "https://money.udn.com/money/story/5621/9208541"
+}
+],
+"status": "proposal",
+"title": "南港—內科—北士科科技廊帶"
+},
+{
+"date": "2026-04-27",
+"facts": [
+"市府委託顧問評估，營區約 3 公頃",
+"產發局預計 2026 年底提出評估建議"
+],
+"id": "industry-songnan",
+"sources": [
+{
+"published": "2026-04-27",
+"publisher": "公視新聞網",
+"url": "https://news.pts.org.tw/article/805647"
+}
+],
+"status": "proposal",
+"title": "松南營區 AI 產業園區可行性評估"
+},
+{
+"date": "2024-10-09",
+"facts": [
+"單案補助最高 1,500 萬元",
+"對象為設立 1–8 年、近 3 年募資至少 500 萬元的新創",
+"另提供 30 萬元 AI 算力資源"
+],
+"id": "industry-startup",
+"sources": [
+{
+"published": "2024-10-09",
+"publisher": "大紀元",
+"url": "https://www.epochtimes.com/b5/24/10/9/n14347267.htm"
+}
+],
+"status": "done",
+"title": "新創拔尖計畫"
+},
+{
+"date": "2024-06-01",
+"facts": [
+"臺北市青年局 2024-06-01 成立",
+"實習後補助 1.5 萬元、弱勢青年 3 萬元",
+"提供創業「一案到底」輔導"
+],
+"id": "industry-youth",
+"sources": [
+{
+"published": "2025-11-25",
+"publisher": "NOWnews",
+"url": "https://www.nownews.com/news/6757833"
+},
+{
+"published": "2026-10-06",
+"publisher": "數位時代",
+"url": "https://www.bnext.com.tw/article/92509/taipei-mayor-2026-shen-chiang-tech-policy"
+}
+],
+"status": "done",
+"title": "青年局成立與青年職涯措施"
+}
+],
+"name": "產業科技",
+"summary": "北士科招商、科技廊帶、新創與青年就業。"
+},
+{
+"color": "#f08c3a",
+"id": "housing",
+"items": [
+{
+"date": "2026-10-06",
+"facts": [
+"市長稱北市社宅共 2 萬 4,860 戶（2026-10-06）",
+"景豐社宅二區 2026-10-06 動土，80 戶，預計 2030 年完工",
+"市府稱中央對北市社宅補助減列 53.1 億元"
+],
+"id": "housing-social",
+"sources": [
+{
+"published": "2026-10-06",
+"publisher": "中時新聞網",
+"url": "https://www.chinatimes.com/realtimenews/20261006003031-260407"
+},
+{
+"published": "2026-09-02",
+"publisher": "自立晚報",
+"url": "https://news.pchome.com.tw/public/idn/20260902/index-78829364365969224016.html"
+}
+],
+"status": "in_progress",
+"title": "社會住宅總量與新案"
+},
+{
+"date": "2024-09-19",
+"facts": [
+"對象：婚後 2 年內或育有 0–6 歲子女家庭",
+"租金約為市價 7 折以下，另依所得補貼 3,000–11,000 元",
+"至 2026-01-31 釋出 7 處 175 戶，累計申請 6,987 件"
+],
+"id": "housing-happy",
+"sources": [
+{
+"published": "2024-09-19",
+"publisher": "臺北市都市發展局",
+"url": "https://udd.gov.taipei/events/fhqekzq-20370"
+},
+{
+"published": "2026-02-04",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9307693"
+}
+],
+"status": "in_progress",
+"title": "幸福住宅（新婚／育兒家庭租屋）"
+},
+{
+"date": "2026-03-20",
+"facts": [
+"未滿 40 歲單身青年每月加碼 1,000 元",
+"45 歲以下已婚無子女家庭每月加碼 2,500 元",
+"育有 12 歲以下子女，每名每月加碼 1,000 元"
+],
+"id": "housing-rent-subsidy",
+"sources": [
+{
+"published": "2026-03-20",
+"publisher": "臺北市都市發展局",
+"url": "https://rent-allowance.udd.gov.taipei/documents/grade/%E8%87%BA%E5%8C%97%E5%B9%B8%E7%A6%8F%E7%A7%9F-%E6%B0%91%E9%96%93%E7%A7%9F%E5%B1%8B%E7%A7%9F%E9%87%91%E5%8A%A0%E7%A2%BC%E8%A3%9C%E8%B2%BC%E8%A8%88%E7%95%AB%E5%8F%8A%E9%99%84%E8%A1%A8.pdf"
+}
+],
+"status": "done",
+"title": "臺北幸福租：民間租屋租金加碼補貼"
+},
+{
+"date": "2025",
+"facts": [
+"標籤：歡迎長者、學生、青年、設籍、租補",
+"配合租金補貼的房東，每戶最高可減免地價稅、房屋稅 1 萬元"
+],
+"id": "housing-friendly",
+"sources": [
+{
+"published": "2025-08-04",
+"publisher": "台灣英文新聞",
+"url": "https://www.taiwannews.com.tw/zh/news/6170923"
+}
+],
+"status": "done",
+"title": "友善屋源租屋標籤"
+},
+{
+"date": "2025-11-25",
+"facts": [
+"近 3 年都更報核 353 件，年均 117 件",
+"2023 年公辦都更第一階段門檻由 90% 降至 75%"
+],
+"id": "housing-renewal",
+"sources": [
+{
+"published": "2025-11-25",
+"publisher": "中央社（聯合新聞網）",
+"url": "https://udn.com/news/story/7323/9161223"
+},
+{
+"published": "2023-03-03",
+"publisher": "台灣好新聞",
+"url": "https://n.yam.com/Article/20230303919141"
+}
+],
+"status": "in_progress",
+"title": "都市更新與危老重建"
+},
+{
+"date": "2026-01-06",
+"facts": [
+"北市有 23 處老舊整宅",
+"南機場三號完成招商",
+"信維大樓同意逾 90%，住都中心為實施者"
+],
+"id": "housing-public-renewal",
+"sources": [
+{
+"published": "2026-01-06",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9246700"
+}
+],
+"status": "in_progress",
+"title": "公辦都更（老舊整宅）進度"
+},
+{
+"date": "2026-10-16",
+"facts": [
+"2026-10-16 宣布，公辦都更 7599 第一階段門檻擬由 75% 降至 50%",
+"大街廓更新：3,000 平方公尺以上基地優先、提高容積獎勵",
+"更新案加入托老、托幼與幸福住宅；未公布實施日期"
+],
+"id": "housing-renewal-new",
+"sources": [
+{
+"published": "2026-10-17",
+"publisher": "自由時報",
+"url": "https://news.ltn.com.tw/news/politics/breakingnews/5609883"
+},
+{
+"published": "2026-10-17",
+"publisher": "東森新聞",
+"url": "https://news.ebc.net.tw/news/living/576224"
+}
+],
+"status": "proposal",
+"title": "都更新政：門檻擬降至 50% 與大街廓更新"
+}
+],
+"name": "居住",
+"summary": "社會住宅、幸福住宅、租屋補貼與都市更新。"
+},
+{
+"color": "#e46a8c",
+"id": "family",
+"items": [
+{
+"date": "2023-04-04",
+"facts": [
+"生育獎勵：第 1 胎 4 萬、第 2 胎 4.5 萬、第 3 胎起 5 萬",
+"友善托育補助每月加 1,000 元",
+"社宅育兒租金補助每童每月 1,000 元"
+],
+"id": "family-birth",
+"sources": [
+{
+"published": "2023-03-21",
+"publisher": "NOWnews",
+"url": "https://www.nownews.com/news/6087441"
+}
+],
+"status": "done",
+"title": "生育獎勵金與托育補助調升"
+},
+{
+"date": "2026-09",
+"facts": [
+"115 學年度（2026-09）起公私立國中小全面免費",
+"每餐補助國小 87 元、國中 92 元",
+"預計受惠約 18 萬名學生"
+],
+"id": "family-lunch",
+"sources": [
+{
+"published": "2026-04-02",
+"publisher": "TVBS",
+"url": "https://news.tvbs.com.tw/politics/3168122"
+},
+{
+"published": "2026-01-06",
+"publisher": "公視新聞網",
+"url": "https://news.pts.org.tw/article/789320"
+}
+],
+"status": "done",
+"title": "公私立國中小營養午餐免費"
+},
+{
+"date": "2026-08-31",
+"facts": [
+"2025-04 啟動，每週免費兌換 1 瓶鮮奶或豆漿",
+"2026-08-31 起擴及國中生",
+"總受惠約 28.9 萬人"
+],
+"id": "family-milk",
+"sources": [
+{
+"published": "2025-03-13",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/6885/8604112"
+},
+{
+"published": "2026-08-04",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9668555"
+}
+],
+"status": "done",
+"title": "生生喝鮮奶"
+},
+{
+"date": "2026-03-01",
+"facts": [
+"育有 12 歲以下子女，每日減 1 小時不減薪",
+"市府補助減少工時薪資 80%",
+"每人上限 1.5 萬元、每事業單位上限 10 萬元"
+],
+"id": "family-worktime",
+"sources": [
+{
+"published": "2026-02-25",
+"publisher": "TVBS",
+"url": "https://health.tvbs.com.tw/life/361237"
+},
+{
+"published": "2026-02-26",
+"publisher": "今周刊",
+"url": "https://www.businesstoday.com.tw/article/category/183034/post/202602260020/"
+}
+],
+"status": "done",
+"title": "父母育兒減少工時補助"
+},
+{
+"date": "2026-01-01",
+"facts": [
+"對象：2026-01-01 後出生、體重 1,500 公克以下",
+"每名新生兒一次性 2 萬元"
+],
+"id": "family-lbw",
+"sources": [
+{
+"published": "2026-01-02",
+"publisher": "臺北市社會局",
+"url": "https://dosw.gov.taipei/cp.aspx?n=ACD77E2297887D0B"
+}
+],
+"status": "done",
+"title": "極低出生體重兒營養品津貼"
+},
+{
+"date": "2026-08-19",
+"facts": [
+"月子加菜金每胎 3 萬元不排富，預計 2027 年實施",
+"醫療性凍卵補助上限擬由 3.2 萬提高至 7.2 萬",
+"新生兒 8 小時免費臨托券，預定 2026-09 推出"
+],
+"id": "family-new-measures",
+"sources": [
+{
+"published": "2026-08-19",
+"publisher": "中央社",
+"url": "https://www.cna.com.tw/news/aloc/202608190132.aspx"
+},
+{
+"published": "2026-08-20",
+"publisher": "今周刊",
+"url": "https://www.businesstoday.com.tw/article/category/183030/post/202608200005/"
+}
+],
+"status": "proposal",
+"title": "2026 育兒新措施（分階段上路）"
+},
+{
+"date": "2026-10-21",
+"facts": [
+"一級：波及 5 校以上或 50 人以上就醫等，停餐至少 21 天",
+"規劃 3 年投入 1.4 億元改善 38 校廚房",
+"今年已完成 13 所國小廚房升級"
+],
+"id": "family-food-safety",
+"sources": [
+{
+"published": "2026-10-21",
+"publisher": "中央社",
+"url": "https://www.cna.com.tw/news/aipl/202610210062.aspx"
+}
+],
+"status": "in_progress",
+"title": "午餐食安：三級停餐制度與廚房改善"
+},
+{
+"date": "2026-06-08",
+"facts": [
+"校長每月加發 3,000、主任 2,000、組長 1,000 元",
+"追溯自 2025-09-01，約 4,313 人受惠",
+"2026-08-01 起公立國中小增置 303 名行政人力"
+],
+"id": "family-teachers",
+"sources": [
+{
+"published": "2026-06-08",
+"publisher": "中央社（聯合新聞網）",
+"url": "https://udn.com/news/story/6885/9553381"
+},
+{
+"published": "2026-01-14",
+"publisher": "民報",
+"url": "https://www.peoplenews.tw/?p=12026"
+}
+],
+"status": "done",
+"title": "教師兼行政獎勵金與行政人力"
+},
+{
+"date": "2026-07-03",
+"facts": [
+"4 年投入 92 億元推 AI 教育",
+"擬於北士科設 AI 教育中心",
+"116 學年起逐步降低班級人數"
+],
+"id": "family-ai-edu",
+"sources": [
+{
+"published": "2026-07-04",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9605903"
+},
+{
+"published": "2026-06-06",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9549703"
+}
+],
+"status": "proposal",
+"title": "AI 教育政策白皮書與教育白皮書 2.0"
+}
+],
+"name": "育兒教育",
+"summary": "生育與托育補助、免費營養午餐、學校食安與 AI 教育。"
+},
+{
+"color": "#20a39e",
+"id": "care",
+"items": [
+{
+"date": "2026-07",
+"facts": [
+"2026-07 起每月點數由 480 點增至 600 點",
+"2026-01-02 起可折抵北市聯醫門診掛號費",
+"計程車每趟折抵上限提高至 85 點"
+],
+"id": "care-senior-card",
+"sources": [
+{
+"published": "2026-01-07",
+"publisher": "工商時報",
+"url": "https://www.ctee.com.tw/news/20260107700994-431401"
+},
+{
+"published": "2026-07-27",
+"publisher": "風傳媒",
+"url": "https://www.storm.mg/article/11151718"
+}
+],
+"status": "done",
+"title": "敬老愛心卡擴充"
+},
+{
+"date": "2026-08-12",
+"facts": [
+"換發新卡後每月另加 300 點消費點數",
+"預計可用於超市、超商、藥局、農會"
+],
+"id": "care-senior-points",
+"sources": [
+{
+"published": "2026-08-12",
+"publisher": "墨新聞",
+"url": "https://news.pchome.com.tw/public/morenews/20260812/index-78654237707016350016.html"
+}
+],
+"status": "proposal",
+"title": "敬老卡消費點數"
+},
+{
+"date": "2026-05-29",
+"facts": [
+"報導稱市長上任後長照床數新增 437 床",
+"老人日照中心 83 家，共可收托 3,879 人（2026-05）"
+],
+"id": "care-ltc",
+"sources": [
+{
+"published": "2026-05-29",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9533213"
+}
+],
+"status": "in_progress",
+"title": "長照床位與日照中心"
+},
+{
+"date": "2025-01",
+"facts": [
+"2025-01 上線，救護車透過 APP 將心電圖等生命數據傳送至醫院",
+"市府稱醫院最多可提早 6 分鐘取得傷病患生理資料",
+"2025-07 加入 TFDA 認證 AI 心電圖判讀",
+"「院前院後急重症整合資訊平台系統」獲「2026 智慧城市創新應用獎」優勝；市府稱為該獎首度有地方政府以到院前緊急救護系統獲獎"
+],
+"id": "care-ambulance",
+"sources": [
+{
+"published": "2025-04-29",
+"publisher": "新頭殼（中央社）",
+"title": "北市急重症整合系統暨APP 單季助1198人就醫",
+"url": "https://newtalk.tw/news/view/2025-04-29/968195"
+},
+{
+"published": "2025-12-19",
+"publisher": "中央社（聯合新聞網）",
+"url": "https://udn.com/news/story/7323/9214445"
+},
+{
+"publisher": "臺北市政府",
+"title": "臺北市政府消防局「院前院後急重症整合資訊平台系統」榮獲『2026智慧城市創新應用獎』優勝",
+"url": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=BC312ACFB7B048DE"
+},
+{
+"published": "2026-03-31",
+"publisher": "中央社",
+"title": "院前院後急重症整合系統獲獎 北市消戮力智慧醫療",
+"url": "https://www.cna.com.tw/news/asoc/202603310352.aspx"
+}
+],
+"status": "done",
+"title": "智慧救護車與 AI 心電圖"
+},
+{
+"date": "2026-09-17",
+"facts": [
+"導入 AI 心電圖輔助判讀，協助辨識疑似急性心肌梗塞等高風險病人",
+"中興院區設西區急重症心血管中心"
+],
+"id": "care-hospital-ai",
+"sources": [
+{
+"published": "2026-09-17",
+"publisher": "臺北市立聯合醫院",
+"url": "https://health.gov.taipei/News_Content.aspx?n=BB5A41BA1E6CA260&sms=72544237BBE4C5F6&s=68EA79645BEBD7DC"
+}
+],
+"status": "in_progress",
+"title": "北市聯醫 AI 心電圖與心血管救治整合"
+},
+{
+"date": "2026-06-01",
+"facts": [
+"2026-01 宣布推無菸城市，原則禁止、例外開放",
+"西門町商圈 2026-06-01 起除吸菸區外全面禁菸",
+"全市指定吸菸區 267 處，負壓式 12 處（2026-08）"
+],
+"id": "care-smokefree",
+"sources": [
+{
+"published": "2026-01-13",
+"publisher": "公視新聞網",
+"url": "https://news.pts.org.tw/article/790492"
+},
+{
+"published": "2026-08-27",
+"publisher": "中央社",
+"url": "https://cna.com.tw/news/aloc/202608270313.aspx"
+},
+{
+"published": "",
+"publisher": "台灣英文新聞",
+"url": "https://www.taiwannews.com.tw/zh/news/6373200"
+}
+],
+"status": "in_progress",
+"title": "無菸城市"
+}
+],
+"name": "長者醫療",
+"summary": "敬老卡、長照床位、智慧救護與無菸城市。"
+},
+{
+"color": "#d64545",
+"id": "safety",
+"items": [
+{
+"date": "2026-03-01",
+"facts": [
+"行政院 2026-02-12 核定警勤加給表修正",
+"北市加成上限由 1 倍調至 1.3 倍，每月增 2,328–2,910 元",
+"北市府核定溯自 2026-03-01 生效"
+],
+"id": "safety-police-pay",
+"sources": [
+{
+"published": "2026-03-20",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9392934"
+},
+{
+"published": "2026-02-12",
+"publisher": "中時新聞網",
+"url": "https://www.chinatimes.com/realtimenews/20260212004757-260421"
+}
+],
+"status": "done",
+"title": "員警勤務繁重加成調至 1.3 倍"
+},
+{
+"date": "2026-03-10",
+"facts": [
+"行政院 2026-03-10 核定危險職務加給表修正",
+"北市、新北消防最高加成由 1 倍調至 1.3 倍",
+"市府自 2023 年起多次行文中央爭取"
+],
+"id": "safety-fire-pay",
+"sources": [
+{
+"published": "2023-12-01",
+"publisher": "臺北市政府",
+"url": "https://www.gov.taipei/News_Content.aspx?n=2044902FC839D045&s=90D5D4E2C8B7AF3F"
+},
+{
+"published": "2026-03-13",
+"publisher": "中時新聞網（Yahoo）",
+"url": "https://tw.news.yahoo.com/%E6%94%BF%E9%99%A2%E6%A0%B8%E5%AE%9A%E8%AA%BF%E9%AB%98%E5%8D%B1%E9%9A%AA%E5%8A%A0%E6%88%90-%E6%B6%88%E9%98%B2%E7%BD%B2-%E6%9C%89%E5%8A%A9%E7%95%99%E7%94%A8%E5%BB%B6%E6%94%AC%E5%B0%88%E6%A5%AD%E4%BA%BA%E6%89%8D-092103118.html"
+}
+],
+"status": "done",
+"title": "消防人員危險加成調至 1.3 倍"
+},
+{
+"date": "2026-07",
+"facts": [
+"北市首座地下管涵式滯洪設施，滯洪量 3.2 萬噸",
+"全長約 1.1 公里，市府斥資 17 億元",
+"預計 2029 年底完工"
+],
+"id": "safety-flood",
+"sources": [
+{
+"published": "2026-07-19",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9636468"
+},
+{
+"published": "2026-07-19",
+"publisher": "世界日報",
+"url": "https://www.worldjournal.com/wj/amp/story/121221/9637211"
+}
+],
+"status": "in_progress",
+"title": "敦北地下大排滯洪工程"
+},
+{
+"date": "2023-10-03",
+"facts": [
+"海砂屋、耐震不足建物適用，容積獎勵最高 100%",
+"6 至 7 樓住宅須每 4 年辦公安申報",
+"截至 2026-04-28 申報率 27.2%"
+],
+"id": "safety-building",
+"sources": [
+{
+"published": "2023-10-03",
+"publisher": "中央社",
+"url": "https://www.cna.com.tw/news/aloc/202310030129.aspx"
+},
+{
+"published": "2026-04-29",
+"publisher": "經濟日報",
+"url": "https://money.udn.com/money/story/5621/9470829"
+}
+],
+"status": "in_progress",
+"title": "防災型都更與老屋公安申報"
+},
+{
+"date": "2026-04-17",
+"facts": [
+"報導稱市府公務員約 6.2 萬人，缺額率約 11.27%",
+"調升主管職等、發放重大工程獎勵金"
+],
+"id": "safety-staffing",
+"sources": [
+{
+"published": "2026-04-17",
+"publisher": "TVBS",
+"url": "https://news.tvbs.com.tw/life/3161401"
+},
+{
+"published": "2026-09-15",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9755917"
+}
+],
+"status": "in_progress",
+"title": "市府人才留任措施"
+},
+{
+"date": "2026-02-09",
+"facts": [
+"2026-02-09 函發各機關推動，訓練內容含 CPR＋AED、異物哽塞排除與緊急止血",
+"目標：第一線接觸民眾的員工 2026 年底受訓率達 50% 以上、2027 年底達 80%；內勤員工每年達 50% 以上",
+"市府統計截至 2026-10-22：第一線員工 73.9%（17,220 名）、內勤員工 44.2%（10,585 名）已完成實體訓練"
+],
+"id": "safety-first-aid",
+"sources": [
+{
+"published": "2026-10-28",
+"publisher": "臺北市政府消防局",
+"title": "本府全社群急救推廣計畫，經統計截至115年10月22日執行成果",
+"url": "https://www.119.gov.taipei/News_Content.aspx?n=37B67E7640165BF9&sms=9FE100ABBC7FAE50&s=96BC6D1CB2BC4E50"
+}
+],
+"status": "in_progress",
+"title": "全社群急救推廣：市府員工急救訓練"
+}
+],
+"name": "安全韌性",
+"summary": "警消加給、防洪工程、老屋公安與公務人力。"
+},
+{
+"color": "#4caf50",
+"id": "environment",
+"items": [
+{
+"date": "2025-12-18",
+"facts": [
+"2026–2030 碳預算總量 4,284 萬噸 CO2e",
+"2024 年排放較 2005 年減 19.39%",
+"目標 2030 年較 2005 年減 40%、2050 淨零"
+],
+"id": "environment-carbon",
+"sources": [
+{
+"published": "2025-12-18",
+"publisher": "臺北市環保局",
+"url": "https://www.dep.gov.taipei/News_Content.aspx?n=CB6D5C560DE4D2DD&sms=72544237BBE4C5F6&s=C896B11FE243A3FA"
+}
+],
+"status": "in_progress",
+"title": "淨零：第一期碳預算核定"
+},
+{
+"date": "2025-07",
+"facts": [
+"2025-07 起 280 處公有場所一次性餐具收費",
+"市長稱家戶垃圾減 65%、回收率由 2% 提升至 66%",
+"報導未說明基準年，屬長期累積成果，非單一任期"
+],
+"id": "environment-waste",
+"sources": [
+{
+"published": "2025-11-12",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/7323/9134925"
+}
+],
+"status": "done",
+"title": "一次性餐具收費與垃圾減量"
+},
+{
+"date": "2025-08-27",
+"facts": [
+"總經費 18 億元，分四區段施作",
+"大稻埕至敦煌步道拓寬 6 公尺，2025-08-27 動工",
+"全案預計 2028 年底完成"
+],
+"id": "environment-river",
+"sources": [
+{
+"published": "2025-08-28",
+"publisher": "世界日報",
+"url": "https://www.worldjournal.com/wj/story/121221/8968366"
+}
+],
+"status": "in_progress",
+"title": "淡水河河岸活化計畫"
+},
+{
+"date": "2025-12",
+"facts": [
+"報導稱 2025 年 PM2.5 平均 11.0μg/m³",
+"空品維護區增至 17 處，目標 2030 年全市涵蓋"
+],
+"id": "environment-air",
+"sources": [
+{
+"published": "2025-12-12",
+"publisher": "墨新聞",
+"url": "https://news.pchome.com.tw/public/morenews/20251212/index-76554956502657350016.html"
+}
+],
+"status": "in_progress",
+"title": "空氣品質維護區擴大"
+}
+],
+"name": "環境永續",
+"summary": "碳預算、垃圾減量、河岸與空氣品質。"
+},
+{
+"color": "#c9a227",
+"id": "culture",
+"items": [
+{
+"date": "2023-12-03",
+"facts": [
+"2023-11-02 取得使用執照",
+"2023-12-03 亞洲棒球錦標賽為首場正式賽事",
+"市長稱大巨蛋用途須以運動賽事為主"
+],
+"id": "culture-dome",
+"sources": [
+{
+"published": "2023-11-03",
+"publisher": "中央社",
+"url": "https://www.cna.com.tw/news/ahel/202311035001.aspx"
+},
+{
+"published": "2023-12-03",
+"publisher": "中央社",
+"url": "https://www.cna.com.tw/news/aspt/202312030081.aspx"
+},
+{
+"published": "2024-11-01",
+"publisher": "中央社",
+"url": "https://www.cna.com.tw/news/aloc/202411010101.aspx"
+}
+],
+"status": "done",
+"title": "臺北大巨蛋啟用與營運"
+},
+{
+"date": "2025-09-03",
+"facts": [
+"文化局長稱擬串聯三館，朝「國際藝術村」願景",
+"北美館園區擴建計畫為新館長一大挑戰"
+],
+"id": "culture-museums",
+"sources": [
+{
+"published": "2025-09-03",
+"publisher": "中央社（經濟日報）",
+"url": "https://money.udn.com/money/story/7307/8981686"
+}
+],
+"status": "proposal",
+"title": "北美館、當代館、寶藏巖串聯構想"
+}
+],
+"name": "文化運動",
+"summary": "大巨蛋與文化場館。國際賽事、展會與城市外交見「國際交流」島。"
+},
+{
+"color": "#3d5a80",
+"id": "international",
+"items": [
+{
+"date": "2025-11-13",
+"facts": [
+"臺北市至今與 39 國 53 個城市締結姊妹市（市府秘書處資料，2026-10 檢視）",
+"任內新增姊妹市 2 個：聖文森金石城（2024-05-21）、聖克里斯多福巴士底市（2025-11-13）",
+"另新增友誼市 2 個：日本松山市（2024-10-11，僅市府頁面記載）、美國蒙哥馬利郡（2025-03-19）"
+],
+"id": "intl-sister-cities",
+"sources": [
+{
+"published": "2025-11-14",
+"publisher": "臺北市政府秘書處",
+"title": "拉丁美洲及加勒比海地區各姊妹市",
+"url": "https://sec.gov.taipei/News_Content.aspx?n=6DB01D28DCD9FC33&sms=48505C64570D47D6&s=859D438228425B4A"
+},
+{
+"published": "2025-11-14",
+"publisher": "中央社",
+"title": "巴士底市與臺北市締結姊妹市",
+"url": "https://www.cna.com.tw/news/aipl/202511140112.aspx"
+},
+{
+"published": "2025-11-19",
+"publisher": "聖克里斯多福及尼維斯駐多倫多總領事館",
+"title": "Formal Ties with Two Major Cities in Taiwan will be Beneficial, says Ambassador Francis",
+"url": "https://skncgtoronto.gov.kn/?p=14242"
+},
+{
+"published": "2024-06-25",
+"publisher": "新頭殼",
+"title": "高雄與巴士底市締結姊妹市",
+"url": "https://newtalk.tw/news/view/2024-06-25/925328"
+}
+],
+"status": "done",
+"title": "姊妹市與友誼市"
+},
+{
+"date": "2026-04-28",
+"facts": [
+"2025-06 出席巴黎「巴黎協定」10 週年市長峰會並發言；出訪未簽署文件",
+"2026-03-19 舉辦台北國際城市論壇（第 2 屆），與德國德勒斯登市長簽署交流合作備忘錄（MOU，非姊妹市）",
+"2026-04-28 資訊局與東京都數位服務局簽署數位合作 MOU（局處層級）"
+],
+"id": "culture-diplomacy",
+"sources": [
+{
+"published": "2026-03-19",
+"publisher": "中央社",
+"title": "台北德勒斯登簽MOU（中央社 2026-03-19）",
+"url": "https://www.cna.com.tw/news/aloc/202603190132.aspx"
+},
+{
+"published": "2026-03-19",
+"publisher": "聯合報",
+"title": "2026台北國際城市論壇 蔣萬安推廣台北美食",
+"url": "https://udn.com/news/story/7323/9389856"
+},
+{
+"published": "2026-04-28",
+"publisher": "聯合報",
+"title": "「新雙城」模式 台北、東京今簽MOU確立每年數位實體交流",
+"url": "https://udn.com/news/story/7323/9469620"
+},
+{
+"published": "2025-06-24",
+"publisher": "台灣英文新聞（中央社稿）",
+"title": "蔣萬安巴黎市長峰會分享台北經驗（中央社）",
+"url": "https://www.taiwannews.com.tw/zh/news/6140779"
+}
+],
+"status": "done",
+"title": "城市外交：合作備忘錄與國際論壇"
+},
+{
+"date": "2025-12-28",
+"facts": [
+"2023-08 於上海舉行，簽署 3 項合作備忘錄（由雙方業務局處簽署）",
+"2024-12 於臺北舉行，簽署智慧醫療、小貓熊保育 2 項備忘錄",
+"2025-12 於上海舉行，簽署水治理、職業技能培訓 2 項備忘錄"
+],
+"id": "intl-twin-city-forum",
+"sources": [
+{
+"published": "2023-08-30",
+"publisher": "NOWnews今日新聞",
+"title": "雙城論壇開幕 蔣萬安致詞",
+"url": "https://www.nownews.com/news/6244687"
+},
+{
+"published": "2023-08-18",
+"publisher": "1111人力銀行產經新聞網（綜合報導）",
+"title": "蔣萬安將赴上海參與2023雙城論壇 聚焦科技簽3項MOU",
+"url": "https://www.1111.com.tw/news/jobns/152817"
+},
+{
+"published": "2024-12-17",
+"publisher": "公視新聞網",
+"title": "2024雙城論壇開幕",
+"url": "https://news.pts.org.tw/article/729184"
+},
+{
+"published": "2025-12-28",
+"publisher": "墨新聞（蕃新聞轉載）",
+"title": "蔣萬安赴上海臺北城市論壇 簽署交流合作備忘錄",
+"url": "https://n.yam.com/Article/20251228524734"
+}
+],
+"status": "done",
+"title": "臺北上海雙城論壇"
+},
+{
+"date": "2026-06-15",
+"facts": [
+"2026-06-15 於新加坡頒獎，臺北獲 Special Mention",
+"同獲表揚：安特衛普、布達佩斯、廣州、天津；首獎為倫敦"
+],
+"id": "culture-lky",
+"sources": [
+{
+"published": "2026-06-15",
+"publisher": "World Cities Summit",
+"url": "https://www.worldcitiessummit.com.sg/qql/slot/u337/Media%20Releases/2026/London%20Conferred%20Lee%20Kuan%20Yew%20World%20City%20Prize%20at%20Award%20Ceremony.pdf"
+},
+{
+"published": "2026-06-14",
+"publisher": "聯合報",
+"url": "https://udn.com/news/story/6656/9566040"
+}
+],
+"status": "done",
+"title": "李光耀世界城市獎特別表揚"
+},
+{
+"date": "2024-09-15",
+"facts": [
+"2024-09-15 於杜拜決選，由中華智慧運輸協會與臺北市政府共同申辦取得主辦權",
+"協會理事長稱申辦歷時 2014–2024 年、前後 4 次（跨越多任市府）",
+"預定 2029 年 9 月於臺北舉行"
+],
+"id": "culture-its",
+"sources": [
+{
+"published": "2024-09-16",
+"publisher": "台灣英文新聞",
+"title": "台灣取得2029年智慧運輸世界大會主辦權",
+"url": "https://www.taiwannews.com.tw/zh/news/5936907"
+},
+{
+"published": "2026-03-30",
+"publisher": "聯合新聞網",
+"title": "遠傳助力智慧運輸產業 迎接2029智慧運輸世界大會",
+"url": "https://udn.com/news/story/7240/9412471"
+},
+{
+"published": "2024-09-17",
+"publisher": "工商時報",
+"title": null,
+"url": "https://www.ctee.com.tw/news/20240917700373-430201"
+}
+],
+"status": "in_progress",
+"title": "2029 ITS 智慧運輸世界大會主辦權"
+},
+{
+"date": "2025-09",
+"facts": [
+"2024-09 首屆示範，市府文化、產業、資訊、觀傳 4 局合辦，以北流為主場地，含 12 國 25 位國際音樂策展人與買家",
+"2025-08-27 至 09-07 第 2 屆，於台北 101 舉辦國際論壇，約 30 位國內外講者"
+],
+"id": "intl-trendy-taipei",
+"sources": [
+{
+"published": "2024-07-18",
+"publisher": "中央社訊息平台",
+"title": "2024 TRENDY TAIPEI潮臺北起跑記者會（訊息來源：臺北市政府文化局）",
+"url": "https://www.cna.com.tw/postwrite/chi/376672"
+},
+{
+"published": "2024-09-30",
+"publisher": "中央社訊息平台",
+"title": "2024潮臺北TRENDY TAIPEI（訊息來源：臺北市政府文化局）",
+"url": "https://www.cna.com.tw/postwrite/chi/382840"
+},
+{
+"published": "2025-08-27",
+"publisher": "台灣英文新聞",
+"title": "潮台北 TRENDY TAIPEI 登場",
+"url": "https://www.taiwannews.com.tw/zh/news/6188031"
+}
+],
+"status": "done",
+"title": "潮台北 TRENDY TAIPEI"
+},
+{
+"date": "2025-03",
+"facts": [
+"2025-03-18 至 21 於南港展覽館舉行，主辦為台北市電腦公會等 4 單位，臺北市為共同主辦並辦國際高峰論壇",
+"主辦方稱涵蓋 59 個國家或地區、138 個城市、86 位城市首長"
+],
+"id": "intl-smart-city",
+"sources": [
+{
+"published": "2025-03-19",
+"publisher": "蕃新聞（轉載）",
+"title": "2025智慧城市展暨淨零城市展 攜手全球城市推動數位與綠色雙軸轉型",
+"url": "https://n.yam.com/Article/20250319307608"
+}
+],
+"status": "done",
+"title": "智慧城市展（市府共同主辦）"
+},
+{
+"date": "2025-02",
+"facts": [
+"2023-08 U18 世界盃青棒賽（天母等 3 球場）；2023-12-03 亞洲棒球錦標賽為大巨蛋首場正式比賽",
+"2024-11 世界棒球 12 強賽 B 組預賽於大巨蛋與天母舉行，中華隊於該屆奪冠",
+"2025-02 世界棒球經典賽資格賽於大巨蛋舉行，中華隊取得正賽資格；各賽事主辦權多由中華棒協取得"
+],
+"id": "intl-baseball",
+"sources": [
+{
+"published": "2023-12-01",
+"publisher": "中央社",
+"title": "亞錦賽3日登場 中華電轉播首推巨蛋視角鳥瞰全場",
+"url": "https://www.cna.com.tw/news/aspt/202312010216.aspx"
+},
+{
+"published": "2023-12-05",
+"publisher": "數位時代",
+"title": "2023亞洲棒球錦標賽賽程",
+"url": "https://www.bnext.com.tw/article/77685/2023-asian-baseball-championship"
+},
+{
+"published": "2024-10-02",
+"publisher": "中央社",
+"title": "世界棒球12強賽程 中華隊11/13首戰韓國",
+"url": "https://www.cna.com.tw/news/aspt/202410025005.aspx"
+},
+{
+"published": "2024-11-16",
+"publisher": "遠見雜誌",
+"title": "2024世界棒球12強賽 B組賽事資訊",
+"url": "https://www.gvm.com.tw/article/117027"
+}
+],
+"status": "done",
+"title": "大巨蛋與天母的國際棒球賽事"
+},
+{
+"date": "2025-05-17",
+"facts": [
+"主辦權於 2020-10-22（柯文哲市長任內）由雙北聯名取得",
+"2025-05-17 至 30 舉行，亞洲首次舉辦；開幕典禮在大巨蛋",
+"報導指 107 國、35 種運動，報名 2 萬 5,746 人"
+],
+"id": "culture-masters",
+"sources": [
+{
+"published": "2020-10-22",
+"publisher": "公視新聞網",
+"title": "2025世界壯年運動會 雙北將首度聯名主辦",
+"url": "https://news.pts.org.tw/article/497939"
+},
+{
+"published": "2025-04-17",
+"publisher": "NOWnews今日新聞",
+"title": "世壯運5月17日台北大巨蛋開幕",
+"url": "https://www.nownews.com/news/6672363"
+},
+{
+"published": "2025-05-16",
+"publisher": "NOWnews今日新聞",
+"title": "世壯運明天開幕 2萬5746選手及隊職員報名",
+"url": "https://www.nownews.com/news/6683802"
+}
+],
+"status": "done",
+"title": "2025 雙北世界壯年運動會"
+},
+{
+"date": "2024-12-15",
+"facts": [
+"2024 臺北馬拉松晉升世界田徑總會（WA）金標籤賽事",
+"2024-12-15 約 2 萬 8,000 名跑者參賽，其中國際跑者 4,380 位，為歷年最多"
+],
+"id": "intl-marathon",
+"sources": [
+{
+"published": "2024-12-14",
+"publisher": "NOWnews今日新聞",
+"title": "2024臺北馬拉松周日開跑 晉升金標籤賽事",
+"url": "https://www.nownews.com/news/6610809"
+},
+{
+"published": "2024-07-17",
+"publisher": "創新聞（蕃新聞轉載）",
+"title": "金標籤賽事全臺唯一市區路線 臺北馬拉松報名正式啟動",
+"url": "https://n.yam.com/Article/20240716523665"
+}
+],
+"status": "done",
+"title": "臺北馬拉松晉升世界田徑金標籤"
+},
+{
+"date": "2026-08-17",
+"facts": [
+"中華棒協 2026-08-14 宣布取得 2027 世界 12 強預賽、複賽與 2028 洛杉磯奧運最終資格賽主辦權，均在臺北舉行",
+"主辦權由中華棒協取得，市府稱提供行政協助",
+"賽程與場館尚待公布"
+],
+"id": "culture-olympic",
+"sources": [
+{
+"published": "2026-08-14",
+"publisher": "公視新聞網",
+"title": "台灣取得2027年12強及2028奧運最終資格賽主辦權",
+"url": "https://news.pts.org.tw/article/822493"
+},
+{
+"published": "2026-08-17",
+"publisher": "公視新聞網",
+"title": null,
+"url": "https://news.pts.org.tw/article/822826"
+},
+{
+"published": "2026-08-17",
+"publisher": "聯合報",
+"title": null,
+"url": "https://udn.com/news/story/7001/9696673"
+}
+],
+"status": "in_progress",
+"title": "2027 世界 12 強與 LA 奧運最終資格賽在臺北"
+},
+{
+"date": "2026-10",
+"facts": [
+"2024 年內政部表示由市府依權責決定後，市府要求遠雄完成防火避難驗證，開放大巨蛋辦演唱會；市長稱仍以運動賽事為主，演唱會屬臨時性使用",
+"2025-03 起依報導已宣布或舉辦的國際（非台灣）藝人場次包括：太妍、安德烈・波伽利、林俊傑、G-DRAGON、SUPER JUNIOR、TXT、i-dle、TWICE、ONE OK ROCK、aespa、BIGBANG",
+"2026-01-10 韓國金唱片獎首次移師台灣在大巨蛋舉行；演唱會與頒獎典禮均為民間主辦"
+],
+"id": "intl-dome-concerts",
+"sources": [
+{
+"published": "2024-06-27",
+"publisher": "中央社",
+"title": "大巨蛋辦演唱會 蔣萬安：依議會決議函詢內政部",
+"url": "https://www.cna.com.tw/news/aloc/202406270175.aspx"
+},
+{
+"published": "2024-07-31",
+"publisher": "公視新聞網",
+"title": "蔣萬安：8月消安審查通過 大巨蛋即可辦國慶晚會",
+"url": "https://news.pts.org.tw/article/707667"
+},
+{
+"published": "2024-11-01",
+"publisher": "中央社",
+"title": "大巨蛋114年中職檔期腰斬剩20場 蔣萬安：須以運動賽事為主",
+"url": "https://www.cna.com.tw/news/aloc/202411010101.aspx"
+},
+{
+"published": "2026-03-20",
+"publisher": "今周刊",
+"title": "TWICE台北應援地圖！9大打卡點、快閃店、主題車廂、台北塔點燈",
+"url": "https://www.businesstoday.com.tw/article/category/183030/post/202603160026/"
+}
+],
+"status": "done",
+"title": "大巨蛋開放國際藝人演唱會"
+},
+{
+"date": "2026-02-11",
+"facts": [
+"2025-05-19 輝達宣布台灣總部落址北士科；2026-02-11 市府與輝達簽地上權契約（50 年可延 20 年），輝達稱投資逾 400 億元",
+"選址與投資規模由輝達決定，市府角色為地上權與行政程序",
+"任內查得可證實落腳臺北市的大型外商投資以此案為主；其他外商據點多不在臺北市或查無所在城市資料"
+],
+"id": "intl-investment",
+"sources": [
+{
+"published": "2025-05-19",
+"publisher": "新頭殼",
+"title": "黃仁勳宣布輝達台灣總部落腳北士科",
+"url": "https://newtalk.tw/news/view/2025-05-19/971754"
+},
+{
+"published": "2025-10-22",
+"publisher": "科技新報",
+"title": "新光人壽宣布北士科T17、T18地上權與北市府合意解約",
+"url": "https://technews.tw/?p=1457451"
+},
+{
+"published": "2026-02-11",
+"publisher": "鏡週刊",
+"title": "蔣萬安宣布與輝達完成北士科地上權簽約",
+"url": "https://www.mirrormedia.mg/story/20260211edi035"
+}
+],
+"status": "done",
+"title": "國際企業投資：輝達北士科總部"
+}
+],
+"name": "國際交流",
+"summary": "姊妹市與城市外交、國際會展、國際賽事、大巨蛋國際演唱會與外商投資。"
+}
+]
+}
