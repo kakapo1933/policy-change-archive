@@ -262,7 +262,11 @@ def discover(site: dict, getter, previous_history: list[dict], sleep=time.sleep)
                 record_id = raw_id if duplicate_ids[raw_id] == 1 else f"{raw_id}--{duplicate_ids[raw_id]}"
                 logical = f"{parent['url']}#record={quote(str(record_id), safe='')}"
                 sid = "item-" + hashlib.sha256(f"{parent['id']}:{record_id}".encode()).hexdigest()[:20]
-                source = {"id": sid, "url": logical, "name": str(title or record_id)[:140], "type": "json", "discovered_by": f"record:{parent['id']}", "logical": True}
+                if isinstance(title, dict):
+                    display_title = title.get("zh") or title.get("zh-TW") or title.get("en") or record_id
+                else:
+                    display_title = title or record_id
+                source = {"id": sid, "url": logical, "name": str(display_title)[:140], "type": "json", "discovered_by": f"record:{parent['id']}", "logical": True}
                 result.sources.append(source)
                 result.virtual_blobs[sid] = body_from_json(record)
                 derived_current.add(sid)
