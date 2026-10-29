@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "monitor.py"
+      - "discovery.py"
       - "targets.json"
       - "site/**"
       - "tests/**"

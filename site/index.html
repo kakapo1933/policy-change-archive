@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#09131d">
   <meta name="description" content="公開監測三個政策相關網站／專案的網頁與資料變更，保存 SHA-256、時間與差異。">
-  <title>政策變更檔案館 · Policy Watch</title>
+  <title>政策變更檔案館 · Policy Change Archive</title>
   <style>
   :root{color-scheme:dark;--bg:#09131d;--panel:#111f2b;--panel2:#172b37;--line:#2c4552;--ink:#eaf3f0;--muted:#9bb1b8;--accent:#b5e6bb;--amber:#ffd58b;--red:#fc9994;font-family:ui-sans-serif,system-ui,-apple-system,"PingFang TC","Noto Sans TC",sans-serif}
   *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 75% -30%,#1d423b 0,transparent 47%),var(--bg);color:var(--ink)}
@@ -14,15 +14,16 @@
   </style>
 </head>
 <body>
-<header class="wrap top"><a class="brand" href="#top"><span class="mark">⌁</span> 政策變更檔案館 <span style="font-size:10px;color:var(--muted);font-weight:500">/ POLICY WATCH</span></a><nav class="nav"><a href="#sites">監測來源</a><a href="#history">時間紀錄</a><a href="#compare">三站比較</a></nav></header>
+<header class="wrap top"><a class="brand" href="#top"><span class="mark">⌁</span> 政策變更檔案館 <span style="font-size:10px;color:var(--muted);font-weight:500">/ POLICY CHANGE ARCHIVE</span></a><nav class="nav"><a href="#sites">監測來源</a><a href="#history">時間紀錄</a><a href="#compare">三站比較</a></nav></header>
 <main class="wrap" id="top">
-  <section class="hero"><div><p class="eyebrow">OPEN EVIDENCE · DAILY WEB ARCHIVE</p><h1>網站修改，<br><em>應該留下證據。</em></h1><p>每天觀察三個公開政策相關專案，記錄網站原始內容、SHA-256、可讀文字與前後差異。這是觀測紀錄，不推斷政策來源，也不自動判定抄襲。</p></div><aside class="hero-note"><strong>獨立監測 · 公開方法</strong><span id="updated">等待監測資料</span><br>每天約 09:17（台灣時間）排程擷取<br>GitHub Actions 可能延遲</aside></section>
-  <section class="stats" aria-label="監測統計"><div class="stat"><div class="label">監測專案</div><div class="number" id="s-sites">3</div><div class="small">不同來源，分開記錄</div></div><div class="stat"><div class="label">累計抓取紀錄</div><div class="number" id="s-obs">—</div><div class="small">包含抓取失敗</div></div><div class="stat"><div class="label">偵測原始檔變更</div><div class="number" id="s-change">—</div><div class="small">相對前次成功版本</div></div><div class="stat"><div class="label">最近抓取失敗</div><div class="number" id="s-fail">—</div><div class="small">失敗不等於內容刪除</div></div></section>
+  <section class="hero"><div><p class="eyebrow">OPEN EVIDENCE · DAILY WEB ARCHIVE</p><h1>網站修改，<br><em>應該留下證據。</em></h1><p>每天探索三個公開政策相關專案的頁面、政策條目及網站原始資料，逐筆記錄 SHA-256、文字內容與前後差異。這是觀測紀錄，不推斷政策來源，也不自動判定抄襲。</p></div><aside class="hero-note"><strong>獨立監測 · 公開方法</strong><span id="updated">等待監測資料</span><br>每天約 09:17（台灣時間）排程擷取<br>GitHub Actions 可能延遲</aside></section>
+  <section class="stats" aria-label="監測統計"><div class="stat"><div class="label">當次監測資源</div><div class="number" id="s-sites">—</div><div class="small">實際頁面、原始檔及政策條目</div></div><div class="stat"><div class="label">累計抓取紀錄</div><div class="number" id="s-obs">—</div><div class="small">包含抓取失敗</div></div><div class="stat"><div class="label">偵測原始檔變更</div><div class="number" id="s-change">—</div><div class="small">相對前次成功版本</div></div><div class="stat"><div class="label">最近抓取失敗</div><div class="number" id="s-fail">—</div><div class="small">失敗不等於內容刪除</div></div></section>
   <section id="sites"><div class="section-head"><h2>目前監測來源</h2><span class="small">各自獨立記錄原始內容與時間</span></div><div class="site-grid" id="sites-grid"><div class="empty">載入監測來源中…</div></div></section>
-  <section id="history"><div class="section-head"><h2>每日觀察紀錄</h2><span class="small">最新在上 · UTC 擷取，顯示為台灣時間</span></div><div class="panel"><div class="panel-head"><h3>版本與變更明細</h3><div class="filters"><select aria-label="篩選專案" id="site-filter"><option value="all">全部專案</option></select><select aria-label="篩選變更" id="change-filter"><option value="all">所有狀態</option><option value="changed">內容變更</option><option value="unchanged">未變更</option><option value="initial">首次觀測</option><option value="error">抓取失敗</option></select></div></div><div class="table-wrap"><table><thead><tr><th>擷取時間</th><th>專案／資源</th><th>狀態</th><th>SHA-256（原始內容）</th><th>版本差異</th></tr></thead><tbody id="history-body"><tr><td colspan="5" class="empty">載入中…</td></tr></tbody></table></div></div><p class="hint">即使原始檔案內容沒有改變，也會新增一次抓取紀錄。HTML 不一定包含 JavaScript 動態渲染的所有文字；可讀文字差異與原始 Hash 必須一起解讀。</p></section>
+  <section id="directory"><div class="section-head"><h2>本次逐頁監測清單</h2><span class="small">可搜尋每個實體網址與每筆政策紀錄</span></div><div class="panel"><div class="panel-head"><h3>已觀察到的公開資源</h3><input type="search" id="resource-search" aria-label="搜尋監測頁面" placeholder="輸入標題、來源網址或 Hash"></div><div class="table-wrap"><table><thead><tr><th>監測來源</th><th>頁面／政策條目</th><th>狀態</th><th>SHA-256（前 16 碼）</th></tr></thead><tbody id="directory-body"><tr><td colspan="4" class="empty">載入中…</td></tr></tbody></table></div></div><p class="hint" id="coverage-note">這是公開且可發現的網頁及 JSON 政策條目清單。未公開、被 robots.txt 禁止、超過上限、或只有登入後才看的頁面不會列入；單頁式網站各畫面可能共用同一 HTML。</p></section>
+  <section id="history"><div class="section-head"><h2>每日觀察紀錄</h2><span class="small">最新在上 · UTC 擷取，顯示為台灣時間</span></div><div class="panel"><div class="panel-head"><h3>版本與變更明細</h3><div class="filters"><select aria-label="篩選專案" id="site-filter"><option value="all">全部專案</option></select><select aria-label="篩選變更" id="change-filter"><option value="all">所有狀態</option><option value="changed">內容變更</option><option value="unchanged">未變更</option><option value="initial">首次觀測</option><option value="error">抓取失敗</option><option value="removed">移除／404／410</option><option value="unlisted">連結消失但可開啟</option></select><input id="page-filter" type="search" aria-label="搜尋網址或政策名稱" placeholder="搜尋頁面／政策／URL" size="20"></div></div><div class="table-wrap"><table><thead><tr><th>擷取時間</th><th>專案／資源</th><th>狀態</th><th>SHA-256（原始內容）</th><th>版本差異</th></tr></thead><tbody id="history-body"><tr><td colspan="5" class="empty">載入中…</td></tr></tbody></table></div></div><p class="hint">即使原始檔案內容沒有改變，也會新增一次抓取紀錄。HTML 不一定包含 JavaScript 動態渲染的所有文字；可讀文字差異與原始 Hash 必須一起解讀。</p></section>
   <section id="compare"><div class="section-head"><h2>三站內容比較</h2><span class="small">最新成功擷取的政策原始資料文字</span></div><div class="sim-grid" id="similarity"><div class="empty">尚無比較資料</div></div><p class="hint">文字相似度使用三字元片段 Jaccard 比較，0% 表示沒有共同片段，100% 表示片段集合相同。資料來源以政策 JSON 為主（HEART 官方 JSON、安可大舞台公開原始碼 JSON、臺北施政島公開原始碼 JSON）。它不比較視覺設計、3D 手感、語意或來源，也不能當作抄襲的認定依據。</p></section>
 </main>
-<footer class="wrap"><div class="line"></div><strong style="color:var(--ink)">Policy Watch / 政策變更檔案館</strong><p>本專案是第三方技術觀察，與三個來源網站均無隸屬關係。所有時間為「本監測器抓到內容的時間」，不代表首次發布時間。原始快照可於各筆紀錄下載；監測程式保存在 GitHub 私有儲存庫。任何 Git 紀錄都可能由有權限者重寫；關鍵證據建議交叉參照第三方封存。</p><a id="source-link" href="https://github.com/kakapo1933/kaipo-site/tree/main/policy-watch" target="_blank" rel="noopener noreferrer">查看 GitHub 專案（須有權限）</a></footer>
+<footer class="wrap"><div class="line"></div><strong style="color:var(--ink)">Policy Change Archive / 政策變更檔案館</strong><p>本專案是第三方技術觀察，與三個來源網站均無隸屬關係。所有時間為「本監測器抓到內容的時間」，不代表首次發布時間。原始快照可於各筆紀錄下載；監測程式與每日紀錄公開存放於 GitHub。任何 Git 紀錄都可能由有權限者重寫；關鍵證據建議交叉參照第三方封存。</p><a id="source-link" href="https://github.com/kakapo1933/policy-change-archive" target="_blank" rel="noopener noreferrer">查看公開 GitHub 原始碼</a></footer>
 <script>
 (()=>{
   'use strict';
@@ -30,25 +31,38 @@
   const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const tw=s=>{if(!s)return '—';const d=new Date(s);return isNaN(d)?'—':new Intl.DateTimeFormat('zh-TW',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).format(d)};
   let data=null;
-  const status=r=>!r?'尚未抓取':r.status==='error'?'抓取失敗':r.change==='changed'?'偵測變更':r.change==='initial'?'首次觀測':'未變更';
-  const klass=r=>!r?'warn':r.status==='error'?'bad':r.change==='changed'?'warn':'ok';
+  const status=r=>!r?'尚未抓取':r.status==='error'?'抓取失敗':r.status==='gone'?'已移除／無法找到':r.change==='unlisted'?'連結未再列出':r.change==='changed'?'偵測變更':r.change==='initial'?'首次觀測':'未變更';
+  const klass=r=>!r?'warn':r.status==='error'||r.status==='gone'?'bad':['changed','unlisted'].includes(r.change)?'warn':'ok';
   function sites(){
     $('sites-grid').innerHTML=data.sites.map((site,i)=>{
-      const st=data.stats[site.id]||{},latest=st.latest||[],primary=latest.find(r=>r.source_id==='homepage'),failed=latest.filter(r=>r.status==='error').length;
-      return `<article class="site"><div class="site-top"><div class="site-icon">0${i+1}</div><span class="pill ${klass(primary)}">${safe(status(primary))}</span></div><h3>${safe(site.name)}</h3><div class="subtitle">${safe(site.owner)}</div><div class="metadata"><div class="kv"><span>監測資源</span><span>${site.sources.length} 個</span></div><div class="kv"><span>最新擷取</span><span>${safe(tw(primary?.observed_at))}</span></div><div class="kv"><span>最近來源失敗</span><span>${failed} / ${latest.length}</span></div><div class="kv"><span>原始 Hash</span><code title="${safe(primary?.raw_sha256||'')}">${safe(primary?.raw_sha256?.slice(0,14)||'—')}…</code></div></div><a class="link" href="${safe(site.homepage)}" target="_blank" rel="noopener noreferrer">查看來源網站 ↗</a></article>`;
+      const st=data.stats[site.id]||{},latest=st.latest||[],primary=latest.find(r=>r.source_id==='homepage'),failed=latest.filter(r=>r.status==='error').length,cv=data.coverage?.[site.id]||{};
+      return `<article class="site"><div class="site-top"><div class="site-icon">0${i+1}</div><span class="pill ${klass(primary)}">${safe(status(primary))}</span></div><h3>${safe(site.name)}</h3><div class="subtitle">${safe(site.owner)}</div><div class="metadata"><div class="kv"><span>本次監測資源</span><span>${latest.length} 個</span></div><div class="kv"><span>最新擷取</span><span>${safe(tw(primary?.observed_at))}</span></div><div class="kv"><span>最近來源失敗</span><span>${failed} / ${latest.length}</span></div><div class="kv"><span>政策逐項追蹤</span><span>${cv.logical_records||0} 筆</span></div><div class="kv"><span>探索品質</span><span style="color:var(--amber)">${cv.complete?'範圍內完成':'部分涵蓋／有錯誤'}</span></div><div class="kv"><span>原始 Hash</span><code title="${safe(primary?.raw_sha256||'')}">${safe(primary?.raw_sha256?.slice(0,14)||'—')}…</code></div></div><a class="link" href="${safe(site.homepage)}" target="_blank" rel="noopener noreferrer">查看來源網站 ↗</a></article>`;
     }).join('');
   }
   function history(){
-    const selected=$('site-filter').value,filter=$('change-filter').value;
-    const list=(data.history||[]).filter(r=>(selected==='all'||selected===r.site_id)&&(filter==='all'||(filter==='error'?r.status==='error':r.change===filter&&r.status==='ok')));
+    const selected=$('site-filter').value,filter=$('change-filter').value,q=$('page-filter').value.trim().toLowerCase();
+    const list=(data.history||[]).filter(r=>(selected==='all'||selected===r.site_id)&&(filter==='all'||(filter==='error'?r.status==='error':r.change===filter))&&(!q||[r.name,r.url,r.source_id,r.raw_sha256].some(v=>String(v||'').toLowerCase().includes(q))));
     const labels=Object.fromEntries(data.sites.map(s=>[s.id,s]));
     $('history-body').innerHTML=list.length?list.slice(0,150).map((r,i)=>{
-      const s=labels[r.site_id],name=s?.sources.find(z=>z.id===r.source_id)?.name||r.source_id;
+      const s=labels[r.site_id],name=r.name||s?.sources.find(z=>z.id===r.source_id)?.name||r.source_id;
       const diff=(r.diff||[]).map(line=>`<div class="${line.startsWith('+')&&!line.startsWith('+++')?'add':line.startsWith('-')&&!line.startsWith('---')?'del':'meta'}">${safe(line)}</div>`).join('');
       const detail=diff||safe(r.error|| (r.status==='ok'?'沒有可顯示的文字差異；原始 HTML／JSON 仍可能改變。':'沒有詳細資訊'));
       const evidence=(r.snapshot?`<a class="link" href="../${safe(r.snapshot)}" download>原始快照（gzip）↗</a> `:'')+(r.text_snapshot?`<a class="link" href="../${safe(r.text_snapshot)}" target="_blank" rel="noopener">文字快照↗</a>`:'');
       return `<tr><td><time>${safe(tw(r.observed_at))}</time></td><td><strong>${safe(s?.name||r.site_id)}</strong><div class="small">${safe(name)}</div></td><td><span class="pill ${klass(r)}">${safe(status(r))}</span></td><td class="hash" title="${safe(r.raw_sha256||'')}">${safe(r.raw_sha256?.slice(0,20)||'—')}</td><td><button class="row-button" type="button" aria-expanded="false" data-details="row-${i}">查看詳細</button><div class="diff" id="row-${i}" hidden><div class="small">${safe(r.url)}</div><div class="small">前次成功：${safe(tw(r.previous_observed_at))}</div><div class="small">文字 Hash：${safe(r.text_sha256||'—')}</div><div class="small">HTTP：${safe(r.http_status||'—')} · ${safe(r.bytes||'—')} bytes</div><div style="margin-top:10px">${detail}</div>${evidence}</div></td></tr>`;
     }).join(''):`<tr><td colspan="5" class="empty">沒有符合條件的紀錄</td></tr>`;
+  }
+  function directory(){
+    const q=$('resource-search').value.trim().toLowerCase();
+    const labels=Object.fromEntries(data.sites.map(s=>[s.id,s.name]));
+    const rows=Object.values(data.stats).flatMap(st=>st.latest||[]).filter(r=>!q||[r.name,r.url,r.site_id,r.raw_sha256].some(v=>String(v||'').toLowerCase().includes(q)));
+    $('directory-body').innerHTML=rows.length?rows.slice(0,400).map(r=>{
+      const link=(r.logical||r.url.includes('#record='))?`<span class="small">政策條目 · 來自 JSON</span>`:`<a class="link" href="${safe(r.url)}" rel="noopener noreferrer" target="_blank">開啟原始網址 ↗</a>`;
+      const evidence=r.text_snapshot?`<a class="link" href="../${safe(r.text_snapshot)}" target="_blank" rel="noopener noreferrer">文字版本 ↗</a>`:'';
+      return `<tr><td>${safe(labels[r.site_id]||r.site_id)}</td><td><strong>${safe(r.name||r.source_id)}</strong><div class="small" style="overflow-wrap:anywhere">${safe(r.url)}</div>${link} ${evidence}</td><td><span class="pill ${klass(r)}">${safe(status(r))}</span></td><td class="hash" title="${safe(r.raw_sha256||'')}">${safe(r.raw_sha256?.slice(0,16)||'—')}</td></tr>`;
+    }).join(''):'<tr><td colspan="4" class="empty">找不到符合條件的資源</td></tr>';
+    const cv=Object.values(data.coverage||{});
+    const partial=cv.filter(x=>!x.complete),capped=cv.some(x=>x.capped);
+    $('coverage-note').textContent=`本次共記錄 ${Object.values(data.stats).reduce((a,st)=>a+(st.latest?.length||0),0)} 筆資源（含 JSON 內獨立政策條目）。${partial.length?'部分網站探索未完全成功，請查看各站狀態。':'所有設定的探索作業均完成；不代表已涵蓋所有 JavaScript 互動狀態。'}${capped?'已達到抓取數量上限。':''} 不抓取私人頁面、登入區或被 robots.txt 禁止的網址。`;
   }
   function comparisons(){
     const names=Object.fromEntries(data.sites.map(s=>[s.id,s.name]));
@@ -60,12 +74,12 @@
       if(!response.ok)throw new Error('HTTP '+response.status);
       data=await response.json();
       $('updated').textContent='最近執行：'+tw(data.generated_at);
-      $('s-sites').textContent=data.sites.length;
+      $('s-sites').textContent=Object.values(data.stats).reduce((n,s)=>n+(s.latest?.length||0),0);
       $('s-obs').textContent=Object.values(data.stats).reduce((n,s)=>n+s.total_observations,0);
       $('s-change').textContent=Object.values(data.stats).reduce((n,s)=>n+s.change_events,0);
       $('s-fail').textContent=Object.values(data.stats).reduce((n,s)=>n+s.latest.filter(r=>r.status==='error').length,0);
       $('site-filter').innerHTML='<option value="all">全部專案</option>'+data.sites.map(s=>`<option value="${safe(s.id)}">${safe(s.name)}</option>`).join('');
-      sites();history();comparisons();
+      sites();directory();history();comparisons();
     }catch(e){
       $('updated').textContent='目前尚未產生正式監測紀錄';
       $('sites-grid').innerHTML='<div class="empty">尚無資料：請先執行 monitor.py</div>';
@@ -74,6 +88,8 @@
     }
   }
   $('site-filter').addEventListener('change',()=>{if(data)history()});
+  $('page-filter').addEventListener('input',()=>{if(data)history()});
+  $('resource-search').addEventListener('input',()=>{if(data)directory()});
   $('change-filter').addEventListener('change',()=>{if(data)history()});
   $('history-body').addEventListener('click',ev=>{
     const button=ev.target.closest('button[data-details]');if(!button)return;

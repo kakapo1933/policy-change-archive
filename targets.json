@@ -21,12 +21,35 @@
       ],
       "comparison_sources": [
         "policies"
-      ]
+      ],
+      "crawl": {
+        "discover_web": true,
+        "seed_urls": [
+          "https://puma.taipei/policies"
+        ],
+        "sitemaps": [
+          "https://puma.taipei/sitemap.xml"
+        ],
+        "allowed_paths": [
+          "/heart-island",
+          "/policies"
+        ],
+        "max_pages": 120,
+        "max_depth": 4,
+        "delay_seconds": 0.2,
+        "policy_datasets": [
+          {
+            "source_id": "policies",
+            "kind": "heart-policies",
+            "policy_urls": true
+          }
+        ]
+      }
     },
     {
       "id": "encore",
       "name": "臺北安可大舞台",
-      "owner": "競選相關平台",
+      "owner": "獨立粉絲創作互動網站（非競選團隊官方網站）",
       "homepage": "https://encore.taipei/",
       "sources": [
         {
@@ -51,7 +74,34 @@
       "comparison_sources": [
         "platform",
         "achievements"
-      ]
+      ],
+      "crawl": {
+        "discover_web": true,
+        "seed_urls": [
+          "https://encore.taipei/2026/",
+          "https://encore.taipei/tower/",
+          "https://encore.taipei/submit/"
+        ],
+        "sitemaps": [
+          "https://encore.taipei/sitemap.xml"
+        ],
+        "allowed_paths": [
+          "/"
+        ],
+        "max_pages": 100,
+        "max_depth": 4,
+        "delay_seconds": 0.2,
+        "policy_datasets": [
+          {
+            "source_id": "platform",
+            "kind": "encore-platform"
+          },
+          {
+            "source_id": "achievements",
+            "kind": "encore-achievements"
+          }
+        ]
+      }
     },
     {
       "id": "policy-island",
@@ -80,7 +130,22 @@
       ],
       "comparison_sources": [
         "policies"
-      ]
+      ],
+      "crawl": {
+        "repository_tree": "https://api.github.com/repos/bounce12340/chiang-wanan-policy-island/git/trees/main?recursive=1",
+        "repository_raw_base": "https://raw.githubusercontent.com/bounce12340/chiang-wanan-policy-island/main",
+        "max_repo_files": 130,
+        "policy_datasets": [
+          {
+            "source_id": "policies",
+            "kind": "policy-island-policies"
+          },
+          {
+            "source_id": "pledges",
+            "kind": "policy-island-pledges"
+          }
+        ]
+      }
     }
   ]
 }
