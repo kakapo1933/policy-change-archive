@@ -1,0 +1,34 @@
+name: Retire superseded master branch
+
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/retire-master.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  retire:
+    if: github.repository == 'kakapo1933/policy-change-archive' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Verify master is fully included in main before deleting
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "${GITHUB_REF_NAME}" = "main"
+          git fetch origin main master
+          git merge-base --is-ancestor origin/master origin/main
+          echo "Verified: master is an ancestor of main."
+      - name: Remove master
+        shell: bash
+        run: |
+          set -euo pipefail
+          git push origin --delete master
