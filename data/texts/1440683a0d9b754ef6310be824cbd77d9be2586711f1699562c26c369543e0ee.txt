@@ -1,0 +1,51 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "結合都市林與文化徑"
+},
+{
+"en": null,
+"zh": "霧裡薛水圳、大灣古河道、雙連大溝、堀仔頭"
+},
+{
+"en": null,
+"zh": "與社區打造水文化溝通平台"
+}
+],
+"flows": [
+"F1",
+"F21"
+],
+"id": "water-culture",
+"name": {
+"en": null,
+"zh": "水路文化空間"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "短期啟動水文化發展溝通平台；中期營造重點水路的文化空間"
+},
+"stages": [
+"short",
+"mid"
+]
+},
+"plain": {
+"en": null,
+"zh": "結合都市林與文化徑，營造霧裡薛水圳、大灣古河道等市內水路的文化空間，並與社區打造溝通平台。"
+},
+"sources": [
+"water"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "社區居民"
+}
+}

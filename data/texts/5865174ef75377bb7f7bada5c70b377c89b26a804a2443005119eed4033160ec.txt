@@ -1,0 +1,33 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "促進學校以母語作為授課或課室語言"
+}
+],
+"flows": [
+"F1",
+"F28"
+],
+"id": "hakka-taigi-school",
+"name": {
+"en": null,
+"zh": "鼓勵母語做課室語言"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "促進學校以母語作為授課或課室語言，讓多語言環境回到孩子的學習日常。"
+},
+"sources": [
+"taigi-pledge"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "中小學生"
+}
+}

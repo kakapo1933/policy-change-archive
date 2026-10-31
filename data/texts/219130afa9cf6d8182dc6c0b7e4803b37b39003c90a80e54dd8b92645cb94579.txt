@@ -1,0 +1,43 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "約聘、櫃台與 1999 熱線甄選"
+},
+{
+"en": null,
+"zh": "客語中級認證加分"
+},
+{
+"en": null,
+"zh": "市府帶頭提升客語職場價值"
+}
+],
+"flows": [
+"F1",
+"F19"
+],
+"id": "hakka-hiring",
+"name": {
+"en": null,
+"zh": "約聘有加分"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "研議修訂市府約聘、櫃台與 1999 市民熱線人員的甄選規則，客語中級認證列為加分，由市府帶頭提升客語職場價值。"
+},
+"sources": [
+"hakka",
+"hakka-ltn",
+"hakka-nextapple"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "市民"
+}
+}

@@ -1,0 +1,30 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "成立台語復振專責單位"
+}
+],
+"flows": [
+"F1",
+"F29"
+],
+"id": "hakka-taigi-unit",
+"name": {
+"en": null,
+"zh": "台語復振專責單位"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "成立台語復振專責單位，在任內持續推動台語的保存與發展。"
+},
+"sources": [
+"taigi-pledge"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": null
+}

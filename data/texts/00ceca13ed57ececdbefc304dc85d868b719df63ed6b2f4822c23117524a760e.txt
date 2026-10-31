@@ -1,0 +1,47 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "先檢視與清疏市內水圳"
+},
+{
+"en": null,
+"zh": "植生過濾、濕地、礫間接觸等自然工法"
+},
+{
+"en": null,
+"zh": "橋梁、建物排水收集過濾再使用"
+}
+],
+"flows": [
+"F1"
+],
+"id": "water-clean",
+"name": {
+"en": null,
+"zh": "水圳清疏與淨水"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "短期盤點、檢視與清疏市內水路；長期建立完善的城市水循環"
+},
+"stages": [
+"short",
+"long"
+]
+},
+"plain": {
+"en": null,
+"zh": "先檢視與清疏市內水圳，用植生過濾、濕地、礫間接觸等自然工法改善水質，推動排水收集再利用。"
+},
+"sources": [
+"water"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": null
+}

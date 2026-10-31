@@ -1,0 +1,41 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "專業 AI 團隊輪流派駐各局處"
+},
+{
+"en": null,
+"zh": "找出可由 AI 協助的重複作業"
+},
+{
+"en": null,
+"zh": "減少同仁額外上課與摸索工具"
+}
+],
+"flows": [
+"F1",
+"F26"
+],
+"id": "ai-civic",
+"name": {
+"en": null,
+"zh": "市政 AI 支持"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "專業 AI 團隊輪流派駐各局處，進入工作現場找出可由 AI 協助的重複作業，讓公務員專注服務市民。"
+},
+"sources": [
+"ai"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "基層公務員"
+}
+}

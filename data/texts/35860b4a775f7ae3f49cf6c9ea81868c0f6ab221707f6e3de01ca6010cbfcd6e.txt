@@ -1,0 +1,43 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "都會伯公照護站"
+},
+{
+"en": null,
+"zh": "長輩照顧據點結合學生交流"
+},
+{
+"en": null,
+"zh": "連結客家社團據點，長幼共學"
+}
+],
+"flows": [
+"F1",
+"F16"
+],
+"id": "hakka-elders",
+"name": {
+"en": null,
+"zh": "長輩有據點"
+},
+"phase": null,
+"plain": {
+"en": null,
+"zh": "設立結合長輩照顧據點與學生交流的社區共照中心「都會伯公照護站」，連結客家社團據點，促進長幼共學。"
+},
+"sources": [
+"hakka",
+"hakka-ltn",
+"hakka-nextapple"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": {
+"en": null,
+"zh": "長輩與孩子"
+}
+}

@@ -1,0 +1,47 @@
+{
+"facts": [
+{
+"en": null,
+"zh": "從濕地、滯洪池出發"
+},
+{
+"en": null,
+"zh": "重新檢視台北夏季風廊"
+},
+{
+"en": null,
+"zh": "維護生物多樣性"
+}
+],
+"flows": [
+"F1",
+"F21"
+],
+"id": "water-eco",
+"name": {
+"en": null,
+"zh": "濕地風廊"
+},
+"phase": {
+"basis": "official",
+"label": {
+"en": null,
+"zh": "長期完成台北風廊與水空間的整合調節網絡"
+},
+"stages": [
+"long"
+]
+},
+"plain": {
+"en": null,
+"zh": "從濕地、滯洪池出發，重新檢視台北夏季風廊，讓水空間成為降溫與氣候調節的基礎建設，並維護生物多樣性。"
+},
+"sources": [
+"water"
+],
+"status": {
+"en": "Proposal",
+"zh": "政見"
+},
+"who": null
+}
