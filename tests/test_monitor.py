@@ -46,6 +46,44 @@ class MonitorTests(unittest.TestCase):
         self.assertEqual(len(list((self.dir/'data/runs').glob('*.json'))),4)
         self.assertEqual(len(list((self.dir/'data/snapshots').glob('*.gz'))),4)
 
+    def test_webp_records_hash_and_byte_changes_without_republishing(self):
+        date = datetime(2026, 11, 21, tzinfo=timezone.utc)
+        asset_url = "https://example.org/card.webp?v=202611181400"
+        self.targets["sites"][0]["sources"].append(
+            {"id": "card", "url": asset_url, "type": "image"}
+        )
+        (self.dir / "targets.json").write_text(json.dumps(self.targets), encoding="utf-8")
+        valid_a = b"RIFF" + b"\x0c\x00\x00\x00" + b"WEBPVP8 A"
+        valid_b = valid_a[:-1] + b"B"
+        body, mime = valid_a, "image/webp"
+
+        def getter(url):
+            if url == asset_url:
+                return body, 200, {"content-type": mime}
+            return b'{}', 200, {"content-type": "application/json"}
+
+        for day, (body, mime, expected) in enumerate([
+            (valid_a, "image/webp", "initial"),
+            (valid_a, "image/webp", "unchanged"),
+            (valid_b, "image/webp", "changed"),
+            (b"<p>Error</p>", "text/html", "unknown"),
+        ]):
+            rec = next(r for r in monitor.run(date + timedelta(days=day), getter)
+                       if r["source_id"] == "card")
+            self.assertEqual(rec["change"], expected)
+            self.assertIsNone(rec["snapshot"])
+            self.assertIsNone(rec["text_snapshot"])
+            self.assertEqual(rec["diff"], [])
+            if expected != "unknown":
+                self.assertEqual(rec["status"], "ok")
+                self.assertEqual(rec["raw_sha256"], monitor.sha(body))
+                self.assertEqual(rec["bytes"], len(body))
+                self.assertFalse((self.dir / "data" / "snapshots" /
+                                  f"{rec['raw_sha256']}.gz").exists())
+            else:
+                self.assertEqual(rec["status"], "error")
+                self.assertIn("expected a WebP policy card", rec["error"])
+
     def test_removed_restored_removed_again(self):
         date=datetime(2026,10,29,tzinfo=timezone.utc)
         state={'up':True}

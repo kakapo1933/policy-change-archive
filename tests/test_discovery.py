@@ -122,6 +122,102 @@ class DiscoveryTests(unittest.TestCase):
         self.assertEqual(result.coverage['repository_files'],4)
 
 
+class DistrictDiscoveryTests(unittest.TestCase):
+    root = "https://puma.taipei"
+    page = root + "/taipei-current"
+    homepage = root + "/heart-island"
+
+    def setUp(self):
+        self.site = {"id": "heart", "homepage": self.homepage,
+                     "sources": [{"id": "homepage", "url": self.homepage, "type": "html"}],
+                     "crawl": {"discover_web": True, "discover_district_cards": True,
+                               "allowed_paths": ["/heart-island", "/policies"], "delay_seconds": 0}}
+        self.manifest = {
+            group: [{"src": f"/images/taipei-current/districts/{slug}/policy-0{group[-1]}.webp?v=202611181400",
+                     "alt": f"政策圖卡 {group}"}]
+            for group, slug in discovery.DISTRICT_GROUPS.items()
+        }
+        self.robots = b"User-agent: *\nAllow: /"
+        self.calls = []
+        self.page_body = None
+
+    def getter(self, url):
+        self.calls.append(url)
+        if url == self.root + "/robots.txt":
+            return self.robots, 200, {"content-type": "text/plain"}
+        if url == self.homepage:
+            return (b'<a href="/taipei-current-other">not in scope</a>'
+                    b'<a href="/images/taipei-current/other.webp">unlisted</a>'), 200, {"content-type": "text/html"}
+        if url == self.page:
+            body = self.page_body if self.page_body is not None else (
+                '<script id="taipei-current-cards" type="application/json">'
+                + json.dumps(self.manifest, ensure_ascii=False) + "</script>"
+            ).encode()
+            return body, 200, {"content-type": "text/html"}
+        raise AssertionError(f"unexpected discovery GET: {url}")
+
+    def run_discovery(self, prior=()):
+        return discovery.discover(self.site, self.getter, list(prior), sleep=lambda _: None)
+
+    def test_seed_manifest_and_stable_id_across_cache_version(self):
+        found = self.run_discovery()
+        cards = [x for x in found.sources if x["type"] == "image"]
+        self.assertEqual(len(cards), 6)
+        self.assertEqual(found.coverage["district_cards"], 6)
+        self.assertEqual(set(self.calls), {self.root + "/robots.txt", self.page, self.homepage})
+        self.assertIn(self.page, found.responses)
+        self.assertTrue(found.coverage["complete"])
+        first = cards[0]
+        self.assertEqual(first["name"], "政策圖卡 01")
+        self.manifest["01"][0]["src"] = self.manifest["01"][0]["src"].replace("202611181400", "202611190900")
+        updated = next(x for x in self.run_discovery().sources if x["name"] == "政策圖卡 01")
+        self.assertEqual(updated["id"], first["id"])
+        self.assertNotEqual(updated["url"], first["url"])
+
+    def test_rejects_unsafe_manifest_entries_and_marks_partial(self):
+        valid = self.manifest["01"][0]["src"]
+        self.manifest["01"] += [
+            {"src": "https://outside.example" + valid},
+            {"src": "//puma.taipei" + valid},
+            {"src": valid.replace("?v=", "?other=")},
+            {"src": valid + "&extra=1"},
+            {"src": valid.replace("zhongshan-datong/", "zhongshan-datong/../")},
+            {"src": valid.replace("zhongshan-datong", "beitou-shilin")},
+            {"src": valid.replace(".webp", ".jpg")},
+            {"src": valid.replace("202611181400", "2")},
+        ]
+        del self.manifest["02"]
+        found = self.run_discovery()
+        self.assertEqual(found.coverage["district_cards"], 5)
+        self.assertFalse(found.coverage["complete"])
+        self.assertIn("duplicate image", " ".join(found.coverage["errors"]))
+        self.assertIn("invalid image URL", " ".join(found.coverage["errors"]))
+
+    def test_robots_disallow_image_and_page(self):
+        self.robots = b"User-agent: *\nDisallow: /images/taipei-current/districts/beitou-shilin/"
+        found = self.run_discovery()
+        self.assertEqual(found.coverage["district_cards"], 5)
+        self.assertIn("robots disallows 1", " ".join(found.coverage["errors"]))
+        self.calls.clear()
+        self.robots = b"User-agent: *\nDisallow: /taipei-current"
+        found = self.run_discovery()
+        self.assertEqual(found.coverage["district_cards"], 0)
+        self.assertFalse(found.coverage["complete"])
+        self.assertNotIn(self.page, self.calls)
+        self.assertNotIn(self.page, {x["url"] for x in found.sources})
+
+    def test_manifest_missing_does_not_schedule_stale_image_or_infer_removal(self):
+        card = next(x for x in self.run_discovery().sources if x["type"] == "image")
+        prior = {"site_id": "heart", "source_id": card["id"], "url": card["url"],
+                 "kind": "image", "status": "ok", "discovered_by": card["discovered_by"]}
+        self.page_body = b"<h1>Page changed</h1>"
+        found = self.run_discovery([prior])
+        self.assertFalse(found.coverage["complete"])
+        self.assertEqual(found.coverage["district_cards"], 0)
+        self.assertNotIn(card["id"], {r["id"] for r in found.sources})
+        self.assertEqual(found.missing_virtual, [])
+
+
 class CrawlIntegrationTests(unittest.TestCase):
     def setUp(self):
         self.tmp=tempfile.TemporaryDirectory()

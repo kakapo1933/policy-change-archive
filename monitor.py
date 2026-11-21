@@ -247,18 +247,28 @@ def run(now: datetime | None = None, getter=fetch):
                     blob, code, headers = discovered.responses.get(source["url"]) or getter(source["url"])
                 if not 200 <= code < 300:
                     raise ValueError(f"HTTP {code}")
-                text = normalized_text(blob, source["type"])
-                raw_hash, text_hash = sha(blob), sha(text.encode("utf-8"))
-                snap = ROOT / "snapshots" / f"{raw_hash}.gz"
-                if not snap.exists():
-                    snap.parent.mkdir(parents=True, exist_ok=True)
-                    with open(snap, "wb") as sink:
-                        # Reproducible gzip bytes avoid unnecessary Git churn.
-                        sink.write(gzip.compress(blob, compresslevel=9, mtime=0))
-                txt = ROOT / "texts" / f"{text_hash}.txt"
-                if not txt.exists():
-                    txt.parent.mkdir(parents=True, exist_ok=True)
-                    txt.write_text(text, encoding="utf-8")
+                raw_hash = sha(blob)
+                text = ""
+                text_hash = snap = txt = None
+                if source["type"] == "image":
+                    content_type = headers.get("content-type", "").split(";", 1)[0].strip().lower()
+                    if content_type != "image/webp" or len(blob) < 16 or blob[:4] != b"RIFF" or blob[8:12] != b"WEBP":
+                        raise ValueError("expected a WebP policy card")
+                    # Its redistribution license has not been established. Record
+                    # the observation, not image bytes, in this public archive.
+                else:
+                    text = normalized_text(blob, source["type"])
+                    text_hash = sha(text.encode("utf-8"))
+                    snap = ROOT / "snapshots" / f"{raw_hash}.gz"
+                    if not snap.exists():
+                        snap.parent.mkdir(parents=True, exist_ok=True)
+                        with open(snap, "wb") as sink:
+                            # Reproducible gzip bytes avoid unnecessary Git churn.
+                            sink.write(gzip.compress(blob, compresslevel=9, mtime=0))
+                    txt = ROOT / "texts" / f"{text_hash}.txt"
+                    if not txt.exists():
+                        txt.parent.mkdir(parents=True, exist_ok=True)
+                        txt.write_text(text, encoding="utf-8")
                 comparison_path = None
                 comparison_hash = None
                 if source["type"] == "json":
@@ -282,7 +292,7 @@ def run(now: datetime | None = None, getter=fetch):
                 if state is not None and state["status"] == "gone":
                     change = "restored"
                 diff = short_diff(before, text) if prev and text_hash != prev["text_sha256"] and before else []
-                rec.update(status="ok", http_status=code, raw_sha256=raw_hash, text_sha256=text_hash, bytes=len(blob), change=change, headers=headers, snapshot=snap.relative_to(BASE).as_posix(), text_snapshot=txt.relative_to(BASE).as_posix(), comparison_text_snapshot=comparison_path.relative_to(BASE).as_posix() if comparison_path else None, comparison_text_sha256=comparison_hash, diff=diff)
+                rec.update(status="ok", http_status=code, raw_sha256=raw_hash, text_sha256=text_hash, bytes=len(blob), change=change, headers=headers, snapshot=snap.relative_to(BASE).as_posix() if snap else None, text_snapshot=txt.relative_to(BASE).as_posix() if txt else None, comparison_text_snapshot=comparison_path.relative_to(BASE).as_posix() if comparison_path else None, comparison_text_sha256=comparison_hash, diff=diff)
             except (HTTPError, URLError, HTTPException, TimeoutError, ValueError, OSError, UnicodeError) as exc:
                 rec["error"] = f"{type(exc).__name__}: {exc}"[:350]
                 if isinstance(exc, HTTPError):
@@ -309,7 +319,17 @@ def run(now: datetime | None = None, getter=fetch):
                             "previous_text_sha256": last["text_sha256"], "error": "Policy record absent from newly fetched parent JSON",
                             "headers": {}, "snapshot": None, "text_snapshot": None, "comparison_text_snapshot": None,
                             "comparison_text_sha256": None, "diff": []})
-        pair_renames(records[site_start:])
+        site_records = records[site_start:]
+        if "district_cards" in coverage[site["id"]]:
+            cards = [r for r in site_records if r["kind"] == "image"]
+            succeeded = sum(r["status"] == "ok" for r in cards)
+            coverage[site["id"]]["district_cards_ok"] = succeeded
+            if succeeded != len(cards):
+                coverage[site["id"]]["complete"] = False
+                coverage[site["id"]]["errors"].insert(
+                    0, f"district policy card retrieval: {succeeded}/{len(cards)} succeeded"
+                )
+        pair_renames(site_records)
     # Append-only history: reject a replay with the same run ID rather than silently overwrite.
     if any(r["run_id"] == run_id for r in history):
         raise ValueError(f"run_id already exists: {run_id}")

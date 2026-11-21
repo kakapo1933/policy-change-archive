@@ -24,6 +24,7 @@
       ],
       "crawl": {
         "discover_web": true,
+        "discover_district_cards": true,
         "seed_urls": [
           "https://puma.taipei/policies"
         ],

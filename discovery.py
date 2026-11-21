@@ -40,6 +40,98 @@ class Links(HTMLParser):
             self.urls.append(attr["href"])
 
 
+DISTRICT_PATH = "/taipei-current"
+DISTRICT_GROUPS = {
+    "01": "zhongshan-datong", "02": "songshan-xinyi", "03": "zhongzheng-wanhua",
+    "04": "daan-wenshan", "05": "neihu-nangang", "06": "beitou-shilin",
+}
+DISTRICT_REASON = "district-card-manifest"
+
+
+class DistrictManifest(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.open = False
+        self.count = 0
+        self.raw = []
+
+    def handle_starttag(self, tag, attrs):
+        attr = dict(attrs)
+        if tag == "script" and attr.get("id") == "taipei-current-cards" and attr.get("type") == "application/json" and not attr.get("src"):
+            self.open = True
+            self.count += 1
+
+    def handle_endtag(self, tag):
+        if tag == "script":
+            self.open = False
+
+    def handle_data(self, data):
+        if self.open:
+            self.raw.append(data)
+
+
+def district_image_url(src, slug, host):
+    """Allow only a district WebP and its optional numeric cache-busting version."""
+    if (not isinstance(src, str) or len(src) > 2048 or any(ord(ch) <= 32 or ord(ch) == 127 for ch in src)
+            or not src.startswith(("/images/", f"https://{host}/images/"))):
+        return None
+    try:
+        parts = urlsplit(src)
+        if parts.netloc and (parts.scheme != "https" or parts.netloc != host):
+            return None
+        if parts.fragment or not re.fullmatch(
+            rf"/images/taipei-current/districts/{re.escape(slug)}/policy-[0-9]{{2,3}}\.webp", parts.path
+        ):
+            return None
+        if parts.query and re.fullmatch(r"v=[0-9]{1,20}", parts.query) is None:
+            return None
+        return (urlunsplit(("https", host, parts.path, parts.query, "")),
+                urlunsplit(("https", host, parts.path, "", "")))
+    except ValueError:
+        return None
+
+
+def district_entries(blob, host):
+    parser = DistrictManifest()
+    parser.feed(blob.decode("utf-8-sig"))
+    parser.close()
+    if parser.count != 1 or parser.open:
+        raise ValueError("expected one complete district-card manifest")
+    def reject_duplicates(pairs):
+        obj = {}
+        for key, value in pairs:
+            if key in obj:
+                raise ValueError("district-card manifest has duplicate JSON keys")
+            obj[key] = value
+        return obj
+
+    manifest = json.loads("".join(parser.raw), object_pairs_hook=reject_duplicates)
+    if not isinstance(manifest, dict):
+        raise ValueError("district-card manifest is not an object")
+    found = {}
+    problems = []
+    if set(manifest) != set(DISTRICT_GROUPS):
+        problems.append("expected exactly six district groups 01–06")
+    for group, slug in DISTRICT_GROUPS.items():
+        cards = manifest.get(group)
+        if not isinstance(cards, list) or not 1 <= len(cards) <= 50:
+            problems.append(f"group {group} missing, empty or above 50-card bound")
+            continue
+        for row in cards:
+            value = district_image_url(row.get("src"), slug, host) if isinstance(row, dict) else None
+            if value is None:
+                problems.append(f"group {group} contains an invalid image URL")
+                continue
+            url, identity = value
+            if identity in found:
+                problems.append(f"group {group} contains a duplicate image")
+                continue
+            name = row.get("alt")
+            found[identity] = {"id": source_id(identity), "name": name[:140] if isinstance(name, str) and name else urlsplit(identity).path,
+                               "url": url, "type": "image", "discovered_by": DISTRICT_REASON}
+    return list(found.values()), list(dict.fromkeys(problems))
+
+
 def canonical(url: str, allowed_host: str | None = None, prefixes: list[str] | None = None) -> str | None:
     """Reject query variants, non-public schemes, cross-origin and unsafe routes."""
     if not isinstance(url, str) or not url or len(url) > 2048:
@@ -129,6 +221,9 @@ def discover(site: dict, getter, previous_history: list[dict], sleep=time.sleep)
     origin = urlsplit(site["homepage"])
     host = origin.hostname
     prefixes = cfg.get("allowed_paths") or ["/"]
+    district_page = f"https://{host}{DISTRICT_PATH}" if cfg.get("discover_district_cards") and host == "puma.taipei" else None
+    district_checked = False
+    district_count = 0
     hit_cap = False
     seen = set()
     robots = None
@@ -142,8 +237,11 @@ def discover(site: dict, getter, previous_history: list[dict], sleep=time.sleep)
             result.responses[url] = fetched
         return fetched
 
+    def scoped_url(url):
+        return url if url == district_page and district_page else canonical(url, host, prefixes)
+
     def add(url, reason, kind=None):
-        normal = canonical(url, host, prefixes)
+        normal = scoped_url(url)
         if not normal or normal in candidates or normal in existing_urls:
             return normal
         # Discovery must also honor the same robots rules as its crawler.
@@ -181,10 +279,10 @@ def discover(site: dict, getter, previous_history: list[dict], sleep=time.sleep)
         sitemap_count = 0
         queued = deque()
         def enqueue(url, reason, depth=0):
-            u = canonical(url, host, prefixes)
+            u = scoped_url(url)
             if u is not None and u not in seen and u not in {pair[0] for pair in queued}:
                 queued.append((u, depth, reason))
-        for url in [site["homepage"], *cfg.get("seed_urls", [])]:
+        for url in [*([district_page] if district_page else []), site["homepage"], *cfg.get("seed_urls", [])]:
             enqueue(url, "seed")
         while sitemap_queue and sitemap_count < 5 and robots is not False:
             url, depth = sitemap_queue.popleft()
@@ -223,6 +321,24 @@ def discover(site: dict, getter, previous_history: list[dict], sleep=time.sleep)
             add(url, reason)
             try:
                 blob, status, headers = read(url)
+                if url == district_page:
+                    district_checked = True
+                    try:
+                        if status != 200 or "html" not in headers.get("content-type", ""):
+                            raise ValueError(f"expected HTML; HTTP {status}")
+                        cards, problems = district_entries(blob, host)
+                        errors.extend(f"district-card manifest: {problem}" for problem in problems)
+                        blocked = 0
+                        for card in cards:
+                            if robots is not None and not robots.can_fetch("PolicyWatch", card["url"]):
+                                blocked += 1
+                                continue
+                            result.sources.append(card)
+                            district_count += 1
+                        if blocked:
+                            errors.append(f"district-card manifest: robots disallows {blocked} image(s)")
+                    except (ValueError, RecursionError) as exc:
+                        errors.append(f"district-card manifest unavailable: {type(exc).__name__}: {exc}")
                 if 200 <= status < 300 and depth < int(cfg.get("max_depth", 3)) and "html" in headers.get("content-type", "text/html"):
                     parser = Links()
                     parser.feed(blob.decode("utf-8-sig", errors="replace"))
@@ -235,6 +351,9 @@ def discover(site: dict, getter, previous_history: list[dict], sleep=time.sleep)
                 sleep(delay)
         if robots is False:
             notes.append("Web discovery halted because robots.txt could not be verified")
+
+    if district_page and not district_checked:
+        errors.append("district-card manifest not observed; no removals inferred")
 
     # Discover standalone policy pages and logical (SPA) policy records from JSON.
     derived_current = set()
@@ -332,10 +451,14 @@ def discover(site: dict, getter, previous_history: list[dict], sleep=time.sleep)
     for sid, rec in previously_seen.items():
         url = rec.get("url", "")
         if sid not in current_ids and len(result.sources) < max_pages + max_repo_files + 1100:
-            permitted = (canonical(url, host, prefixes) if robots is not False else None) or (
+            # Image cards are scheduled only from the currently observed manifest.
+            # A previous URL is not evidence that a card is still listed or removed.
+            if rec.get("kind") == "image" or rec.get("discovered_by") == DISTRICT_REASON:
+                continue
+            permitted = (scoped_url(url) if robots is not False else None) or (
                 cfg.get("repository_raw_base") and url.startswith(cfg["repository_raw_base"].rstrip("/") + "/")
             )
-            if permitted and (robots is None or robots is False or not canonical(url, host, prefixes) or robots.can_fetch("PolicyWatch", url)):
+            if permitted and (robots is None or robots is False or not scoped_url(url) or robots.can_fetch("PolicyWatch", url)):
                 # Failed or capped discovery cannot establish that a page was unlisted.
                 listing_complete = not errors and not hit_cap and robots is not False
                 result.sources.append({"id": sid, "url": url, "name": rec.get("name") or unquote(urlsplit(url).path), "type": rec.get("kind") or "html", "discovered_by": "previously-observed", "listed": False if listing_complete else None})
@@ -357,4 +480,7 @@ def discover(site: dict, getter, previous_history: list[dict], sleep=time.sleep)
                        "complete": not hit_cap and not errors and robots is not False,
                        "capped": hit_cap, "errors": errors[:15], "notes": notes[:15],
                        "scope": "Public HTML, discovered text resources and per-policy JSON records; JavaScript runtime states and binary assets not fully covered"}
+    if district_page:
+        result.coverage["district_cards"] = district_count
+        result.coverage["scope"] += "; includes URLs from the six-group Taipei district card manifest when observed"
     return result
